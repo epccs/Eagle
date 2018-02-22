@@ -6152,7 +6152,7 @@ https://en.wikipedia.org/wiki/Diode</description>
 <part name="D3" library="D-SBR" deviceset="D" device="SMA" value="SQ4"/>
 <part name="C7" library="C-C" deviceset="C" device="C0805A" value="1uF"/>
 <part name="C11" library="C-C" deviceset="C" device="C1206" value="4.7uF"/>
-<part name="R18" library="R-C" deviceset="R" device="1210" value="0.3"/>
+<part name="R18" library="R-C" deviceset="R" device="1210" value="0.15"/>
 <part name="GND5" library="Plane" deviceset="0V" device=""/>
 <part name="GND7" library="Plane" deviceset="0V" device=""/>
 <part name="U6" library="U-Linear" deviceset="AL8805" device="" value="A6"/>
@@ -6160,35 +6160,35 @@ https://en.wikipedia.org/wiki/Diode</description>
 <part name="D6" library="D-SBR" deviceset="D" device="SMA" value="SQ4"/>
 <part name="C12" library="C-C" deviceset="C" device="C0805A" value="1uF"/>
 <part name="C19" library="C-C" deviceset="C" device="C1206" value="4.7uF"/>
-<part name="R29" library="R-C" deviceset="R" device="1210" value="0.3"/>
+<part name="R29" library="R-C" deviceset="R" device="1210" value="0.15"/>
 <part name="GND10" library="Plane" deviceset="0V" device=""/>
 <part name="GND13" library="Plane" deviceset="0V" device=""/>
 <part name="U4" library="U-Linear" deviceset="AL8805" device="" value="A6"/>
 <part name="L2" library="L-PWR" deviceset="L" device="2424" value="33uH"/>
 <part name="D4" library="D-SBR" deviceset="D" device="SMA" value="SQ4"/>
 <part name="C8" library="C-C" deviceset="C" device="C0805A" value="1uF"/>
-<part name="R20" library="R-C" deviceset="R" device="1210" value="0.3"/>
+<part name="R20" library="R-C" deviceset="R" device="1210" value="0.15"/>
 <part name="GND17" library="Plane" deviceset="0V" device=""/>
 <part name="GND16" library="Plane" deviceset="0V" device=""/>
 <part name="U7" library="U-Linear" deviceset="AL8805" device="" value="A6"/>
 <part name="L5" library="L-PWR" deviceset="L" device="2424" value="33uH"/>
 <part name="D7" library="D-SBR" deviceset="D" device="SMA" value="SQ4"/>
 <part name="C14" library="C-C" deviceset="C" device="C0805A" value="1uF"/>
-<part name="R31" library="R-C" deviceset="R" device="1210" value="0.3"/>
+<part name="R31" library="R-C" deviceset="R" device="1210" value="0.15"/>
 <part name="GND18" library="Plane" deviceset="0V" device=""/>
 <part name="GND19" library="Plane" deviceset="0V" device=""/>
 <part name="U5" library="U-Linear" deviceset="AL8805" device="" value="A6"/>
 <part name="L3" library="L-PWR" deviceset="L" device="2424" value="33uH"/>
 <part name="D5" library="D-SBR" deviceset="D" device="SMA" value="SQ4"/>
 <part name="C9" library="C-C" deviceset="C" device="C0805A" value="1uF"/>
-<part name="R22" library="R-C" deviceset="R" device="1210" value="0.3"/>
+<part name="R22" library="R-C" deviceset="R" device="1210" value="0.15"/>
 <part name="GND25" library="Plane" deviceset="0V" device=""/>
 <part name="GND26" library="Plane" deviceset="0V" device=""/>
 <part name="U8" library="U-Linear" deviceset="AL8805" device="" value="A6"/>
 <part name="L6" library="L-PWR" deviceset="L" device="2424" value="33uH"/>
 <part name="D8" library="D-SBR" deviceset="D" device="SMA" value="SQ4"/>
 <part name="C16" library="C-C" deviceset="C" device="C0805A" value="1uF"/>
-<part name="R33" library="R-C" deviceset="R" device="1210" value="0.3"/>
+<part name="R33" library="R-C" deviceset="R" device="1210" value="0.15"/>
 <part name="GND27" library="Plane" deviceset="0V" device=""/>
 <part name="GND28" library="Plane" deviceset="0V" device=""/>
 <part name="J2" library="J-HDR3.5mm" deviceset="MCV6" device="" value="PST1,0/6-3,5"/>
@@ -6406,7 +6406,7 @@ EXAMPLES:
 <wire x1="22.352" y1="186.182" x2="21.59" y2="187.452" width="0.1524" layer="98"/>
 <wire x1="21.59" y1="187.452" x2="21.59" y2="186.182" width="0.1524" layer="98"/>
 <wire x1="21.59" y1="187.452" x2="22.86" y2="186.944" width="0.1524" layer="98"/>
-<text x="28.956" y="176.022" size="1.778" layer="98">350mA</text>
+<text x="28.956" y="176.022" size="1.778" layer="98">330mA</text>
 <wire x1="33.02" y1="139.7" x2="27.94" y2="139.7" width="0.1524" layer="98"/>
 <wire x1="27.94" y1="139.7" x2="27.94" y2="142.24" width="0.1524" layer="98"/>
 <wire x1="33.02" y1="147.32" x2="27.94" y2="147.32" width="0.1524" layer="98"/>
@@ -6423,7 +6423,7 @@ EXAMPLES:
 <wire x1="24.892" y1="145.542" x2="24.13" y2="146.812" width="0.1524" layer="98"/>
 <wire x1="24.13" y1="146.812" x2="24.13" y2="145.542" width="0.1524" layer="98"/>
 <wire x1="24.13" y1="146.812" x2="25.4" y2="146.304" width="0.1524" layer="98"/>
-<text x="31.496" y="135.382" size="1.778" layer="98">350mA</text>
+<text x="31.496" y="135.382" size="1.778" layer="98">330mA</text>
 <wire x1="86.36" y1="180.34" x2="81.28" y2="180.34" width="0.1524" layer="98"/>
 <wire x1="81.28" y1="180.34" x2="81.28" y2="182.88" width="0.1524" layer="98"/>
 <wire x1="86.36" y1="187.96" x2="81.28" y2="187.96" width="0.1524" layer="98"/>
@@ -6440,7 +6440,7 @@ EXAMPLES:
 <wire x1="78.232" y1="186.182" x2="77.47" y2="187.452" width="0.1524" layer="98"/>
 <wire x1="77.47" y1="187.452" x2="77.47" y2="186.182" width="0.1524" layer="98"/>
 <wire x1="77.47" y1="187.452" x2="78.74" y2="186.944" width="0.1524" layer="98"/>
-<text x="84.836" y="176.022" size="1.778" layer="98">350mA</text>
+<text x="84.836" y="176.022" size="1.778" layer="98">330mA</text>
 <wire x1="86.36" y1="139.7" x2="81.28" y2="139.7" width="0.1524" layer="98"/>
 <wire x1="81.28" y1="139.7" x2="81.28" y2="142.24" width="0.1524" layer="98"/>
 <wire x1="86.36" y1="147.32" x2="81.28" y2="147.32" width="0.1524" layer="98"/>
@@ -6457,7 +6457,7 @@ EXAMPLES:
 <wire x1="78.232" y1="145.542" x2="77.47" y2="146.812" width="0.1524" layer="98"/>
 <wire x1="77.47" y1="146.812" x2="77.47" y2="145.542" width="0.1524" layer="98"/>
 <wire x1="77.47" y1="146.812" x2="78.74" y2="146.304" width="0.1524" layer="98"/>
-<text x="84.836" y="135.382" size="1.778" layer="98">350mA</text>
+<text x="84.836" y="135.382" size="1.778" layer="98">330mA</text>
 <wire x1="142.24" y1="180.34" x2="137.16" y2="180.34" width="0.1524" layer="98"/>
 <wire x1="137.16" y1="180.34" x2="137.16" y2="182.88" width="0.1524" layer="98"/>
 <wire x1="142.24" y1="187.96" x2="137.16" y2="187.96" width="0.1524" layer="98"/>
@@ -6474,7 +6474,7 @@ EXAMPLES:
 <wire x1="134.112" y1="186.182" x2="133.35" y2="187.452" width="0.1524" layer="98"/>
 <wire x1="133.35" y1="187.452" x2="133.35" y2="186.182" width="0.1524" layer="98"/>
 <wire x1="133.35" y1="187.452" x2="134.62" y2="186.944" width="0.1524" layer="98"/>
-<text x="140.716" y="176.022" size="1.778" layer="98">350mA</text>
+<text x="140.716" y="176.022" size="1.778" layer="98">330mA</text>
 <wire x1="139.7" y1="139.7" x2="134.62" y2="139.7" width="0.1524" layer="98"/>
 <wire x1="134.62" y1="139.7" x2="134.62" y2="142.24" width="0.1524" layer="98"/>
 <wire x1="139.7" y1="147.32" x2="134.62" y2="147.32" width="0.1524" layer="98"/>
@@ -6491,7 +6491,7 @@ EXAMPLES:
 <wire x1="131.572" y1="145.542" x2="130.81" y2="146.812" width="0.1524" layer="98"/>
 <wire x1="130.81" y1="146.812" x2="130.81" y2="145.542" width="0.1524" layer="98"/>
 <wire x1="130.81" y1="146.812" x2="132.08" y2="146.304" width="0.1524" layer="98"/>
-<text x="138.176" y="135.382" size="1.778" layer="98">350mA</text>
+<text x="138.176" y="135.382" size="1.778" layer="98">330mA</text>
 <text x="131.064" y="172.212" size="1.27" layer="98">OC0B</text>
 <text x="186.944" y="172.212" size="1.27" layer="98">OC0A</text>
 <text x="77.724" y="131.572" size="1.27" layer="98">OC1A</text>
@@ -7083,8 +7083,8 @@ RM A2 SINK, LED CC NOISE</text>
 <segment>
 <pinref part="C11" gate="G$1" pin="1"/>
 <pinref part="R18" gate="G$1" pin="2"/>
-<wire x1="38.1" y1="165.1" x2="38.1" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="160.02" x2="40.64" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="165.1" x2="35.56" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="160.02" x2="40.64" y2="160.02" width="0.1524" layer="91"/>
 <label x="12.7" y="165.1" size="1.27" layer="91" rot="R180" xref="yes"/>
 <pinref part="U3" gate="G$1" pin="VIN"/>
 <wire x1="43.18" y1="160.02" x2="40.64" y2="160.02" width="0.1524" layer="91"/>
@@ -7092,7 +7092,7 @@ RM A2 SINK, LED CC NOISE</text>
 <pinref part="D3" gate="G$1" pin="K"/>
 <wire x1="55.88" y1="152.4" x2="40.64" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="152.4" x2="40.64" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="165.1" x2="27.94" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="165.1" x2="27.94" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="165.1" x2="12.7" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="162.56" x2="27.94" y2="165.1" width="0.1524" layer="91"/>
 <junction x="27.94" y="165.1"/>
@@ -7100,8 +7100,8 @@ RM A2 SINK, LED CC NOISE</text>
 <segment>
 <pinref part="C19" gate="G$1" pin="1"/>
 <pinref part="R29" gate="G$1" pin="2"/>
-<wire x1="40.64" y1="124.46" x2="40.64" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="119.38" x2="43.18" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="124.46" x2="38.1" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="119.38" x2="43.18" y2="119.38" width="0.1524" layer="91"/>
 <label x="15.24" y="124.46" size="1.27" layer="91" rot="R180" xref="yes"/>
 <pinref part="U6" gate="G$1" pin="VIN"/>
 <wire x1="45.72" y1="119.38" x2="43.18" y2="119.38" width="0.1524" layer="91"/>
@@ -7109,7 +7109,7 @@ RM A2 SINK, LED CC NOISE</text>
 <pinref part="D6" gate="G$1" pin="K"/>
 <wire x1="55.88" y1="111.76" x2="43.18" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="111.76" x2="43.18" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="124.46" x2="30.48" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="124.46" x2="30.48" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="124.46" x2="15.24" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="121.92" x2="30.48" y2="124.46" width="0.1524" layer="91"/>
 <junction x="30.48" y="124.46"/>
