@@ -1,5 +1,5 @@
 [RPUadpt]
 
-Shield to interface microcontrollers to a multidrop RS-422 serial daisy-chain.
+Shield to interface microcontrollers to a managed multidrop serial.
 
 [RPUadpt]: https://github.com/epccs/RPUadpt/
