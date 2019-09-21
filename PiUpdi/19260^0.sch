@@ -3071,8 +3071,6 @@ ITS INPUT HIGH SIDE ESD CLAMP IS
 A DIODE ARRRAY (OR ZENER) 
 THAT BLOCKS OVER 5V
 WITHOUT POWER.</text>
-<text x="135.382" y="61.976" size="1.778" layer="98">ESD RANGE
-0V TO 5V</text>
 <text x="148.336" y="77.978" size="1.778" layer="98">https://github.com/mraardvark/pyupdi</text>
 <text x="209.042" y="145.796" size="1.778" layer="98">ENABLE NORMAL FULL
 DUPLEX SERIAL </text>
