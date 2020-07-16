@@ -5736,7 +5736,7 @@ BCM2835 /W
 <pin name="5V0@2" x="25.4" y="27.94" length="short" direction="sup" rot="R180"/>
 <pin name="BCM3/SCL" x="-22.86" y="25.4" length="short"/>
 <pin name="GND@8" x="25.4" y="25.4" length="short" direction="sup" rot="R180"/>
-<pin name="BCM44/GPCKL0" x="-22.86" y="22.86" length="short"/>
+<pin name="BCM4/GPCKL0" x="-22.86" y="22.86" length="short"/>
 <pin name="TXD/BCM14" x="25.4" y="22.86" length="short" rot="R180"/>
 <pin name="GND@1" x="-22.86" y="20.32" length="short" direction="sup"/>
 <pin name="RXD/BCM15" x="25.4" y="20.32" length="short" rot="R180"/>
@@ -5808,7 +5808,7 @@ NOTE: WiFi is needed see https://www.kickstarter.com/projects/1991736672/iot-hat
 <connect gate="G$1" pin="BCM26/SD_DAT2" pad="37"/>
 <connect gate="G$1" pin="BCM27/SD_DAT3" pad="13"/>
 <connect gate="G$1" pin="BCM3/SCL" pad="5"/>
-<connect gate="G$1" pin="BCM44/GPCKL0" pad="7"/>
+<connect gate="G$1" pin="BCM4/GPCKL0" pad="7"/>
 <connect gate="G$1" pin="BCM5" pad="29"/>
 <connect gate="G$1" pin="BCM6" pad="31"/>
 <connect gate="G$1" pin="BCM9/MISO0" pad="21"/>
@@ -5855,7 +5855,7 @@ NOTE: WiFi is needed see https://www.kickstarter.com/projects/1991736672/iot-hat
 <connect gate="G$1" pin="BCM26/SD_DAT2" pad="37"/>
 <connect gate="G$1" pin="BCM27/SD_DAT3" pad="13"/>
 <connect gate="G$1" pin="BCM3/SCL" pad="5"/>
-<connect gate="G$1" pin="BCM44/GPCKL0" pad="7"/>
+<connect gate="G$1" pin="BCM4/GPCKL0" pad="7"/>
 <connect gate="G$1" pin="BCM5" pad="29"/>
 <connect gate="G$1" pin="BCM6" pad="31"/>
 <connect gate="G$1" pin="BCM9/MISO0" pad="21"/>

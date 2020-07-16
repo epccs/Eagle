@@ -1,0 +1,7 @@
+# ignore Eagle backup files (sch, brd, lbr)
+*.s#?
+*.b#?
+*.l#?
+
+# ignore Eagle file locks
+.*.lck
