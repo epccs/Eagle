@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="6.5.0">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="yes"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="yes"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="yes"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="yes"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="yes"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="yes"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="yes"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="yes"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="yes"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="yes"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<description>&lt;pre&gt;North American Hazardous Area Plugs/Receptacle
+for schmatics only
+NEC 505  (and older NEC 500)
+
+USE AT YOUR OWN RISK...
+ 
+Copyright (C) 2013 Ronald Steven Sutherland
+Released under the Creative Commons 
+Attribution Share-Alike 3.0 License
+http://creativecommons.org/licenses/by-sa/3.0</description>
+<packages>
+<package name="POWER">
+<description>&lt;pre&gt; POWER
+E= Earth/PE/GND, N=Nut, L1, L2,L3</description>
+<pad name="L1" x="-7.62" y="0" drill="0.8" shape="square"/>
+<pad name="L2" x="-5.08" y="0" drill="0.8" shape="square"/>
+<pad name="L3" x="-2.54" y="0" drill="0.8" shape="square"/>
+<pad name="N" x="5.08" y="0" drill="0.8" shape="square"/>
+<pad name="E" x="7.62" y="0" drill="0.8"/>
+</package>
+</packages>
+<symbols>
+<symbol name="3P3W">
+<description>&lt;pre&gt;COPPER 
+APQ337 Motor mounted Plug
+APR3355 Cord Connector Receptacle
+APJ3375 Cord Connector Plug
+AR331 Mounted Receptacle
+ARRH23 Dead End Flat mounting enclosure for APQ337 or AR331
+ARRC23 Thru-Feed Flat mounting enclosure for APQ337 or AR331</description>
+<text x="-5.842" y="11.684" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.588" y="9.144" size="1.27" layer="96">&gt;VALUE</text>
+<circle x="0" y="0" radius="7.62" width="0.254" layer="94"/>
+<circle x="-5.08" y="0" radius="1.04726875" width="0.254" layer="94"/>
+<circle x="2.032" y="4.572" radius="1.04726875" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-1.27" x2="7.62" y2="1.27" width="0.254" layer="94" curve="-180"/>
+<text x="-2.032" y="-11.43" size="1.778" layer="94">30A</text>
+<text x="-2.54" y="-2.54" size="1.27" layer="94">600VAC
+
+NEMA 4</text>
+<pin name="L1" x="-5.08" y="0" visible="pin" length="point"/>
+<pin name="N" x="2.54" y="5.08" visible="pin" length="point" rot="R180"/>
+<pin name="E" x="2.54" y="-5.08" visible="pin" length="point" rot="R180"/>
+<circle x="2.032" y="-4.572" radius="1.04726875" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="3P3P-30" prefix="J" uservalue="yes">
+<description>&lt;pre&gt;COPPER 
+APQ337 Motor mounted Plug
+APR3355 Cord Connector Receptacle
+APJ3375 Cord Connector Plug
+AR331 Mounted Receptacle
+ARRH23 Dead End Flat mounting enclosure for APQ337 or AR331
+ARRC23 Thru-Feed Flat mounting enclosure for APQ337 or AR331</description>
+<gates>
+<gate name="G$1" symbol="3P3W" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="POWER">
+<connects>
+<connect gate="G$1" pin="E" pad="E"/>
+<connect gate="G$1" pin="L1" pad="L1"/>
+<connect gate="G$1" pin="N" pad="L2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
+</eagle>

@@ -1,0 +1,843 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="6.6.0">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<description>&lt;pre&gt;Cylindrical Connectors
+
+USE AT YOUR OWN RISK...
+ 
+Copyright (C) 2013 Ronald Steven Sutherland
+Released under the Creative Commons 
+Attribution Share-Alike 3.0 License
+http://creativecommons.org/licenses/by-sa/3.0</description>
+<packages>
+<package name="AMPHENOL-97SERIES">
+<description>&lt;pre&gt;
+Amphenol 97 Series
+first 26 Pin names are A-Z (watch out some skip O and I)</description>
+<pad name="A" x="-10.16" y="6.35" drill="0.8" shape="square"/>
+<pad name="B" x="-7.62" y="6.35" drill="0.8" shape="square"/>
+<pad name="C" x="-5.08" y="6.35" drill="0.8" shape="square"/>
+<pad name="D" x="-2.54" y="6.35" drill="0.8" shape="square"/>
+<pad name="E" x="0" y="6.35" drill="0.8" shape="square"/>
+<pad name="F" x="2.54" y="6.35" drill="0.8" shape="square"/>
+<pad name="G" x="5.08" y="6.35" drill="0.8" shape="square"/>
+<pad name="H" x="7.62" y="6.35" drill="0.8" shape="square"/>
+<pad name="J" x="10.16" y="6.35" drill="0.8" shape="square"/>
+<pad name="K" x="12.7" y="6.35" drill="0.8" shape="square"/>
+<pad name="L" x="-10.16" y="3.81" drill="0.8" shape="square"/>
+<pad name="M" x="-7.62" y="3.81" drill="0.8" shape="square"/>
+<pad name="N" x="-5.08" y="3.81" drill="0.8" shape="square"/>
+<pad name="P" x="-2.54" y="3.81" drill="0.8" shape="square"/>
+<pad name="Q" x="0" y="3.81" drill="0.8" shape="square"/>
+<pad name="R" x="2.54" y="3.81" drill="0.8" shape="square"/>
+<pad name="S" x="5.08" y="3.81" drill="0.8" shape="square"/>
+<pad name="T" x="7.62" y="3.81" drill="0.8" shape="square"/>
+<pad name="U" x="10.16" y="3.81" drill="0.8" shape="square"/>
+<pad name="V" x="12.7" y="3.81" drill="0.8" shape="square"/>
+<pad name="W" x="-10.16" y="1.27" drill="0.8" shape="square"/>
+<pad name="X" x="-7.62" y="1.27" drill="0.8" shape="square"/>
+<pad name="Y" x="-5.08" y="1.27" drill="0.8" shape="square"/>
+<pad name="Z" x="-2.54" y="1.27" drill="0.8" shape="square"/>
+<pad name="I" x="0" y="1.27" drill="0.8" shape="square"/>
+<pad name="O" x="2.54" y="1.27" drill="0.8" shape="square"/>
+</package>
+<package name="ALPHA">
+<description>some parts like amphenol use letters on connectors</description>
+<pad name="A" x="-11.43" y="5.08" drill="0.8" shape="square"/>
+<pad name="B" x="-8.89" y="5.08" drill="0.8" shape="square"/>
+<pad name="C" x="-6.35" y="5.08" drill="0.8" shape="square"/>
+<pad name="D" x="-3.81" y="5.08" drill="0.8" shape="square"/>
+<pad name="E" x="-1.27" y="5.08" drill="0.8" shape="square"/>
+<pad name="F" x="1.27" y="5.08" drill="0.8" shape="square"/>
+<pad name="G" x="3.81" y="5.08" drill="0.8" shape="square"/>
+<pad name="H" x="6.35" y="5.08" drill="0.8" shape="square"/>
+<pad name="I" x="8.89" y="5.08" drill="0.8" shape="square"/>
+<pad name="J" x="11.43" y="5.08" drill="0.8" shape="square"/>
+<pad name="K" x="13.97" y="5.08" drill="0.8" shape="square"/>
+<pad name="L" x="16.51" y="5.08" drill="0.8" shape="square"/>
+<pad name="M" x="19.05" y="5.08" drill="0.8" shape="square"/>
+<pad name="N" x="-11.43" y="1.27" drill="0.8" shape="square"/>
+<pad name="O" x="-8.89" y="1.27" drill="0.8" shape="square"/>
+<pad name="P" x="-6.35" y="1.27" drill="0.8" shape="square"/>
+<pad name="Q" x="-3.81" y="1.27" drill="0.8" shape="square"/>
+<pad name="R" x="-1.27" y="1.27" drill="0.8" shape="square"/>
+<pad name="S" x="1.27" y="1.27" drill="0.8" shape="square"/>
+<pad name="T" x="3.81" y="1.27" drill="0.8" shape="square"/>
+<pad name="U" x="6.35" y="1.27" drill="0.8" shape="square"/>
+<pad name="V" x="8.89" y="1.27" drill="0.8" shape="square"/>
+<pad name="W" x="11.43" y="1.27" drill="0.8" shape="square"/>
+<pad name="X" x="13.97" y="1.27" drill="0.8" shape="square"/>
+<pad name="Y" x="16.51" y="1.27" drill="0.8" shape="square"/>
+<pad name="Z" x="19.05" y="1.27" drill="0.8" shape="square"/>
+</package>
+<package name="NUM">
+<description>&lt;pre&gt;NUMBER 1-50</description>
+<pad name="1" x="-11.43" y="5.08" drill="0.8" shape="square"/>
+<pad name="2" x="-8.89" y="5.08" drill="0.8" shape="square"/>
+<pad name="3" x="-6.35" y="5.08" drill="0.8" shape="square"/>
+<pad name="4" x="-3.81" y="5.08" drill="0.8" shape="square"/>
+<pad name="5" x="-1.27" y="5.08" drill="0.8" shape="square"/>
+<pad name="6" x="1.27" y="5.08" drill="0.8" shape="square"/>
+<pad name="7" x="3.81" y="5.08" drill="0.8" shape="square"/>
+<pad name="8" x="6.35" y="5.08" drill="0.8" shape="square"/>
+<pad name="9" x="8.89" y="5.08" drill="0.8" shape="square"/>
+<pad name="10" x="11.43" y="5.08" drill="0.8" shape="square"/>
+<pad name="11" x="-11.43" y="2.54" drill="0.8" shape="square"/>
+<pad name="12" x="-8.89" y="2.54" drill="0.8" shape="square"/>
+<pad name="13" x="-6.35" y="2.54" drill="0.8" shape="square"/>
+<pad name="14" x="-3.81" y="2.54" drill="0.8" shape="square"/>
+<pad name="15" x="-1.27" y="2.54" drill="0.8" shape="square"/>
+<pad name="16" x="1.27" y="2.54" drill="0.8" shape="square"/>
+<pad name="17" x="3.81" y="2.54" drill="0.8" shape="square"/>
+<pad name="18" x="6.35" y="2.54" drill="0.8" shape="square"/>
+<pad name="19" x="8.89" y="2.54" drill="0.8" shape="square"/>
+<pad name="20" x="11.43" y="2.54" drill="0.8" shape="square"/>
+<pad name="21" x="-11.43" y="0" drill="0.8" shape="square"/>
+<pad name="22" x="-8.89" y="0" drill="0.8" shape="square"/>
+<pad name="23" x="-6.35" y="0" drill="0.8" shape="square"/>
+<pad name="24" x="-3.81" y="0" drill="0.8" shape="square"/>
+<pad name="25" x="-1.27" y="0" drill="0.8" shape="square"/>
+<pad name="26" x="1.27" y="0" drill="0.8" shape="square"/>
+<pad name="27" x="3.81" y="0" drill="0.8" shape="square"/>
+<pad name="28" x="6.35" y="0" drill="0.8" shape="square"/>
+<pad name="29" x="8.89" y="0" drill="0.8" shape="square"/>
+<pad name="30" x="11.43" y="0" drill="0.8" shape="square"/>
+<pad name="31" x="-11.43" y="-2.54" drill="0.8" shape="square"/>
+<pad name="32" x="-8.89" y="-2.54" drill="0.8" shape="square"/>
+<pad name="33" x="-6.35" y="-2.54" drill="0.8" shape="square"/>
+<pad name="34" x="-3.81" y="-2.54" drill="0.8" shape="square"/>
+<pad name="35" x="-1.27" y="-2.54" drill="0.8" shape="square"/>
+<pad name="36" x="1.27" y="-2.54" drill="0.8" shape="square"/>
+<pad name="37" x="3.81" y="-2.54" drill="0.8" shape="square"/>
+<pad name="38" x="6.35" y="-2.54" drill="0.8" shape="square"/>
+<pad name="39" x="8.89" y="-2.54" drill="0.8" shape="square"/>
+<pad name="40" x="11.43" y="-2.54" drill="0.8" shape="square"/>
+<pad name="41" x="-11.43" y="-5.08" drill="0.8" shape="square"/>
+<pad name="42" x="-8.89" y="-5.08" drill="0.8" shape="square"/>
+<pad name="43" x="-6.35" y="-5.08" drill="0.8" shape="square"/>
+<pad name="44" x="-3.81" y="-5.08" drill="0.8" shape="square"/>
+<pad name="45" x="-1.27" y="-5.08" drill="0.8" shape="square"/>
+<pad name="46" x="1.27" y="-5.08" drill="0.8" shape="square"/>
+<pad name="47" x="3.81" y="-5.08" drill="0.8" shape="square"/>
+<pad name="48" x="6.35" y="-5.08" drill="0.8" shape="square"/>
+<pad name="49" x="8.89" y="-5.08" drill="0.8" shape="square"/>
+<pad name="50" x="11.43" y="-5.08" drill="0.8" shape="square"/>
+</package>
+<package name="TE17-28">
+<description>&lt;pre&gt;Receptacles, Printed Circuit Board Mount with .025 [0.64] sq. solder tails
+TE17RR-28SPCB [AMP,1-207216-6]  RECEPTICAL REV FLANGED PCB-MNT SERIES2 TE17-28
+TE17R-28PPCB [AMP,1-207369-1]  RECEPTICAL FLANGED PCB-MNT SERIES2 TE17-28
+NOTE: pin/socket locations matche Standard/Reverse sex Receptacles. 
+It is worth noting that the locations on datasheet are seen looking from back of connector
+but looking at the top of PCB the locations are fliped (as seen in a mirror).</description>
+<pad name="1" x="3.1496" y="7.4676" drill="0.8128" shape="square"/>
+<pad name="2" x="0" y="7.4676" drill="0.8128"/>
+<pad name="3" x="-3.1496" y="7.4676" drill="0.8128"/>
+<pad name="4" x="6.2992" y="4.318" drill="0.8128"/>
+<pad name="5" x="3.1496" y="4.318" drill="0.8128"/>
+<pad name="6" x="0" y="4.318" drill="0.8128"/>
+<pad name="7" x="-3.1496" y="4.318" drill="0.8128"/>
+<pad name="8" x="-6.2992" y="4.318" drill="0.8128"/>
+<pad name="9" x="7.874" y="1.5748" drill="0.8128"/>
+<pad name="10" x="4.7244" y="1.5748" drill="0.8128"/>
+<pad name="11" x="1.5748" y="1.5748" drill="0.8128"/>
+<pad name="12" x="-1.5748" y="1.5748" drill="0.8128"/>
+<pad name="13" x="-4.7244" y="1.5748" drill="0.8128"/>
+<pad name="14" x="-7.874" y="1.5748" drill="0.8128"/>
+<pad name="15" x="7.874" y="-1.5748" drill="0.8128"/>
+<pad name="16" x="4.7244" y="-1.5748" drill="0.8128"/>
+<pad name="17" x="1.5748" y="-1.5748" drill="0.8128"/>
+<pad name="18" x="-1.5748" y="-1.5748" drill="0.8128"/>
+<pad name="19" x="-4.7244" y="-1.5748" drill="0.8128"/>
+<pad name="20" x="-7.874" y="-1.5748" drill="0.8128"/>
+<pad name="21" x="6.2992" y="-4.318" drill="0.8128"/>
+<pad name="22" x="3.1496" y="-4.318" drill="0.8128"/>
+<pad name="23" x="0" y="-4.318" drill="0.8128"/>
+<pad name="24" x="-3.1496" y="-4.318" drill="0.8128"/>
+<pad name="25" x="-6.2992" y="-4.318" drill="0.8128"/>
+<pad name="26" x="3.1496" y="-7.4676" drill="0.8128"/>
+<pad name="27" x="0" y="-7.4676" drill="0.8128"/>
+<pad name="28" x="-3.1496" y="-7.4676" drill="0.8128"/>
+<text x="0.635" y="9.525" size="0.6096" layer="25">&gt;NAME</text>
+</package>
+<package name="TE11-8">
+<description>&lt;pre&gt;Receptacles, Printed Circuit Board Mount with .025 [0.64] sq. solder tails
+TE11RR-8SPCB [AMP,1-208657-1] RECEPTICAL REV FLANGED PCB-MNT SERIES2 TE11-8
+NOTE: only Reverse sex Receptacles are of this size. 
+It is worth noting that the locations on datasheet are seen looking from back of connector
+but looking at the top of PCB the locations are fliped (as seen in a mirror).</description>
+<pad name="1" x="1.5748" y="3.5814" drill="0.8128" shape="square"/>
+<pad name="2" x="-1.5748" y="3.5814" drill="0.8128"/>
+<pad name="3" x="3.1496" y="0.8382" drill="0.8128"/>
+<pad name="4" x="0" y="0.8382" drill="0.8128"/>
+<pad name="5" x="-3.1496" y="0.8382" drill="0.8128"/>
+<pad name="6" x="3.1496" y="-2.3114" drill="0.8128"/>
+<pad name="7" x="0" y="-2.3114" drill="0.8128"/>
+<pad name="8" x="-3.1496" y="-2.3114" drill="0.8128"/>
+<text x="-0.635" y="5.715" size="0.6096" layer="25">&gt;NAME</text>
+</package>
+<package name="TE11-4">
+<description>&lt;pre&gt;Receptacles, Printed Circuit Board Mount with .025 [0.64] sq. solder tails
+TE11R-4PPCB [AMP,207825-9] RECEPTICAL STD FLANGED PCB-MNT SERIES1 TE11-4
+TE11RR-4PPCB [AMP,208283-4] RECEPTICAL REV FLANGED PCB-MNT SERIES1 TE11-4
+It is worth noting that the locations on datasheet are seen looking from back of connector
+but looking at the top of PCB the locations are fliped (as seen in a mirror).</description>
+<pad name="1" x="0" y="2.794" drill="0.8128" shape="square"/>
+<pad name="2" x="-2.794" y="0" drill="0.8128"/>
+<pad name="3" x="2.794" y="0" drill="0.8128"/>
+<pad name="4" x="0" y="-2.794" drill="0.8128"/>
+<text x="-0.635" y="4.445" size="0.6096" layer="25">&gt;NAME</text>
+</package>
+<package name="TE17-14">
+<description>&lt;pre&gt;Receptacles, Printed Circuit Board Mount with .025 [0.64] sq. solder tails
+TE17RR-14PPCB [AMP,213729-9] RECEPTICAL REV FLANGED PCB-MNT SERIES1 TE17-14
+It is worth noting that the locations on datasheet are seen looking from back of connector
+but looking at the top of PCB the locations are fliped (as seen in a mirror).</description>
+<pad name="1" x="3.81" y="5.207" drill="0.8128" shape="square"/>
+<pad name="2" x="0" y="5.207" drill="0.8128"/>
+<pad name="3" x="-3.81" y="5.207" drill="0.8128"/>
+<pad name="4" x="5.715" y="1.905" drill="0.8128"/>
+<text x="-1.905" y="6.985" size="0.6096" layer="25">&gt;NAME</text>
+<pad name="5" x="1.905" y="1.905" drill="0.8128"/>
+<pad name="6" x="-1.905" y="1.905" drill="0.8128"/>
+<pad name="7" x="-5.715" y="1.905" drill="0.8128"/>
+<pad name="8" x="5.715" y="-1.905" drill="0.8128"/>
+<pad name="9" x="1.905" y="-1.905" drill="0.8128"/>
+<pad name="10" x="-1.905" y="-1.905" drill="0.8128"/>
+<pad name="11" x="-5.715" y="-1.905" drill="0.8128"/>
+<pad name="12" x="3.81" y="-5.207" drill="0.8128"/>
+<pad name="13" x="0" y="-5.207" drill="0.8128"/>
+<pad name="14" x="-3.81" y="-5.207" drill="0.8128"/>
+</package>
+</packages>
+<symbols>
+<symbol name="20-27">
+<description>&lt;pre&gt;Amphenol:
+97-3100A-20-27S RECEPTACLE WALL FLANGED 14POS AMPH20-27S
+97-3100A-20-27P RECEPTACLE WALL FLANGED 14POS AMPH20-27P
+97-3055-120-22002 ADAPTER SHELL SZ20-22 TO 1/2MNPT
+97-3055-121-22002 ADAPTER SHELL SZ20-22 TO 1/2FNPT
+97-3102A-20-27S RECEPTACLE BOX FLANGED 14POS AMPH20-27S
+97-3102A-20-27P RECEPTACLE BOX FLANGED 14POS AMPH20-27P
+9760-20 RECEPTICAL FREE HANGING CAP SZ20
+97-3106A-20-27P PLUG FREE HANGING 14POS AMPH20-27P
+97-3106A-20-27S PLUG FREE HANGING 14POS AMPH20-27S
+9760-20P PLUG FREE HANGING CAP SZ20
+9767-22-8 SHELL STRAIGHT CABLE CLAMP OD7/16 SZ20-22
+9767-22-10 SHELL STRAIGHT CABLE CLAMP OD9/16 SZ20-22
+9767-22-12 SHELL STRAIGHT CABLE CLAMP OD11/16 SZ20-22
+
+MS3106F-20-27P is much like 97-3106A-20-27P /w a diff cable clamp and bushing, but its not clear what size cable OD</description>
+<wire x1="-5.08" y1="12.7" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
+<pin name="1" x="7.62" y="15.24" length="short" rot="R180"/>
+<pin name="5" x="7.62" y="5.08" length="short" rot="R180"/>
+<pin name="2" x="7.62" y="12.7" length="short" rot="R180"/>
+<pin name="6" x="7.62" y="2.54" length="short" rot="R180"/>
+<pin name="3" x="7.62" y="10.16" length="short" rot="R180"/>
+<pin name="7" x="7.62" y="0" length="short" rot="R180"/>
+<pin name="4" x="7.62" y="7.62" length="short" rot="R180"/>
+<pin name="8" x="7.62" y="-2.54" length="short" rot="R180"/>
+<pin name="12" x="7.62" y="-12.7" length="short" rot="R180"/>
+<pin name="11" x="7.62" y="-10.16" length="short" rot="R180"/>
+<wire x1="5.08" y1="17.78" x2="5.08" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-20.32" x2="-5.08" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-20.32" x2="-5.08" y2="17.78" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="17.78" x2="5.08" y2="17.78" width="0.254" layer="94"/>
+<pin name="9" x="7.62" y="-5.08" length="short" rot="R180"/>
+<pin name="10" x="7.62" y="-7.62" length="short" rot="R180"/>
+<pin name="13" x="7.62" y="-15.24" length="short" rot="R180"/>
+<pin name="14" x="7.62" y="-17.78" length="short" rot="R180"/>
+<text x="-4.572" y="20.828" size="1.778" layer="95">&gt;NAME</text>
+<text x="-4.572" y="18.288" size="1.27" layer="96">&gt;VALUE</text>
+<text x="-2.54" y="-8.89" size="1.778" layer="94" rot="R90">Amphenol 20-27</text>
+</symbol>
+<symbol name="18-1">
+<description>&lt;pre&gt;Amphenol:
+97-3100A-18-1S RECEPTACLE WALL FLANGED 10POS AMPH18-1S
+97-3100A-18-1P RECEPTACLE WALL FLANGED 10POS AMPH18-1P
+97-3055-120-18002 ADAPTER SHELL SZ18 TO 1/2MNPT
+97-3102A-18-1S RECEPTACLE BOX FLANGED 10POS AMPH18-1S
+97-3102A-18-1P RECEPTACLE BOX FLANGED 10POS AMPH18-1P
+9760-18 RECEPTICAL FREE HANGING CAP SZ18
+97-3106A-18-1P PLUG FREE HANGING 10POS AMPH18-1P
+97-3106A-18-1S PLUG FREE HANGING 10POS AMPH18-1S
+9760-18P PLUG FREE HANGING CAP SZ18
+9767-18-6 SHELL STRAIGHT CABLE CLAMP OD11/32 SZ18
+9767-18-8 SHELL STRAIGHT CABLE CLAMP OD7/16 SZ18
+9767-18-10 SHELL STRAIGHT CABLE CLAMP OD9/16 SZ18
+
+MS3106F-20-27P is much like 97-3106A-20-27P /w a diff cable clamp and bushing, but its not clear what size cable OD</description>
+<text x="-4.318" y="18.288" size="1.778" layer="95">&gt;NAME</text>
+<text x="-4.318" y="15.748" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="1" x="7.62" y="12.7" length="short" rot="R180"/>
+<pin name="2" x="7.62" y="10.16" length="short" rot="R180"/>
+<pin name="3" x="7.62" y="7.62" length="short" rot="R180"/>
+<pin name="4" x="7.62" y="5.08" length="short" rot="R180"/>
+<pin name="5" x="7.62" y="2.54" length="short" rot="R180"/>
+<pin name="6" x="7.62" y="-2.54" length="short" rot="R180"/>
+<pin name="7" x="7.62" y="-5.08" length="short" rot="R180"/>
+<pin name="8" x="7.62" y="-7.62" length="short" rot="R180"/>
+<pin name="9" x="7.62" y="-10.16" length="short" rot="R180"/>
+<pin name="10" x="7.62" y="-12.7" length="short" rot="R180"/>
+<wire x1="-5.08" y1="15.24" x2="5.08" y2="15.24" width="0.254" layer="94"/>
+<wire x1="5.08" y1="15.24" x2="5.08" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-15.24" x2="-5.08" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-15.24" x2="-5.08" y2="15.24" width="0.254" layer="94"/>
+<text x="-2.54" y="-7.874" size="1.778" layer="94" rot="R90">Amphenol 18-1</text>
+</symbol>
+<symbol name="20-29">
+<description>&lt;pre&gt;Amphenol:
+97-3100A-20-29S RECEPTACLE WALL FLANGED 17POS AMPH20-27S
+97-3100A-20-29P RECEPTACLE WALL FLANGED 17POS AMPH20-27P
+97-3055-120-22002 ADAPTER SHELL SZ20-22 TO 1/2MNPT
+97-3055-121-22002 ADAPTER SHELL SZ20-22 TO 1/2FNPT
+97-3102A-20-29S RECEPTACLE BOX FLANGED 17POS AMPH20-27S
+97-3102A-20-29P RECEPTACLE BOX FLANGED 17POS AMPH20-27P
+9760-20 RECEPTICAL FREE HANGING CAP SZ20
+97-3106A-20-29P PLUG FREE HANGING 17POS AMPH20-27P
+97-3106A-20-29S PLUG FREE HANGING 17POS AMPH20-27S
+9760-20P PLUG FREE HANGING CAP SZ20
+9767-22-8 SHELL STRAIGHT CABLE CLAMP OD7/16 SZ20-22
+9767-22-10 SHELL STRAIGHT CABLE CLAMP OD9/16 SZ20-22
+9767-22-12 SHELL STRAIGHT CABLE CLAMP OD11/16 SZ20-22
+
+MS3106F-20-29P is much like 97-3106A-20-29P /w a diff cable clamp and bushing, but its not clear what size cable OD</description>
+<wire x1="-5.08" y1="17.78" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
+<pin name="1" x="7.62" y="20.32" length="short" rot="R180"/>
+<pin name="5" x="7.62" y="10.16" length="short" rot="R180"/>
+<pin name="2" x="7.62" y="17.78" length="short" rot="R180"/>
+<pin name="6" x="7.62" y="7.62" length="short" rot="R180"/>
+<pin name="3" x="7.62" y="15.24" length="short" rot="R180"/>
+<pin name="7" x="7.62" y="5.08" length="short" rot="R180"/>
+<pin name="4" x="7.62" y="12.7" length="short" rot="R180"/>
+<pin name="8" x="7.62" y="2.54" length="short" rot="R180"/>
+<pin name="12" x="7.62" y="-7.62" length="short" rot="R180"/>
+<pin name="11" x="7.62" y="-5.08" length="short" rot="R180"/>
+<wire x1="5.08" y1="22.86" x2="5.08" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-22.86" x2="-5.08" y2="22.86" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="22.86" x2="5.08" y2="22.86" width="0.254" layer="94"/>
+<pin name="9" x="7.62" y="0" length="short" rot="R180"/>
+<pin name="10" x="7.62" y="-2.54" length="short" rot="R180"/>
+<pin name="13" x="7.62" y="-10.16" length="short" rot="R180"/>
+<pin name="14" x="7.62" y="-12.7" length="short" rot="R180"/>
+<text x="-4.572" y="25.908" size="1.778" layer="95">&gt;NAME</text>
+<text x="-4.572" y="23.368" size="1.27" layer="96">&gt;VALUE</text>
+<text x="-2.54" y="-8.89" size="1.778" layer="94" rot="R90">Amphenol 20-29</text>
+<wire x1="-5.08" y1="-22.86" x2="5.08" y2="-22.86" width="0.254" layer="94"/>
+<pin name="15" x="7.62" y="-15.24" length="short" rot="R180"/>
+<pin name="16" x="7.62" y="-17.78" length="short" rot="R180"/>
+<pin name="17" x="7.62" y="-20.32" length="short" rot="R180"/>
+</symbol>
+<symbol name="18-4">
+<description>&lt;pre&gt;Amphenol:
+97-3100A-18-4S RECEPTACLE WALL FLANGED 4POS AMPH18-4S
+97-3100A-18-4P RECEPTACLE WALL FLANGED 4POS AMPH18-4P
+97-3055-120-18002 ADAPTER SHELL SZ18 TO 1/2MNPT
+97-3102A-18-4S RECEPTACLE BOX FLANGED 4POS AMPH18-4S
+97-3102A-18-4P RECEPTACLE BOX FLANGED 4POS AMPH18-4P
+9760-18 RECEPTICAL FREE HANGING CAP SZ18
+97-3106A-18-4P PLUG FREE HANGING 4POS AMPH18-4P
+97-3106A-18-4S PLUG FREE HANGING 4POS AMPH18-4S
+9760-18P PLUG FREE HANGING CAP SZ18
+9767-18-6 SHELL STRAIGHT CABLE CLAMP OD11/32 SZ18
+9767-18-8 SHELL STRAIGHT CABLE CLAMP OD7/16 SZ18
+9767-18-10 SHELL STRAIGHT CABLE CLAMP OD9/16 SZ18
+
+MS3106F18-4[PS] is much like 97-3106A-18-4[PS] /w a diff cable clamp and bushing, but its not clear what size cable OD</description>
+<text x="-5.08" y="12.954" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="10.668" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="1" x="7.62" y="7.62" length="short" rot="R180"/>
+<pin name="2" x="7.62" y="5.08" length="short" rot="R180"/>
+<pin name="3" x="7.62" y="2.54" length="short" rot="R180"/>
+<pin name="4" x="7.62" y="0" length="short" rot="R180"/>
+<wire x1="-5.08" y1="10.16" x2="5.08" y2="10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="10.16" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="10.16" width="0.254" layer="94"/>
+<text x="-2.54" y="-1.778" size="1.6764" layer="94" rot="R90">Amph 18-4</text>
+</symbol>
+<symbol name="TE11-4">
+<wire x1="-5.08" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
+<pin name="1" x="7.62" y="5.08" length="short" rot="R180"/>
+<pin name="2" x="7.62" y="2.54" length="short" rot="R180"/>
+<pin name="3" x="7.62" y="-2.54" length="short" rot="R180"/>
+<pin name="4" x="7.62" y="-5.08" length="short" rot="R180"/>
+<text x="-5.08" y="10.414" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="8.382" size="1.27" layer="96">&gt;VALUE</text>
+<text x="-2.286" y="-2.794" size="1.778" layer="94" rot="R90">TE11-4</text>
+</symbol>
+<symbol name="TE17-28">
+<wire x1="-5.08" y1="38.1" x2="5.08" y2="38.1" width="0.254" layer="94"/>
+<wire x1="5.08" y1="38.1" x2="5.08" y2="-38.1" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-38.1" x2="-5.08" y2="-38.1" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-38.1" x2="-5.08" y2="38.1" width="0.254" layer="94"/>
+<pin name="1" x="7.62" y="35.56" length="short" rot="R180"/>
+<pin name="2" x="7.62" y="33.02" length="short" rot="R180"/>
+<pin name="3" x="7.62" y="30.48" length="short" rot="R180"/>
+<pin name="4" x="7.62" y="27.94" length="short" rot="R180"/>
+<text x="-5.08" y="40.894" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="38.862" size="1.27" layer="96">&gt;VALUE</text>
+<text x="-2.286" y="27.686" size="1.778" layer="94" rot="R90">TE17-28</text>
+<pin name="5" x="7.62" y="25.4" length="short" rot="R180"/>
+<pin name="6" x="7.62" y="22.86" length="short" rot="R180"/>
+<pin name="7" x="7.62" y="20.32" length="short" rot="R180"/>
+<pin name="8" x="7.62" y="17.78" length="short" rot="R180"/>
+<pin name="9" x="7.62" y="15.24" length="short" rot="R180"/>
+<pin name="10" x="7.62" y="12.7" length="short" rot="R180"/>
+<pin name="11" x="7.62" y="10.16" length="short" rot="R180"/>
+<pin name="12" x="7.62" y="7.62" length="short" rot="R180"/>
+<pin name="13" x="7.62" y="5.08" length="short" rot="R180"/>
+<pin name="14" x="7.62" y="2.54" length="short" rot="R180"/>
+<pin name="15" x="7.62" y="-2.54" length="short" rot="R180"/>
+<pin name="16" x="7.62" y="-5.08" length="short" rot="R180"/>
+<pin name="17" x="7.62" y="-7.62" length="short" rot="R180"/>
+<pin name="18" x="7.62" y="-10.16" length="short" rot="R180"/>
+<pin name="19" x="7.62" y="-12.7" length="short" rot="R180"/>
+<pin name="20" x="7.62" y="-15.24" length="short" rot="R180"/>
+<pin name="21" x="7.62" y="-17.78" length="short" rot="R180"/>
+<pin name="22" x="7.62" y="-20.32" length="short" rot="R180"/>
+<pin name="23" x="7.62" y="-22.86" length="short" rot="R180"/>
+<pin name="24" x="7.62" y="-25.4" length="short" rot="R180"/>
+<pin name="25" x="7.62" y="-27.94" length="short" rot="R180"/>
+<pin name="26" x="7.62" y="-30.48" length="short" rot="R180"/>
+<pin name="27" x="7.62" y="-33.02" length="short" rot="R180"/>
+<pin name="28" x="7.62" y="-35.56" length="short" rot="R180"/>
+</symbol>
+<symbol name="TE11-8">
+<wire x1="-5.08" y1="12.7" x2="5.08" y2="12.7" width="0.254" layer="94"/>
+<wire x1="5.08" y1="12.7" x2="5.08" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-12.7" x2="-5.08" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-12.7" x2="-5.08" y2="12.7" width="0.254" layer="94"/>
+<pin name="1" x="7.62" y="10.16" length="short" rot="R180"/>
+<pin name="2" x="7.62" y="7.62" length="short" rot="R180"/>
+<pin name="3" x="7.62" y="5.08" length="short" rot="R180"/>
+<pin name="4" x="7.62" y="2.54" length="short" rot="R180"/>
+<text x="-5.08" y="15.494" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="13.462" size="1.27" layer="96">&gt;VALUE</text>
+<text x="-2.286" y="2.286" size="1.778" layer="94" rot="R90">TE11-8</text>
+<pin name="5" x="7.62" y="-2.54" length="short" rot="R180"/>
+<pin name="6" x="7.62" y="-5.08" length="short" rot="R180"/>
+<pin name="7" x="7.62" y="-7.62" length="short" rot="R180"/>
+<pin name="8" x="7.62" y="-10.16" length="short" rot="R180"/>
+</symbol>
+<symbol name="TE17-14">
+<wire x1="-5.08" y1="20.32" x2="5.08" y2="20.32" width="0.254" layer="94"/>
+<wire x1="5.08" y1="20.32" x2="5.08" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-20.32" x2="-5.08" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-20.32" x2="-5.08" y2="20.32" width="0.254" layer="94"/>
+<pin name="1" x="7.62" y="17.78" length="short" rot="R180"/>
+<pin name="2" x="7.62" y="15.24" length="short" rot="R180"/>
+<pin name="3" x="7.62" y="12.7" length="short" rot="R180"/>
+<pin name="4" x="7.62" y="10.16" length="short" rot="R180"/>
+<text x="-5.08" y="23.114" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="21.082" size="1.27" layer="96">&gt;VALUE</text>
+<text x="-2.286" y="9.906" size="1.778" layer="94" rot="R90">TE17-14</text>
+<pin name="5" x="7.62" y="7.62" length="short" rot="R180"/>
+<pin name="6" x="7.62" y="5.08" length="short" rot="R180"/>
+<pin name="7" x="7.62" y="2.54" length="short" rot="R180"/>
+<pin name="8" x="7.62" y="-2.54" length="short" rot="R180"/>
+<pin name="9" x="7.62" y="-5.08" length="short" rot="R180"/>
+<pin name="10" x="7.62" y="-7.62" length="short" rot="R180"/>
+<pin name="11" x="7.62" y="-10.16" length="short" rot="R180"/>
+<pin name="12" x="7.62" y="-12.7" length="short" rot="R180"/>
+<pin name="13" x="7.62" y="-15.24" length="short" rot="R180"/>
+<pin name="14" x="7.62" y="-17.78" length="short" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="20-27" prefix="J" uservalue="yes">
+<description>&lt;pre&gt;Amphenol:
+97-3100A-20-27S RECEPTACLE WALL FLANGED 14POS AMPH20-27S
+97-3100A-20-27P RECEPTACLE WALL FLANGED 14POS AMPH20-27P
+97-3055-120-22002 ADAPTER SHELL SZ20-22 TO 1/2MNPT
+97-3055-121-22002 ADAPTER SHELL SZ20-22 TO 1/2FNPT
+97-3102A-20-27S RECEPTACLE BOX FLANGED 14POS AMPH20-27S
+97-3102A-20-27P RECEPTACLE BOX FLANGED 14POS AMPH20-27P
+9760-20 RECEPTICAL FREE HANGING CAP SZ20
+97-3106A-20-27P PLUG FREE HANGING 14POS AMPH20-27P
+97-3106A-20-27S PLUG FREE HANGING 14POS AMPH20-27S
+9760-20P PLUG FREE HANGING CAP SZ20
+9767-22-8 SHELL STRAIGHT CABLE CLAMP OD7/16 SZ20-22
+9767-22-10 SHELL STRAIGHT CABLE CLAMP OD9/16 SZ20-22
+9767-22-12 SHELL STRAIGHT CABLE CLAMP OD11/16 SZ20-22
+
+MS3106F-20-27P is much like 97-3106A-20-27P /w a diff cable clamp and bushing, but its not clear what size cable OD</description>
+<gates>
+<gate name="G$1" symbol="20-27" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="AMPHENOL-97SERIES">
+<connects>
+<connect gate="G$1" pin="1" pad="A"/>
+<connect gate="G$1" pin="10" pad="J"/>
+<connect gate="G$1" pin="11" pad="K"/>
+<connect gate="G$1" pin="12" pad="L"/>
+<connect gate="G$1" pin="13" pad="M"/>
+<connect gate="G$1" pin="14" pad="N"/>
+<connect gate="G$1" pin="2" pad="B"/>
+<connect gate="G$1" pin="3" pad="C"/>
+<connect gate="G$1" pin="4" pad="D"/>
+<connect gate="G$1" pin="5" pad="E"/>
+<connect gate="G$1" pin="6" pad="F"/>
+<connect gate="G$1" pin="7" pad="G"/>
+<connect gate="G$1" pin="8" pad="H"/>
+<connect gate="G$1" pin="9" pad="I"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="18-1" prefix="J" uservalue="yes">
+<description>&lt;pre&gt;Amphenol:
+97-3100A-18-1S RECEPTACLE WALL FLANGED 10POS AMPH18-1S
+97-3100A-18-1P RECEPTACLE WALL FLANGED 10POS AMPH18-1P
+97-3055-120-18002 ADAPTER SHELL SZ18 TO 1/2MNPT
+97-3102A-18-1S RECEPTACLE BOX FLANGED 10POS AMPH18-1S
+97-3102A-18-1P RECEPTACLE BOX FLANGED 10POS AMPH18-1P
+9760-18 RECEPTICAL FREE HANGING CAP SZ18
+97-3106A-18-1P PLUG FREE HANGING 10POS AMPH18-1P
+97-3106A-18-1S PLUG FREE HANGING 10POS AMPH18-1S
+9760-18P PLUG FREE HANGING CAP SZ18
+9767-18-6 SHELL STRAIGHT CABLE CLAMP OD11/32 SZ18
+9767-18-8 SHELL STRAIGHT CABLE CLAMP OD7/16 SZ18
+9767-18-10 SHELL STRAIGHT CABLE CLAMP OD9/16 SZ18
+
+MS3106F-18-1S is an environmental MS-5015 Class F rated verison of 97-3106A-18-1S however I can't find the cable OD like the 9767 water resistant shell</description>
+<gates>
+<gate name="G$1" symbol="18-1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ALPHA">
+<connects>
+<connect gate="G$1" pin="1" pad="A"/>
+<connect gate="G$1" pin="10" pad="J"/>
+<connect gate="G$1" pin="2" pad="B"/>
+<connect gate="G$1" pin="3" pad="C"/>
+<connect gate="G$1" pin="4" pad="D"/>
+<connect gate="G$1" pin="5" pad="E"/>
+<connect gate="G$1" pin="6" pad="F"/>
+<connect gate="G$1" pin="7" pad="G"/>
+<connect gate="G$1" pin="8" pad="H"/>
+<connect gate="G$1" pin="9" pad="I"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="20-29" prefix="J" uservalue="yes">
+<description>&lt;pre&gt;Amphenol:
+97-3100A-20-29S RECEPTACLE WALL FLANGED 17POS AMPH20-27S
+97-3100A-20-29P RECEPTACLE WALL FLANGED 17POS AMPH20-27P
+97-3055-120-22002 ADAPTER SHELL SZ20-22 TO 1/2MNPT
+97-3055-121-22002 ADAPTER SHELL SZ20-22 TO 1/2FNPT
+97-3102A-20-29S RECEPTACLE BOX FLANGED 17POS AMPH20-27S
+97-3102A-20-29P RECEPTACLE BOX FLANGED 17POS AMPH20-27P
+9760-20 RECEPTICAL FREE HANGING CAP SZ20
+97-3106A-20-29P PLUG FREE HANGING 17POS AMPH20-27P
+97-3106A-20-29S PLUG FREE HANGING 17POS AMPH20-27S
+9760-20P PLUG FREE HANGING CAP SZ20
+9767-22-8 SHELL STRAIGHT CABLE CLAMP OD7/16 SZ20-22
+9767-22-10 SHELL STRAIGHT CABLE CLAMP OD9/16 SZ20-22
+9767-22-12 SHELL STRAIGHT CABLE CLAMP OD11/16 SZ20-22
+
+MS3106F-20-29P is much like 97-3106A-20-29P /w a diff cable clamp and bushing, but its not clear what size cable OD</description>
+<gates>
+<gate name="G$1" symbol="20-29" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="AMPHENOL-97SERIES">
+<connects>
+<connect gate="G$1" pin="1" pad="A"/>
+<connect gate="G$1" pin="10" pad="K"/>
+<connect gate="G$1" pin="11" pad="L"/>
+<connect gate="G$1" pin="12" pad="M"/>
+<connect gate="G$1" pin="13" pad="N"/>
+<connect gate="G$1" pin="14" pad="P"/>
+<connect gate="G$1" pin="15" pad="R"/>
+<connect gate="G$1" pin="16" pad="S"/>
+<connect gate="G$1" pin="17" pad="T"/>
+<connect gate="G$1" pin="2" pad="B"/>
+<connect gate="G$1" pin="3" pad="C"/>
+<connect gate="G$1" pin="4" pad="D"/>
+<connect gate="G$1" pin="5" pad="E"/>
+<connect gate="G$1" pin="6" pad="F"/>
+<connect gate="G$1" pin="7" pad="G"/>
+<connect gate="G$1" pin="8" pad="H"/>
+<connect gate="G$1" pin="9" pad="J"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="18-4" prefix="J" uservalue="yes">
+<description>&lt;pre&gt;Amphenol 18-4
+97-3100A-18-4S RECEPTACLE WALL FLANGED 4POS AMPH18-4S
+97-3100A-18-4P RECEPTACLE WALL FLANGED 4POS AMPH18-4P
+97-3055-120-18002 ADAPTER SHELL SZ18 TO 1/2MNPT
+97-3102A-18-4S RECEPTACLE BOX FLANGED 4POS AMPH18-4S
+97-3102A-18-4P RECEPTACLE BOX FLANGED 4POS AMPH18-4P
+9760-18 RECEPTICAL FREE HANGING CAP SZ18
+97-3106A-18-4P PLUG FREE HANGING 4POS AMPH18-4P
+97-3106A-18-4S PLUG FREE HANGING 4POS AMPH18-4S
+9760-18P PLUG FREE HANGING CAP SZ18
+9767-18-6 SHELL STRAIGHT CABLE CLAMP OD11/32 SZ18
+9767-18-8 SHELL STRAIGHT CABLE CLAMP OD7/16 SZ18
+9767-18-10 SHELL STRAIGHT CABLE CLAMP OD9/16 SZ18
+
+MS3106F18-4[PS] is much like 97-3106A-18-4[PS] /w a diff cable clamp and bushing, but its not clear what size cable OD</description>
+<gates>
+<gate name="G$1" symbol="18-4" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ALPHA">
+<connects>
+<connect gate="G$1" pin="1" pad="A"/>
+<connect gate="G$1" pin="2" pad="B"/>
+<connect gate="G$1" pin="3" pad="C"/>
+<connect gate="G$1" pin="4" pad="D"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TE11-4" prefix="J" uservalue="yes">
+<description>&lt;pre&gt;Receptacles, Printed Circuit Board Mount with .025 [0.64] sq. solder tails
+TE11-4PFPCB [AMP,207825-9] RECEPTICAL STD FLANGED PCB-MNT SERIES1 TE11-4
+TE11-4PF [AMP,206061-1] RECEPTICAL STD FLANGED SERIES1 TE11-4
+TE11-4P [AMP,206153-1] RECEPTICAL FREE HANGING STD SERIES1 TE11-4
+TE11-4S [AMP,206060-1] PLUG STD SERIES2 TE11-4
+
+TE11-4SRFPCB [AMP,208283-4] RECEPTICAL REV FLANGED PCB-MNT SERIES1 TE11-4
+TE11-4SRF [AMP,206430-1] RECEPTICAL REV FLANGED SERIES1 TE11-4
+TE11-4SR [AMP,206430-2] RECEPTICAL FREE HANGING REV SERIES1 TE11-4
+TE11-4PR [AMP,206429-1] PLUG REV SERIES1 TE11-4
+
+TE-III+P16 [TE,66099-3] PIN 16-18AWG GOLD CRIMP SERIES1
+TE-III+P20 [TE,66102-8] PIN 20-24AWG GOLD CRIMP SERIES1
+TE-III+S16 [TE,66101-3] SOCKET 16-18AWG GOLD CRIMP SERIES1
+TE-III+S20 [TE,66105-3] SOCKET 20-24AWG GOLD CRIMP SERIES1
+TE-SH11 [AMP,1-206062-4] SHELL SZ11</description>
+<gates>
+<gate name="G$1" symbol="TE11-4" x="-2.54" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="NUM">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TE17-28" prefix="J" uservalue="yes">
+<description>&lt;pre&gt;TE17RR-28SPCB [AMP,1-207216-6]  RECEPTICAL REV FLANGED PCB-MNT SERIES2 TE17-28
+TE17RRF-28S [AMP,206038-1] RECEPTICAL REV FLANGED SERIES2 TE17-28
+TE17RR-28S [AMP,206038-2] RECEPTICAL FREE HANGING REV SERIES2 TE17-28
+TE17PR-28P [AMP,206039-1] PLUG REV SERIES2 TE17-28
+
+TE17RF-28PPCB [AMP,1-207369-1]  RECEPTICAL FLANGED PCB-MNT SERIES2 TE17-28
+TE17RF-28P [AMP,205840-3] RECEPTICAL FLANGED SERIES2 TE17-28
+TE17R-28P [AMP,206152-1] RECEPTICAL FREE HANGING SERIES2 TE17-28
+TE17P-28S [AMP,205839-3] PLUG SERIES2 TE17-28
+
+TE-PIN20DF [AMP,1-66506-0] PIN 20-24AWG CRIMP SERIES2
+TE-SOC20DF [AMP,66504-9] SOCKET 20-24AWG CRIMP SERIES2
+TE-SH17 [AMP,206070-8] SHELL SZ17</description>
+<gates>
+<gate name="G$1" symbol="TE17-28" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TE17-28">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="11" pad="11"/>
+<connect gate="G$1" pin="12" pad="12"/>
+<connect gate="G$1" pin="13" pad="13"/>
+<connect gate="G$1" pin="14" pad="14"/>
+<connect gate="G$1" pin="15" pad="15"/>
+<connect gate="G$1" pin="16" pad="16"/>
+<connect gate="G$1" pin="17" pad="17"/>
+<connect gate="G$1" pin="18" pad="18"/>
+<connect gate="G$1" pin="19" pad="19"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="20" pad="20"/>
+<connect gate="G$1" pin="21" pad="21"/>
+<connect gate="G$1" pin="22" pad="22"/>
+<connect gate="G$1" pin="23" pad="23"/>
+<connect gate="G$1" pin="24" pad="24"/>
+<connect gate="G$1" pin="25" pad="25"/>
+<connect gate="G$1" pin="26" pad="26"/>
+<connect gate="G$1" pin="27" pad="27"/>
+<connect gate="G$1" pin="28" pad="28"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TE11-8" prefix="J" uservalue="yes">
+<description>&lt;pre&gt;Receptacles, Printed Circuit Board Mount with .025 [0.64] sq. solder tails
+TE11RR-8SPCB [AMP,1-208657-1] RECEPTICAL REV FLANGED PCB-MNT SERIES2 TE11-8
+TE11RRF-8S [AMP,206433-1] RECEPTICAL REV FLANGED SERIES2 TE11-8
+TE11RR-8S [AMP,206433-2] RECEPTICAL FREE HANGING REV SERIES2 TE11-8
+TE11PR-8P [AMP,206434-1] PLUG REV SERIES2 TE11-8
+TE-PIN20DF [AMP,1-66506-0] PIN 20-24AWG CRIMP SERIES2
+TE-SOC20DF [AMP,66504-9] SOCKET 20-24AWG CRIMP SERIES2
+TE-SH11 [AMP,1-206062-4] SHELL SZ11</description>
+<gates>
+<gate name="G$1" symbol="TE11-8" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TE11-8">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TE17-14" prefix="J" uservalue="yes">
+<description>&lt;pre&gt;Receptacles, Printed Circuit Board Mount with .025 [0.64] sq. solder tails
+TE17RR-1SPPCB [AMP,213729-9] RECEPTICAL REV FLANGED PCB-MNT SERIES1 TE17-14
+TE17RRF-14S [AMP,206430-1] RECEPTICAL REV FLANGED SERIES1 TE17-14
+TE17RR-14S [AMP,206430-2] RECEPTICAL FREE HANGING REV SERIES1 TE17-14
+TE17PR14P [AMP,206429-1] PLUG REV SERIES1 TE17-14
+
+TE-III+P16 [TE,66099-3] PIN 16-18AWG GOLD CRIMP SERIES1
+TE-III+P20 [TE,66102-8] PIN 20-24AWG GOLD CRIMP SERIES1
+TE-III+S16 [TE,66101-3] SOCKET 16-18AWG GOLD CRIMP SERIES1
+TE-III+S20 [TE,66105-3] SOCKET 20-24AWG GOLD CRIMP SERIES1
+TE-SH17 [TE,206070-8] SHELL SZ17</description>
+<gates>
+<gate name="G$1" symbol="TE17-14" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TE17-14">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="11" pad="11"/>
+<connect gate="G$1" pin="12" pad="12"/>
+<connect gate="G$1" pin="13" pad="13"/>
+<connect gate="G$1" pin="14" pad="14"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>

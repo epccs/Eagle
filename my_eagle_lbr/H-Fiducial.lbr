@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="6.6.0">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="6" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="3" fill="1" visible="no" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<description>&lt;pre&gt;Fiducianl Mark
+USE AT YOUR OWN RISK...
+Copyright (C) 2013 Ronald Steven Sutherland
+Permission is granted to copy, distribute and/or modify this document 
+under the terms of the GNU Free Documentation License, Version 1.2 or 
+any later version published by the Free Software Foundation; with no 
+Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A 
+copy of the license is included in the section entitled "GNU Free 
+Documentation License".</description>
+<packages>
+<package name="FIDUCIAN_IN_PLANE-1.27">
+<description>&lt;pre&gt;tKeepout R=1.27mm 
+STOP=2.54mm
+This can be placed on a copper poor area, it makes a hole in the plane and the stop will prevent mask from obscuring mark.
+No traces under Fiducial (i.e. Void or sold plane only)
+Autorouter restricted areas are defined as RECTangles, POLYGONs, or CIRCLEs on the 
+tRestrict, bRestrict, or vRestrict layers.</description>
+<circle x="0" y="0" radius="0.3175" width="0.635" layer="41"/>
+<circle x="0" y="0" radius="0.635" width="1.27" layer="29"/>
+</package>
+<package name="FIDUCIAL-1.27">
+<description>&lt;pre&gt;Fiducian R=1.27mm 
+STOP=2.54mm
+It is up to designer to not put traces under Fiducial (i.e. Void or sold plane only)
+Autorouter restricted areas are defined as RECTangles, POLYGONs, or CIRCLEs on the 
+tRestrict, bRestrict, or vRestrict layers.</description>
+<circle x="0" y="0" radius="0.635" width="1.27" layer="29"/>
+<smd name="1" x="0" y="0" dx="1.27" dy="1.27" layer="1" roundness="100" stop="no" thermals="no" cream="no"/>
+<circle x="0" y="0" radius="0.635" width="1.27" layer="39"/>
+<circle x="0" y="0" radius="0.635" width="1.27" layer="41"/>
+<circle x="0" y="0" radius="0.635" width="1.27" layer="43"/>
+</package>
+<package name="FIDUCIAL-1.27_LY2">
+<description>&lt;pre&gt;Fiducian R=1.27mm 
+STOP=2.54mm
+A plane sized as stop is under fiducial to allow other planes to have traces</description>
+<circle x="0" y="0" radius="0.635" width="1.27" layer="29"/>
+<smd name="1" x="0" y="0" dx="1.27" dy="1.27" layer="1" roundness="100" stop="no" thermals="no" cream="no"/>
+<circle x="0" y="0" radius="0.635" width="1.27" layer="39"/>
+<circle x="0" y="0" radius="0.635" width="1.27" layer="41"/>
+<circle x="0" y="0" radius="0.635" width="1.27" layer="43"/>
+<circle x="0" y="0" radius="0.635" width="1.27" layer="2"/>
+</package>
+</packages>
+<symbols>
+<symbol name="FIDUCIAL">
+<wire x1="-2.54" y1="2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="FIDUCIAL">
+<description>&lt;b&gt;Fiducial Alignment Points&lt;/b&gt;
+Various fiducial points for machine vision alignment.</description>
+<gates>
+<gate name="G$1" symbol="FIDUCIAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="1.27" package="FIDUCIAL-1.27">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1.27_LY2" package="FIDUCIAL-1.27_LY2">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PLN-1.27" package="FIDUCIAN_IN_PLANE-1.27">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>

@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="6.6.0">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<description>&lt;pre&gt;UL489 Type Circuit Breaker 
+For Schmatic Only
+
+USE AT YOUR OWN RISK...
+ 
+Copyright (C) 2013 Ronald Steven Sutherland
+Released under the Creative Commons 
+Attribution Share-Alike 3.0 License
+http://creativecommons.org/licenses/by-sa/3.0</description>
+<packages>
+<package name="NA-10">
+<pad name="1" x="-7.62" y="3.81" drill="0.8" shape="square"/>
+<pad name="2" x="-3.81" y="3.81" drill="0.8" shape="square"/>
+<pad name="3" x="0" y="3.81" drill="0.8" shape="square"/>
+<pad name="4" x="3.81" y="3.81" drill="0.8" shape="square"/>
+<pad name="5" x="7.62" y="3.81" drill="0.8" shape="square"/>
+<pad name="6" x="7.62" y="-3.81" drill="0.8" shape="square"/>
+<pad name="7" x="3.81" y="-3.81" drill="0.8" shape="square"/>
+<pad name="8" x="0" y="-3.81" drill="0.8" shape="square"/>
+<pad name="9" x="-3.81" y="-3.81" drill="0.8" shape="square"/>
+<pad name="10" x="-7.62" y="-3.81" drill="0.8" shape="square"/>
+</package>
+</packages>
+<symbols>
+<symbol name="ABB-S203">
+<description>&lt;pre&gt;ABB
+System pro M compact
+Miniature circuit breakers
+S200, S200P, S200U, S200UP
+
+• Current limiting
+• Fast breaking time (2.5 – 3.5 msec)
+• Unique bus connection system
+• Wide range of accessories
+• Available with variable depth handle mechanism
+• Optional Z curve for SCR protection
+• CE certified and marked
+• DIN rail or front panel mounting
+• Finger safe terminals
+• Multi-function terminals
+• Suitable for reverse feed
+• 480Y/277VAC and 500VDC versions
+
+B 3 - 5X 1.13 1.45X S200, S500
+C 5 - 10X 1.13 1.45X S200, S290, S500
+D 10 - 20X 1.13 1.45X S200, S500
+K 8 - 12X 1.05 1.20X S200, S500
+Z 2 - 3X 1.05 1.20X S200</description>
+<circle x="-10.16" y="0" radius="2.032" width="0.254" layer="94"/>
+<circle x="10.16" y="0" radius="2.032" width="0.254" layer="94"/>
+<wire x1="-6.604" y1="0" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="6.604" y1="0" x2="2.286" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.794" y1="1.016" x2="2.286" y2="1.016" width="0.254" layer="94" curve="-126.869898"/>
+<pin name="3" x="-10.16" y="0" visible="pin" length="point"/>
+<pin name="4" x="10.16" y="0" visible="pin" length="point" rot="R180"/>
+<circle x="-10.16" y="10.16" radius="2.032" width="0.254" layer="94"/>
+<circle x="10.16" y="10.16" radius="2.032" width="0.254" layer="94"/>
+<wire x1="-14.732" y1="14.732" x2="14.732" y2="14.732" width="0.254" layer="94"/>
+<wire x1="-14.732" y1="-14.732" x2="-14.732" y2="14.732" width="0.254" layer="94"/>
+<wire x1="-6.604" y1="10.16" x2="-2.54" y2="10.16" width="0.254" layer="94"/>
+<wire x1="6.35" y1="10.16" x2="2.286" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-2.794" y1="11.176" x2="2.286" y2="11.176" width="0.254" layer="94" curve="-126.869898"/>
+<pin name="5" x="-10.16" y="10.16" visible="pin" length="point"/>
+<pin name="6" x="10.16" y="10.16" visible="pin" length="point" rot="R180"/>
+<text x="-7.874" y="12.7" size="1.778" layer="95">&gt;NAME</text>
+<circle x="-10.16" y="-10.16" radius="2.032" width="0.254" layer="94"/>
+<circle x="10.16" y="-10.16" radius="2.032" width="0.254" layer="94"/>
+<wire x1="14.732" y1="14.732" x2="14.732" y2="-14.732" width="0.254" layer="94"/>
+<wire x1="14.732" y1="-14.732" x2="-14.732" y2="-14.732" width="0.254" layer="94"/>
+<wire x1="-6.858" y1="-10.16" x2="-2.54" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="6.858" y1="-10.16" x2="2.286" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-2.794" y1="-9.144" x2="2.286" y2="-9.144" width="0.254" layer="94" curve="-126.869898"/>
+<pin name="1" x="-10.16" y="-10.16" visible="pin" length="point"/>
+<pin name="2" x="10.16" y="-10.16" visible="pin" length="point" rot="R180"/>
+<text x="-7.62" y="-13.716" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="8.128" y1="10.16" x2="7.874" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-8.128" y1="10.16" x2="-7.874" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-8.128" y1="0" x2="-7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="-8.128" y1="-10.16" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="8.128" y1="-10.16" x2="7.874" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="8.128" y1="0" x2="7.874" y2="0" width="0.254" layer="94"/>
+</symbol>
+<symbol name="ABB-S202">
+<description>&lt;pre&gt;ABB
+System pro M compact
+Miniature circuit breakers
+S200, S200P, S200U, S200UP
+
+• Current limiting
+• Fast breaking time (2.5 – 3.5 msec)
+• Unique bus connection system
+• Wide range of accessories
+• Available with variable depth handle mechanism
+• Optional Z curve for SCR protection
+• CE certified and marked
+• DIN rail or front panel mounting
+• Finger safe terminals
+• Multi-function terminals
+• Suitable for reverse feed
+• 480Y/277VAC and 500VDC versions
+
+B 3 - 5X 1.13 1.45X S200, S500
+C 5 - 10X 1.13 1.45X S200, S290, S500
+D 10 - 20X 1.13 1.45X S200, S500
+K 8 - 12X 1.05 1.20X S200, S500
+Z 2 - 3X 1.05 1.20X S200</description>
+<circle x="-10.16" y="5.08" radius="2.032" width="0.254" layer="94"/>
+<circle x="10.16" y="5.08" radius="2.032" width="0.254" layer="94"/>
+<wire x1="-14.732" y1="9.652" x2="14.732" y2="9.652" width="0.254" layer="94"/>
+<wire x1="-6.604" y1="5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="6.604" y1="5.08" x2="2.286" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-2.794" y1="6.096" x2="2.286" y2="6.096" width="0.254" layer="94" curve="-126.869898"/>
+<pin name="1" x="-10.16" y="-5.08" visible="pin" length="point"/>
+<pin name="2" x="10.16" y="-5.08" visible="pin" length="point" rot="R180"/>
+<text x="-7.874" y="7.366" size="1.778" layer="95">&gt;NAME</text>
+<circle x="-10.16" y="-5.08" radius="2.032" width="0.254" layer="94"/>
+<circle x="10.16" y="-5.08" radius="2.032" width="0.254" layer="94"/>
+<wire x1="14.732" y1="9.652" x2="14.732" y2="-9.398" width="0.254" layer="94"/>
+<wire x1="14.732" y1="-9.398" x2="-14.732" y2="-9.398" width="0.254" layer="94"/>
+<wire x1="-14.732" y1="-9.398" x2="-14.732" y2="9.652" width="0.254" layer="94"/>
+<wire x1="-6.604" y1="-5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="6.858" y1="-5.08" x2="2.286" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-2.794" y1="-4.064" x2="2.286" y2="-4.064" width="0.254" layer="94" curve="-126.869898"/>
+<pin name="3" x="-10.16" y="5.08" visible="pin" length="point"/>
+<pin name="4" x="10.16" y="5.08" visible="pin" length="point" rot="R180"/>
+<text x="-7.62" y="-8.636" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="-7.62" y1="5.08" x2="-8.128" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-8.128" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="8.128" y1="5.08" x2="7.874" y2="5.08" width="0.254" layer="94"/>
+<wire x1="8.128" y1="-5.08" x2="7.874" y2="-5.08" width="0.254" layer="94"/>
+</symbol>
+<symbol name="ABB-S201">
+<description>&lt;pre&gt;ABB
+System pro M compact
+Miniature circuit breakers
+S200, S200P, S200U, S200UP
+
+• Current limiting
+• Fast breaking time (2.5 – 3.5 msec)
+• Unique bus connection system
+• Wide range of accessories
+• Available with variable depth handle mechanism
+• Optional Z curve for SCR protection
+• CE certified and marked
+• DIN rail or front panel mounting
+• Finger safe terminals
+• Multi-function terminals
+• Suitable for reverse feed
+• 480Y/277VAC and 500VDC versions
+
+B 3 - 5X 1.13 1.45X S200, S500
+C 5 - 10X 1.13 1.45X S200, S290, S500
+D 10 - 20X 1.13 1.45X S200, S500
+K 8 - 12X 1.05 1.20X S200, S500
+Z 2 - 3X 1.05 1.20X S200</description>
+<circle x="-10.16" y="0" radius="2.032" width="0.254" layer="94"/>
+<circle x="10.16" y="0" radius="2.032" width="0.254" layer="94"/>
+<wire x1="-14.732" y1="4.572" x2="14.732" y2="4.572" width="0.254" layer="94"/>
+<wire x1="14.732" y1="4.572" x2="14.732" y2="-4.572" width="0.254" layer="94"/>
+<wire x1="14.732" y1="-4.572" x2="-14.732" y2="-4.572" width="0.254" layer="94"/>
+<wire x1="-14.732" y1="-4.572" x2="-14.732" y2="4.572" width="0.254" layer="94"/>
+<wire x1="-6.604" y1="0" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="6.858" y1="0" x2="2.286" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.794" y1="1.016" x2="2.286" y2="1.016" width="0.254" layer="94" curve="-126.869898"/>
+<pin name="1" x="-10.16" y="0" visible="pin" length="point"/>
+<pin name="2" x="10.16" y="0" visible="pin" length="point" rot="R180"/>
+<text x="-7.62" y="-3.556" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-8.382" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<wire x1="-8.128" y1="0" x2="-7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="8.128" y1="0" x2="7.874" y2="0" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="S203" prefix="F" uservalue="yes">
+<description>&lt;pre&gt;ABB S203xxxxx
+• Current limiting
+• Fast breaking time (2.5 – 3.5 msec)
+• Unique bus connection system
+• Wide range of accessories
+• Available with variable depth handle mechanism
+• Optional Z curve for SCR protection
+• CE certified and marked
+• DIN rail or front panel mounting
+• Finger safe terminals
+• Multi-function terminals
+• Suitable for reverse feed
+• 480Y/277VAC and 500VDC versions
+
+
+B 3 - 5X 1.13 1.45X S200, S500
+C 5 - 10X 1.13 1.45X S200, S290, S500
+D 10 - 20X 1.13 1.45X S200, S500
+K 8 - 12X 1.05 1.20X S200, S500
+Z 2 - 3X 1.05 1.20X S200</description>
+<gates>
+<gate name="G$1" symbol="ABB-S203" x="0" y="0"/>
+</gates>
+<devices>
+<device name="U-K10" package="NA-10">
+<connects>
+<connect gate="G$1" pin="1" pad="5"/>
+<connect gate="G$1" pin="2" pad="6"/>
+<connect gate="G$1" pin="3" pad="1"/>
+<connect gate="G$1" pin="4" pad="2"/>
+<connect gate="G$1" pin="5" pad="3"/>
+<connect gate="G$1" pin="6" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="S202" prefix="F" uservalue="yes">
+<description>&lt;pre&gt;ABB S202xxxxx
+• Current limiting
+• Fast breaking time (2.5 – 3.5 msec)
+• Unique bus connection system
+• Wide range of accessories
+• Available with variable depth handle mechanism
+• Optional Z curve for SCR protection
+• CE certified and marked
+• DIN rail or front panel mounting
+• Finger safe terminals
+• Multi-function terminals
+• Suitable for reverse feed
+• 480Y/277VAC and 500VDC versions
+
+
+B 3 - 5X 1.13 1.45X S200, S500
+C 5 - 10X 1.13 1.45X S200, S290, S500
+D 10 - 20X 1.13 1.45X S200, S500
+K 8 - 12X 1.05 1.20X S200, S500
+Z 2 - 3X 1.05 1.20X S200</description>
+<gates>
+<gate name="G$1" symbol="ABB-S202" x="0" y="0"/>
+</gates>
+<devices>
+<device name="U-K10" package="NA-10">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="U-K15" package="NA-10">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="S201" prefix="F" uservalue="yes">
+<description>&lt;pre&gt;ABB S201xxxxx
+• Current limiting
+• Fast breaking time (2.5 – 3.5 msec)
+• Unique bus connection system
+• Wide range of accessories
+• Available with variable depth handle mechanism
+• Optional Z curve for SCR protection
+• CE certified and marked
+• DIN rail or front panel mounting
+• Finger safe terminals
+• Multi-function terminals
+• Suitable for reverse feed
+• 480Y/277VAC and 500VDC versions
+
+
+B 3 - 5X 1.13 1.45X S200, S500
+C 5 - 10X 1.13 1.45X S200, S290, S500
+D 10 - 20X 1.13 1.45X S200, S500
+K 8 - 12X 1.05 1.20X S200, S500
+Z 2 - 3X 1.05 1.20X S200</description>
+<gates>
+<gate name="G$1" symbol="ABB-S201" x="0" y="0"/>
+</gates>
+<devices>
+<device name="U-K20" package="NA-10">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="U-K30" package="NA-10">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="U-K10" package="NA-10">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="U-K5" package="NA-10">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>

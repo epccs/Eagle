@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="6.6.0">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<description>&lt;pre&gt;IEC 309
+plugs, socket-outlets and couplers for industrial purposes
+http://en.wikipedia.org/wiki/IEC_60309
+
+USE AT YOUR OWN RISK...
+ 
+Copyright (C) 2013 Ronald Steven Sutherland
+Released under the Creative Commons 
+Attribution Share-Alike 3.0 License
+http://creativecommons.org/licenses/by-sa/3.0</description>
+<packages>
+<package name="IEC309">
+<pad name="L1" x="-7.62" y="0" drill="0.8" shape="square"/>
+<pad name="L2" x="-5.08" y="0" drill="0.8" shape="square"/>
+<pad name="L3" x="-2.54" y="0" drill="0.8" shape="square"/>
+<pad name="N" x="5.08" y="0" drill="0.8" shape="square"/>
+<pad name="E" x="7.62" y="0" drill="0.8"/>
+</package>
+</packages>
+<symbols>
+<symbol name="2W3P_BU">
+<description>&lt;pre&gt;200-250VAC, BU, (2P/P+N)+E
+Cooper
+Interlock Receptacle PN: GHG 511 4306 R3001
+2W3P, 220-240VAC, 16A IEC 309 type.
+two ports threaded M20 for gland or use adaptor for conduit.
+mates with plug GHG 511 7306 R0001
+
+http://en.wikipedia.org/wiki/IEC_60309#Keying</description>
+<text x="-5.842" y="11.684" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.588" y="9.144" size="1.27" layer="96">&gt;VALUE</text>
+<circle x="0" y="0" radius="7.62" width="0.254" layer="94"/>
+<circle x="-4.572" y="2.54" radius="1.04726875" width="0.254" layer="94"/>
+<circle x="4.572" y="2.54" radius="1.04726875" width="0.254" layer="94"/>
+<circle x="0" y="-5.08" radius="1.016" width="0.8128" layer="94"/>
+<wire x1="1.27" y1="-7.62" x2="-1.27" y2="-7.62" width="0.254" layer="94" curve="-180"/>
+<text x="-4.572" y="-11.43" size="1.778" layer="94">IEC 60309</text>
+<text x="-6.096" y="-2.286" size="1.27" layer="94">200-250VAC BU
+   (2P/P+N)+E</text>
+<pin name="P1" x="-5.08" y="2.54" visible="off" length="point"/>
+<pin name="P2" x="5.08" y="2.54" visible="off" length="point"/>
+<pin name="E" x="0" y="-5.08" visible="off" length="point"/>
+</symbol>
+<symbol name="2W3P_YE">
+<description>&lt;pre&gt;100-130V, YE, (2P/P+N)+E
+Cooper 
+Interlock Receptacle: GHG 511 4304 R3001
+Plug: GHG 511 7304 R0001
+http://en.wikipedia.org/wiki/IEC_60309#Keying</description>
+<text x="-5.842" y="11.684" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.588" y="9.144" size="1.27" layer="96">&gt;VALUE</text>
+<circle x="0" y="0" radius="7.62" width="0.254" layer="94"/>
+<circle x="-4.572" y="-2.54" radius="1.04726875" width="0.254" layer="94"/>
+<circle x="0" y="5.08" radius="1.04726875" width="0.254" layer="94"/>
+<circle x="4.318" y="-2.54" radius="1.016" width="0.8128" layer="94"/>
+<wire x1="1.27" y1="-7.62" x2="-1.27" y2="-7.62" width="0.254" layer="94" curve="-180"/>
+<text x="-4.572" y="-11.43" size="1.778" layer="94">IEC 60309</text>
+<text x="-6.35" y="-0.254" size="1.27" layer="94">100-130VAC YE
+   (2P/P+N)+E</text>
+<pin name="P1" x="-5.08" y="-2.54" visible="off" length="point"/>
+<pin name="P2" x="0" y="5.08" visible="off" length="point"/>
+<pin name="E" x="5.08" y="-2.54" visible="off" length="point"/>
+</symbol>
+<symbol name="3W4P_RD">
+<description>&lt;pre&gt;380-415VAC, RD, 3P + E
+Cooper 
+Interlock Receptacle: GHG 511 4406 R3001
+Plug:GHG 511 7406 R0001
+http://en.wikipedia.org/wiki/IEC_60309#Keying</description>
+<text x="-5.842" y="11.684" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.588" y="9.144" size="1.27" layer="96">&gt;VALUE</text>
+<circle x="0" y="0" radius="7.62" width="0.254" layer="94"/>
+<circle x="-5.08" y="0" radius="1.04726875" width="0.254" layer="94"/>
+<circle x="5.08" y="0" radius="1.04726875" width="0.254" layer="94"/>
+<circle x="0" y="-5.08" radius="1.016" width="0.8128" layer="94"/>
+<wire x1="1.27" y1="-7.62" x2="-1.27" y2="-7.62" width="0.254" layer="94" curve="-180"/>
+<text x="-4.572" y="-11.43" size="1.778" layer="94">IEC 60309</text>
+<text x="-5.08" y="-0.508" size="1.27" layer="94">380-415VAC
+   RD 3P+E</text>
+<pin name="P1" x="-5.08" y="0" visible="off" length="point"/>
+<pin name="P2" x="0" y="5.08" visible="off" length="point"/>
+<pin name="E" x="0" y="-5.08" visible="off" length="point"/>
+<pin name="P3" x="5.08" y="0" visible="off" length="point"/>
+<circle x="0" y="5.08" radius="1.04726875" width="0.254" layer="94"/>
+<text x="1.778" y="-6.35" size="1.27" layer="94">E</text>
+<text x="-6.096" y="-2.794" size="1.016" layer="94">L1</text>
+<text x="1.778" y="4.318" size="1.016" layer="94">L2</text>
+<text x="4.572" y="-2.794" size="1.016" layer="94">L3</text>
+</symbol>
+<symbol name="4W5P_RD">
+<description>&lt;pre&gt;380-415VAC//220-240VAC Y, RD, 3P+N+E
+Cooper 
+Interlock Receptacle: GHG 511 4506 R3001
+Plug: GHG 511 7506 R0001
+http://en.wikipedia.org/wiki/IEC_60309#Keying</description>
+<text x="-5.842" y="11.684" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.588" y="9.144" size="1.27" layer="96">&gt;VALUE</text>
+<circle x="0" y="0" radius="7.62" width="0.254" layer="94"/>
+<circle x="-4.572" y="-2.54" radius="1.04726875" width="0.254" layer="94"/>
+<circle x="2.54" y="4.572" radius="1.04726875" width="0.254" layer="94"/>
+<circle x="0" y="-5.08" radius="1.016" width="0.8128" layer="94"/>
+<wire x1="1.27" y1="-7.62" x2="-1.27" y2="-7.62" width="0.254" layer="94" curve="-180"/>
+<text x="-4.572" y="-11.43" size="1.778" layer="94">IEC 60309</text>
+<text x="-5.588" y="-1.27" size="1.143" layer="94">  380-415VAC
+220-240VAC Y
+  RD 3P+N+E</text>
+<pin name="P1" x="-5.08" y="-2.54" visible="off" length="point"/>
+<pin name="P2" x="-2.54" y="5.08" visible="off" length="point"/>
+<pin name="E" x="0" y="-5.08" visible="off" length="point"/>
+<pin name="P3" x="2.54" y="5.08" visible="off" length="point"/>
+<circle x="-2.54" y="4.572" radius="1.04726875" width="0.254" layer="94"/>
+<text x="1.778" y="-6.35" size="1.27" layer="94">E</text>
+<text x="-4.826" y="-4.826" size="1.016" layer="94">L1</text>
+<text x="-1.778" y="5.842" size="1.016" layer="94">L2</text>
+<text x="0.762" y="5.842" size="1.016" layer="94">L3</text>
+<circle x="4.572" y="-2.54" radius="1.04726875" width="0.254" layer="94"/>
+<pin name="N" x="5.08" y="-2.54" visible="off" length="point"/>
+<text x="5.588" y="-1.524" size="1.016" layer="94">N</text>
+</symbol>
+<symbol name="4W5P_BU">
+<description>&lt;pre&gt;208-250VAC//120-144VAC Y, BU, 3P+N+E
+Cooper 
+is missing this plug</description>
+<text x="-5.842" y="11.684" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.588" y="9.144" size="1.27" layer="96">&gt;VALUE</text>
+<circle x="0" y="0" radius="7.62" width="0.254" layer="94"/>
+<circle x="-2.032" y="5.08" radius="1.04726875" width="0.254" layer="94"/>
+<circle x="4.318" y="-3.048" radius="1.04726875" width="0.254" layer="94"/>
+<circle x="-5.08" y="0" radius="1.016" width="0.8128" layer="94"/>
+<wire x1="1.27" y1="-7.62" x2="-1.27" y2="-7.62" width="0.254" layer="94" curve="-180"/>
+<text x="-4.572" y="-11.43" size="1.778" layer="94">IEC 60309</text>
+<text x="-6.35" y="2.032" size="1.143" layer="94">208-250VAC</text>
+<pin name="P1" x="-2.54" y="5.08" visible="off" length="point"/>
+<pin name="P2" x="5.08" y="2.54" visible="off" length="point"/>
+<pin name="E" x="-5.08" y="0" visible="off" length="point"/>
+<pin name="P3" x="5.08" y="-2.54" visible="off" length="point"/>
+<circle x="4.318" y="3.048" radius="1.04726875" width="0.254" layer="94"/>
+<text x="-7.112" y="-2.032" size="1.016" layer="94">E</text>
+<text x="-0.762" y="5.588" size="1.016" layer="94">L1</text>
+<text x="3.048" y="4.826" size="1.016" layer="94">L2</text>
+<text x="3.048" y="-5.588" size="1.016" layer="94">L3</text>
+<circle x="-2.032" y="-5.08" radius="1.04726875" width="0.254" layer="94"/>
+<pin name="N" x="-2.54" y="-5.08" visible="off" length="point"/>
+<text x="-0.762" y="-6.858" size="1.016" layer="94">N</text>
+<text x="-3.302" y="-0.508" size="1.143" layer="94">120-144VAC Y</text>
+<text x="-5.842" y="-3.302" size="1.143" layer="94">BU 3P+N+E</text>
+</symbol>
+<symbol name="3W4P_BU">
+<description>&lt;pre&gt;200-250VAC,BU, 3P + E
+Cooper 
+Interlock Receptacle: GHG 511 4409 L3001
+Plug: GHG 511 7409 L0001
+http://en.wikipedia.org/wiki/IEC_60309#Keying</description>
+<text x="-5.842" y="11.684" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.588" y="9.144" size="1.27" layer="96">&gt;VALUE</text>
+<circle x="0" y="0" radius="7.62" width="0.254" layer="94"/>
+<circle x="0" y="-5.08" radius="1.04726875" width="0.254" layer="94"/>
+<circle x="5.08" y="0" radius="1.04726875" width="0.254" layer="94"/>
+<circle x="-5.08" y="0" radius="1.016" width="0.8128" layer="94"/>
+<wire x1="1.27" y1="-7.62" x2="-1.27" y2="-7.62" width="0.254" layer="94" curve="-180"/>
+<text x="-4.572" y="-11.43" size="1.778" layer="94">IEC 60309</text>
+<text x="-5.08" y="-3.556" size="1.27" layer="94">200-250VAC
+
+
+   BU 3P+E</text>
+<pin name="P1" x="0" y="5.08" visible="off" length="point"/>
+<pin name="P2" x="5.08" y="0" visible="off" length="point"/>
+<pin name="E" x="-5.08" y="0" visible="off" length="point"/>
+<pin name="P3" x="0" y="-5.08" visible="off" length="point"/>
+<circle x="0" y="5.08" radius="1.04726875" width="0.254" layer="94"/>
+<text x="-6.604" y="-2.54" size="1.27" layer="94">E</text>
+<text x="1.524" y="4.826" size="1.016" layer="94">L1</text>
+<text x="5.334" y="-2.54" size="1.016" layer="94">L2</text>
+<text x="1.778" y="-6.096" size="1.016" layer="94">L3</text>
+</symbol>
+<symbol name="3W4P_BK">
+<description>&lt;pre&gt;480-500VAC,BK, 3P + E
+Cooper 
+Interlock Receptacle: GHG 511 4407 L3001
+Plug: GHG 511 7407 L0001
+http://en.wikipedia.org/wiki/IEC_60309#Keying</description>
+<text x="-5.842" y="11.684" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.588" y="9.144" size="1.27" layer="96">&gt;VALUE</text>
+<circle x="0" y="0" radius="7.62" width="0.254" layer="94"/>
+<circle x="4.826" y="-2.286" radius="1.04726875" width="0.254" layer="94"/>
+<circle x="2.286" y="4.826" radius="1.04726875" width="0.254" layer="94"/>
+<circle x="-2.286" y="-4.826" radius="1.016" width="0.8128" layer="94"/>
+<wire x1="1.27" y1="-7.62" x2="-1.27" y2="-7.62" width="0.254" layer="94" curve="-180"/>
+<text x="-4.572" y="-11.43" size="1.778" layer="94">IEC 60309</text>
+<text x="-4.064" y="-2.032" size="1.27" layer="94">BK 3P+E</text>
+<pin name="P1" x="-5.08" y="2.54" visible="off" length="point"/>
+<pin name="P2" x="2.54" y="5.08" visible="off" length="point"/>
+<pin name="E" x="-2.54" y="-5.08" visible="off" length="point"/>
+<pin name="P3" x="5.08" y="-2.54" visible="off" length="point"/>
+<circle x="-4.826" y="2.286" radius="1.04726875" width="0.254" layer="94"/>
+<text x="-4.826" y="-5.08" size="1.27" layer="94">E</text>
+<text x="-6.858" y="0.254" size="1.016" layer="94">L1</text>
+<text x="-0.508" y="5.334" size="1.016" layer="94">L2</text>
+<text x="5.588" y="-1.27" size="1.016" layer="94">L3</text>
+<text x="-3.048" y="0.762" size="1.27" layer="94">480-500VAC</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="2W3P_YE" prefix="J" uservalue="yes">
+<description>&lt;pre&gt;100-130V YE (2P/P+N)+E
+Cooper 
+Interlock Receptacle: GHG 511 4304 R3001
+Plug: GHG 511 7304 R0001
+http://en.wikipedia.org/wiki/IEC_60309#Keying</description>
+<gates>
+<gate name="G$1" symbol="2W3P_YE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="IEC309">
+<connects>
+<connect gate="G$1" pin="E" pad="E"/>
+<connect gate="G$1" pin="P1" pad="L1"/>
+<connect gate="G$1" pin="P2" pad="L2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="2W3P_BU" prefix="J" uservalue="yes">
+<description>&lt;pre&gt;200-250V YE (2P/P+N)+E
+Cooper 
+Interlock Receptacle: GHG 511 4304 R3001
+Plug: GHG 511 7304 R0001
+http://en.wikipedia.org/wiki/IEC_60309#Keying</description>
+<gates>
+<gate name="G$1" symbol="2W3P_BU" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="IEC309">
+<connects>
+<connect gate="G$1" pin="E" pad="E"/>
+<connect gate="G$1" pin="P1" pad="L1"/>
+<connect gate="G$1" pin="P2" pad="L2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="3W4P_RD" prefix="J" uservalue="yes">
+<description>&lt;pre&gt;380-480 V, RD, 3P+ E
+Cooper
+Interlock Receptacle: GHG 511 4406 R3001
+Plug:GHG 511 7406 R0001
+http://en.wikipedia.org/wiki/IEC_60309#Keying</description>
+<gates>
+<gate name="G$1" symbol="3W4P_RD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="IEC309">
+<connects>
+<connect gate="G$1" pin="E" pad="E"/>
+<connect gate="G$1" pin="P1" pad="L1"/>
+<connect gate="G$1" pin="P2" pad="L2"/>
+<connect gate="G$1" pin="P3" pad="L3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="4W5P_RD">
+<description>&lt;pre&gt;380-480V, RD, 3P+N+E
+Cooper 
+Interlock Receptacle: GHG 511 4506 R3001
+Plug: GHG 511 7506 R0001
+http://en.wikipedia.org/wiki/IEC_60309#Keying</description>
+<gates>
+<gate name="G$1" symbol="4W5P_RD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="3W4P_BK" prefix="J" uservalue="yes">
+<description>&lt;pre&gt;480-500VAC,BK, 3P + E
+Cooper 
+Interlock Receptacle: GHG 511 4407 L3001
+Plug: GHG 511 7407 L0001
+http://en.wikipedia.org/wiki/IEC_60309#Keying</description>
+<gates>
+<gate name="G$1" symbol="3W4P_BK" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="IEC309">
+<connects>
+<connect gate="G$1" pin="E" pad="E"/>
+<connect gate="G$1" pin="P1" pad="L1"/>
+<connect gate="G$1" pin="P2" pad="L2"/>
+<connect gate="G$1" pin="P3" pad="L3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="3W4P_BU" prefix="J" uservalue="yes">
+<description>&lt;pre&gt;200-250VAC,BU, 3P + E
+Cooper 
+Interlock Receptacle: GHG 511 4409 L3001
+Plug: GHG 511 7409 L0001
+http://en.wikipedia.org/wiki/IEC_60309#Keying</description>
+<gates>
+<gate name="G$1" symbol="3W4P_BU" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="IEC309">
+<connects>
+<connect gate="G$1" pin="E" pad="E"/>
+<connect gate="G$1" pin="P1" pad="L1"/>
+<connect gate="G$1" pin="P2" pad="L2"/>
+<connect gate="G$1" pin="P3" pad="L3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
+</eagle>
