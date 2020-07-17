@@ -10,16 +10,15 @@
             change m324pb to AVR128DA48 
             change m328pb to AVR128DA32
 
-        ^2  Done: Design,
-            WIP: Layout (#=done),
-            Todo:   BOM, Review*, Order Boards, Assembly, Testing, Evaluation.
+        ^2  Done: Design, Layout (#=done), BOM,
+            WIP: Review*, 
+            Todo: Order Boards, Assembly, Testing, Evaluation.
             *during review the Design may change without changing the revision.
             # Q105 and Q118 need to go into cut off (or hi-z) when the MOSFET gate is low.
-            (shm) Add note on schem near *manager* ISP port "remove alternat power befor programing with ISP"
+            # Add note on schem near *manager* ISP port "remove alternat power befor programing with ISP"
             # Add test points on I2C0 nodes.
-            (no) Staggered holes shifted 8mil (~0.2 mm) off-center for bootload and ISP header (see AVR128DA48-Curiosity-Nano).
             # Shutdown switch resistor needs moved so manager can overide switch while host is doing power UP.
-            This version may not be built, but the layout will be done.
+            This version may not be ordered and built, but the layout will be done.
 
         ^1  Done: Design, Layout (#=done), BOM, Review*, Order Boards, Assembly,
             WIP: Testing,

@@ -7388,7 +7388,7 @@ WITH MP2467 FROM
 Monolithic Power Solutions</text>
 <text x="13.97" y="243.078" size="1.778" layer="98">POWER 7-36V</text>
 <text x="133.35" y="245.618" size="1.778" layer="98">BLOCKS -40V</text>
-<text x="117.348" y="153.162" size="2.54" layer="98">PROGRAMMABLE CONTROLLER</text>
+<text x="130.048" y="155.702" size="2.54" layer="98">APPLICATION CONTROLLER</text>
 <text x="60.96" y="110.49" size="1.778" layer="98">ECS-160-20-3X-TR
 16MHZ +/- 30PPM
 STABILITY AND TOLERANCE
