@@ -7366,6 +7366,8 @@ USE AT YOUR OWN RISK...
 <part name="TP6" library="J-TP" deviceset="TP" device="PAD1-08"/>
 <part name="TP10" library="J-TP" deviceset="TP" device="PAD1-08"/>
 <part name="TP35" library="J-TP" deviceset="TP" device="PAD1-08"/>
+<part name="TP1" library="J-TP" deviceset="TP" device="PAD1-08"/>
+<part name="TP2" library="J-TP" deviceset="TP" device="PAD1-08"/>
 </parts>
 <sheets>
 <sheet>
@@ -7373,7 +7375,7 @@ USE AT YOUR OWN RISK...
 <text x="356.87" y="26.416" size="2.54" layer="98">3 ICP+CS, 4 MIX+CS, SPI
 2 I2C, 3 UART, R-PI HDR</text>
 <text x="350.012" y="44.196" size="2.54" layer="98">RON S</text>
-<text x="335.788" y="44.196" size="2.1844" layer="98">8/22/19</text>
+<text x="335.788" y="44.196" size="2.1844" layer="98">7/16/20</text>
 <text x="365.76" y="20.32" size="2.54" layer="98">GRAVIMETRIC</text>
 <text x="258.572" y="117.094" size="2.54" layer="98">ICSP</text>
 <text x="376.682" y="138.938" size="1.27" layer="98"></text>
@@ -7463,6 +7465,10 @@ https://www.adafruit.com/product/284</text>
 PWR PROTECT,MGR DOES M</text>
 <text x="320.294" y="16.764" size="1.778" layer="98">8/22/19</text>
 <text x="144.78" y="64.77" size="1.778" layer="98">ABS MAX CURR ON GND OR VCC: 100mA</text>
+<text x="282.702" y="21.844" size="2.54" layer="98">^2</text>
+<text x="290.068" y="20.828" size="1.6764" layer="98">DIVERSON &amp; START CUTOFF
+SHUTDOWN SW OVERIDE</text>
+<text x="320.294" y="21.844" size="1.778" layer="98">7/16/20</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$3" x="279.4" y="50.8"/>
@@ -8591,7 +8597,7 @@ PWR PROTECT,MGR DOES M</text>
 <text x="356.87" y="26.416" size="2.54" layer="98">3 ICP+CS, 4 MIX+CS, SPI
 2 I2C, 3 UART, R-PI HDR</text>
 <text x="350.012" y="44.196" size="2.54" layer="98">RON S</text>
-<text x="335.788" y="44.196" size="2.1844" layer="98">8/22/19</text>
+<text x="335.788" y="44.196" size="2.1844" layer="98">7/16/20</text>
 <text x="365.76" y="20.32" size="2.54" layer="98">GRAVIMETRIC</text>
 <text x="320.294" y="11.684" size="1.778" layer="98">2/14/19</text>
 <text x="282.702" y="11.684" size="2.54" layer="98">^0</text>
@@ -8770,6 +8776,10 @@ BACK DUE TO SELF HEATING</text>
 <text x="290.068" y="15.748" size="1.6764" layer="98">ALT PWR DEBUG, MV CTS
 PWR PROTECT,MGR DOES M</text>
 <text x="320.294" y="16.764" size="1.778" layer="98">8/22/19</text>
+<text x="282.702" y="21.844" size="2.54" layer="98">^2</text>
+<text x="290.068" y="20.828" size="1.6764" layer="98">DIVERSON &amp; START CUTOFF
+SHUTDOWN SW OVERIDE</text>
+<text x="320.294" y="21.844" size="1.778" layer="98">7/16/20</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$3" x="279.4" y="50.8"/>
@@ -8824,7 +8834,7 @@ PWR PROTECT,MGR DOES M</text>
 <instance part="Q114" gate="G$1" x="292.1" y="200.66" rot="MR0"/>
 <instance part="R113" gate="G$1" x="294.64" y="215.9" rot="R270"/>
 <instance part="GND13" gate="1" x="289.56" y="193.04"/>
-<instance part="Q105" gate="G$1" x="165.1" y="228.6" rot="MR270"/>
+<instance part="Q105" gate="G$1" x="165.1" y="228.6" rot="R270"/>
 <instance part="U102" gate="G$1" x="347.98" y="193.04"/>
 <instance part="P+10" gate="1" x="332.74" y="205.74"/>
 <instance part="P+11" gate="1" x="368.3" y="205.74"/>
@@ -8863,7 +8873,7 @@ PWR PROTECT,MGR DOES M</text>
 <instance part="Q129" gate="G$1" x="45.72" y="121.92" rot="MR0"/>
 <instance part="R133" gate="G$1" x="48.26" y="132.08" rot="R270"/>
 <instance part="GND27" gate="1" x="43.18" y="114.3"/>
-<instance part="Q118" gate="G$1" x="55.88" y="149.86" rot="MR270"/>
+<instance part="Q118" gate="G$1" x="55.88" y="149.86" rot="R270"/>
 <instance part="R134" gate="G$1" x="55.88" y="129.54" rot="R270"/>
 <instance part="J3" gate=".1" x="20.32" y="106.68" rot="R180"/>
 <instance part="J3" gate=".2" x="20.32" y="99.06" rot="R180"/>
@@ -9358,9 +9368,9 @@ PWR PROTECT,MGR DOES M</text>
 </net>
 <net name="CS_ICP3" class="0">
 <segment>
-<label x="172.72" y="228.6" size="1.27" layer="91" xref="yes"/>
-<pinref part="Q105" gate="G$1" pin="S"/>
-<wire x1="170.18" y1="228.6" x2="172.72" y2="228.6" width="0.1524" layer="91"/>
+<label x="175.26" y="228.6" size="1.27" layer="91" xref="yes"/>
+<pinref part="Q105" gate="G$1" pin="D"/>
+<wire x1="175.26" y1="228.6" x2="170.18" y2="228.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="!SS" class="0">
@@ -9578,8 +9588,8 @@ PWR PROTECT,MGR DOES M</text>
 <net name="N$42" class="0">
 <segment>
 <pinref part="R106" gate="G$1" pin="1"/>
-<pinref part="Q105" gate="G$1" pin="D"/>
 <wire x1="157.48" y1="215.9" x2="157.48" y2="228.6" width="0.1524" layer="91"/>
+<pinref part="Q105" gate="G$1" pin="S"/>
 <wire x1="157.48" y1="228.6" x2="160.02" y2="228.6" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -9776,16 +9786,16 @@ PWR PROTECT,MGR DOES M</text>
 <net name="N$55" class="0">
 <segment>
 <pinref part="R133" gate="G$1" pin="1"/>
-<pinref part="Q118" gate="G$1" pin="D"/>
 <wire x1="48.26" y1="137.16" x2="48.26" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="149.86" x2="50.8" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="Q118" gate="G$1" pin="S"/>
+<wire x1="50.8" y1="149.86" x2="48.26" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CS_DIVERSION" class="0">
 <segment>
-<label x="63.5" y="149.86" size="1.27" layer="91" xref="yes"/>
-<pinref part="Q118" gate="G$1" pin="S"/>
-<wire x1="60.96" y1="149.86" x2="63.5" y2="149.86" width="0.1524" layer="91"/>
+<label x="66.04" y="149.86" size="1.27" layer="91" xref="yes"/>
+<pinref part="Q118" gate="G$1" pin="D"/>
+<wire x1="66.04" y1="149.86" x2="60.96" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$56" class="0">
@@ -10579,7 +10589,7 @@ RISK (E.G. 6MA)</text>
 <text x="356.87" y="26.416" size="2.54" layer="98">3 ICP+CS, 4 MIX+CS, SPI
 2 I2C, 3 UART, R-PI HDR</text>
 <text x="350.012" y="44.196" size="2.54" layer="98">RON S</text>
-<text x="335.788" y="44.196" size="2.1844" layer="98">8/22/19</text>
+<text x="335.788" y="44.196" size="2.1844" layer="98">7/16/20</text>
 <text x="365.76" y="20.32" size="2.54" layer="98">GRAVIMETRIC</text>
 <text x="320.294" y="11.684" size="1.778" layer="98">2/14/19</text>
 <text x="282.702" y="11.684" size="2.54" layer="98">^0</text>
@@ -10590,6 +10600,13 @@ RISK (E.G. 6MA)</text>
 <text x="290.068" y="15.748" size="1.6764" layer="98">ALT PWR DEBUG, MV CTS
 PWR PROTECT,MGR DOES M</text>
 <text x="320.294" y="16.764" size="1.778" layer="98">8/22/19</text>
+<text x="282.702" y="21.844" size="2.54" layer="98">^2</text>
+<text x="290.068" y="20.828" size="1.6764" layer="98">DIVERSON &amp; START CUTOFF
+SHUTDOWN SW OVERIDE</text>
+<text x="320.294" y="21.844" size="1.778" layer="98">7/16/20</text>
+<text x="115.062" y="6.35" size="1.27" layer="98">REMOVE ALTERNAT
+POWER BEFOR ISP
+PROGRAMING</text>
 </plain>
 <instances>
 <instance part="FRAME3" gate="G$3" x="279.4" y="50.8"/>
@@ -10688,7 +10705,7 @@ PWR PROTECT,MGR DOES M</text>
 <instance part="C210" gate="G$1" x="50.8" y="68.58"/>
 <instance part="R240" gate="G$1" x="144.78" y="35.56"/>
 <instance part="S201" gate="S" x="149.86" y="55.88"/>
-<instance part="R237" gate="G$1" x="121.92" y="71.12" rot="R180"/>
+<instance part="R237" gate="G$1" x="121.92" y="66.04" rot="R180"/>
 <instance part="GND61" gate="1" x="162.56" y="53.34"/>
 <instance part="R231" gate="G$1" x="152.4" y="106.68"/>
 <instance part="R232" gate="G$1" x="152.4" y="96.52"/>
@@ -10701,6 +10718,8 @@ PWR PROTECT,MGR DOES M</text>
 <instance part="P+29" gate="1" x="111.76" y="35.56"/>
 <instance part="P+31" gate="1" x="160.02" y="114.3"/>
 <instance part="P+3" gate="1" x="149.86" y="185.42"/>
+<instance part="TP1" gate="G$1" x="162.56" y="106.68"/>
+<instance part="TP2" gate="G$1" x="162.56" y="96.52"/>
 </instances>
 <busses>
 </busses>
@@ -11191,21 +11210,19 @@ PWR PROTECT,MGR DOES M</text>
 </net>
 <net name="SHUTDOWN" class="0">
 <segment>
-<pinref part="J7" gate="G$1" pin="BCM6"/>
-<label x="33.02" y="205.74" size="1.27" layer="91" rot="R180" xref="yes"/>
-<wire x1="43.18" y1="182.88" x2="27.94" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="182.88" x2="27.94" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="200.66" x2="33.02" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="200.66" x2="33.02" y2="205.74" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<label x="162.56" y="68.58" size="1.27" layer="91" xref="yes"/>
 <pinref part="R238" gate="G$1" pin="1"/>
 <pinref part="U202" gate="F" pin="O"/>
 <wire x1="152.4" y1="68.58" x2="160.02" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="68.58" x2="160.02" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="68.58" x2="162.56" y2="68.58" width="0.1524" layer="91"/>
 <junction x="160.02" y="68.58"/>
+<wire x1="160.02" y1="68.58" x2="182.88" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="68.58" x2="182.88" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="J7" gate="G$1" pin="BCM6"/>
+<wire x1="43.18" y1="182.88" x2="20.32" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="129.54" x2="20.32" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="129.54" x2="20.32" y2="182.88" width="0.1524" layer="91"/>
+<label x="19.558" y="172.212" size="1.27" layer="91" rot="R90"/>
+<label x="168.91" y="69.088" size="1.27" layer="91"/>
 </segment>
 </net>
 <net name="PI3V3" class="0">
@@ -11223,7 +11240,7 @@ PWR PROTECT,MGR DOES M</text>
 <wire x1="38.1" y1="198.12" x2="25.4" y2="198.12" width="0.1524" layer="91"/>
 <pinref part="R216" gate="G$1" pin="1"/>
 <wire x1="25.4" y1="198.12" x2="25.4" y2="170.18" width="0.1524" layer="91"/>
-<label x="24.892" y="175.26" size="1.27" layer="91" rot="R90"/>
+<label x="27.432" y="175.26" size="1.27" layer="91" rot="R90"/>
 <label x="106.68" y="236.22" size="1.27" layer="91" xref="yes"/>
 <pinref part="R207" gate="G$1" pin="2"/>
 <wire x1="99.06" y1="205.74" x2="99.06" y2="236.22" width="0.1524" layer="91"/>
@@ -11713,23 +11730,31 @@ PWR PROTECT,MGR DOES M</text>
 <net name="SDA0" class="0">
 <segment>
 <label x="165.1" y="101.6" size="1.27" layer="91" xref="yes"/>
-<wire x1="165.1" y1="101.6" x2="147.32" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="101.6" x2="162.56" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="R231" gate="G$1" pin="1"/>
+<wire x1="162.56" y1="101.6" x2="147.32" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="101.6" x2="144.78" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="106.68" x2="147.32" y2="101.6" width="0.1524" layer="91"/>
 <junction x="147.32" y="101.6"/>
 <pinref part="R229" gate="G$1" pin="1"/>
+<pinref part="TP1" gate="G$1" pin="TP"/>
+<wire x1="162.56" y1="104.14" x2="162.56" y2="101.6" width="0.1524" layer="91"/>
+<junction x="162.56" y="101.6"/>
 </segment>
 </net>
 <net name="SCL0" class="0">
 <segment>
 <label x="165.1" y="91.44" size="1.27" layer="91" xref="yes"/>
-<wire x1="165.1" y1="91.44" x2="147.32" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="91.44" x2="162.56" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="91.44" x2="147.32" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="91.44" x2="144.78" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="R232" gate="G$1" pin="1"/>
 <wire x1="147.32" y1="96.52" x2="147.32" y2="91.44" width="0.1524" layer="91"/>
 <junction x="147.32" y="91.44"/>
 <pinref part="R230" gate="G$1" pin="1"/>
+<pinref part="TP2" gate="G$1" pin="TP"/>
+<wire x1="162.56" y1="93.98" x2="162.56" y2="91.44" width="0.1524" layer="91"/>
+<junction x="162.56" y="91.44"/>
 </segment>
 </net>
 <net name="N$86" class="0">
@@ -11839,27 +11864,29 @@ PWR PROTECT,MGR DOES M</text>
 <net name="SHUTDWN" class="0">
 <segment>
 <pinref part="U206" gate="G$1" pin="(ICP1)PB0"/>
-<wire x1="111.76" y1="66.04" x2="93.98" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="66.04" x2="114.3" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="R237" gate="G$1" pin="2"/>
-<wire x1="116.84" y1="71.12" x2="111.76" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="71.12" x2="111.76" y2="66.04" width="0.1524" layer="91"/>
 <label x="94.996" y="66.548" size="1.27" layer="91"/>
+<wire x1="114.3" y1="66.04" x2="93.98" y2="66.04" width="0.1524" layer="91"/>
+<junction x="114.3" y="66.04"/>
+<wire x1="114.3" y1="66.04" x2="114.3" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="71.12" x2="134.62" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="71.12" x2="134.62" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="U202" gate="F" pin="I"/>
+<wire x1="134.62" y1="68.58" x2="137.16" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$93" class="0">
 <segment>
 <pinref part="S201" gate="S" pin="2"/>
-<wire x1="137.16" y1="71.12" x2="137.16" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="68.58" x2="137.16" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="55.88" x2="137.16" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="53.34" x2="144.78" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="66.04" x2="134.62" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="55.88" x2="134.62" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="53.34" x2="144.78" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="S201" gate="S" pin="1"/>
-<wire x1="144.78" y1="55.88" x2="137.16" y2="55.88" width="0.1524" layer="91"/>
-<junction x="137.16" y="55.88"/>
+<wire x1="144.78" y1="55.88" x2="134.62" y2="55.88" width="0.1524" layer="91"/>
+<junction x="134.62" y="55.88"/>
 <pinref part="R237" gate="G$1" pin="1"/>
-<wire x1="127" y1="71.12" x2="137.16" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="U202" gate="F" pin="I"/>
-<junction x="137.16" y="68.58"/>
+<wire x1="127" y1="66.04" x2="134.62" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$94" class="0">
