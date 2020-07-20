@@ -2,16 +2,18 @@
 
 
 ```
-        ^1  Done: 
-            WIP: Design,
-            Todo: Layout, BOM, Review*, Order Boards, Assembly, Testing, Evaluation.
+        ^1  Done: Design, Layout,
+            WIP: BOM,
+            Todo: Review* (#= done), Order Boards, Assembly, Testing, Evaluation.
             *during review the Design may change without changing the revision.
-            swap the m4809 for a AVR128DA28
+            # swap the m4809 for a AVR128DA28
+            # UART0 crossover connection to R-Pi
 
             ^0  Done: Design, Layout, BOM, Review*, Order Boards,
             WIP: Assembly (will not do),
             Todo: Testing, Evaluation.
             *during review the Design may change without changing the revision.
+            note this was not tested, and an error has been found with serial.
             # use Python https://github.com/mraardvark/pyupdi to upload AVR from R-Pi Zero
 ```
 
