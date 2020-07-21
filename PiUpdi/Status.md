@@ -2,12 +2,13 @@
 
 
 ```
-        ^1  Done: Design, Layout,
-            WIP: BOM,
-            Todo: Review* (#= done), Order Boards, Assembly, Testing, Evaluation.
+        ^1  Done: Design, Layout, BOM,
+            WIP: Review* (#= done),
+            Todo: Order Boards, Assembly, Testing, Evaluation.
             *during review the Design may change without changing the revision.
             # swap the m4809 for a AVR128DA28
             # UART0 crossover connection to R-Pi
+            (test) check if AREF can be pulled down by the pins push-pull hardware it is sharing (https://www.avrfreaks.net/comment/2922081)
 
             ^0  Done: Design, Layout, BOM, Review*, Order Boards,
             WIP: Assembly (will not do),

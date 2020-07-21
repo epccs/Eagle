@@ -3070,29 +3070,29 @@ PT1,5/2-PVH-3,5 [PHOENIX CONTACT,1984015] CONN PLUG STRIP 2POS 3.5MM</descriptio
 <part name="R1" library="R-C" deviceset="R" device="0805" value="1k"/>
 <part name="S1" library="S-Tactile" deviceset="KSA" device="0M311" value="KSA0M311"/>
 <part name="GND61" library="Plane" deviceset="0V" device=""/>
-<part name="R3" library="R-C" deviceset="R" device="0805" value="1k"/>
+<part name="R4" library="R-C" deviceset="R" device="0805" value="1k"/>
 <part name="R5" library="R-C" deviceset="R" device="0805" value="10k"/>
 <part name="GND5" library="Plane" deviceset="0V" device=""/>
 <part name="Q2" library="Q-NCH" deviceset="N-CH?*" device="SOT23" value="K38"/>
-<part name="R4" library="R-C" deviceset="R" device="0805" value="10k"/>
+<part name="R3" library="R-C" deviceset="R" device="0805" value="100k"/>
 <part name="P+3" library="Plane" deviceset="+5V" device=""/>
 <part name="S2" library="S-Tactile" deviceset="KSA" device="0M311" value="KSA0M311"/>
 <part name="GND1" library="Plane" deviceset="0V" device=""/>
-<part name="R7" library="R-C" deviceset="R" device="0805" value="3.01k"/>
+<part name="R8" library="R-C" deviceset="R" device="0805" value="3.01k"/>
 <part name="P+6" library="Plane" deviceset="+5V" device=""/>
-<part name="R11" library="R-C" deviceset="R" device="0805" value="1.82k"/>
+<part name="R10" library="R-C" deviceset="R" device="0805" value="1.82k"/>
 <part name="+3V6" library="Plane" deviceset="+3V3" device=""/>
 <part name="Q3" library="Q-NCH" deviceset="N-CH?*" device="SOT23" value="K38"/>
 <part name="U2" library="U-7400" deviceset="2G07" device="SOT26" value="Z4"/>
 <part name="U4" library="U-7400" deviceset="2G07" device="SOT26" value="Z4"/>
-<part name="C7" library="C-C" deviceset="C" device="C0603A" value=".1uF"/>
+<part name="C6" library="C-C" deviceset="C" device="C0603A" value=".1uF"/>
 <part name="GND8" library="Plane" deviceset="0V" device=""/>
-<part name="R9" library="R-C" deviceset="R" device="0805" value="3.01k"/>
+<part name="R11" library="R-C" deviceset="R" device="0805" value="3.01k"/>
 <part name="P+5" library="Plane" deviceset="+5V" device=""/>
-<part name="R6" library="R-C" deviceset="R" device="0805" value="182"/>
+<part name="R7" library="R-C" deviceset="R" device="0805" value="182"/>
 <part name="Q4" library="Q-PCH" deviceset="N-CH?*" device="SOT23" value="K84"/>
 <part name="+3V2" library="Plane" deviceset="+3V3" device=""/>
-<part name="R8" library="R-C" deviceset="R" device="0805" value="10k"/>
+<part name="R9" library="R-C" deviceset="R" device="0805" value="10k"/>
 <part name="GND7" library="Plane" deviceset="0V" device=""/>
 <part name="P+1" library="Plane" deviceset="+5V" device=""/>
 <part name="C2" library="C-T" deviceset="CT" device="1206" value="10uF"/>
@@ -3103,10 +3103,11 @@ PT1,5/2-PVH-3,5 [PHOENIX CONTACT,1984015] CONN PLUG STRIP 2POS 3.5MM</descriptio
 <part name="J1" library="J-HDR2.54mm" deviceset="F1X10" device="" value="PPPC101LFBN"/>
 <part name="J3" library="J-HDR2.54mm" deviceset="F1X10" device="" value="PPPC101LFBN"/>
 <part name="J2" library="J-HDR2.54mm" deviceset="F1X10" device="" value="PPPC101LFBN"/>
-<part name="R10" library="R-C" deviceset="R" device="0805" value="3.01k"/>
-<part name="U5" library="U-AVR" deviceset="AVR128DA28" device="-I/SP" value="AVR128DA28-I/SP"/>
+<part name="R12" library="R-C" deviceset="R" device="0805" value="3.01k"/>
+<part name="U3" library="U-AVR" deviceset="AVR128DA28" device="-I/SP" value="AVR128DA28-I/SP"/>
 <part name="J4" library="J-HDR3.5mm" deviceset="MCV2" device="" value="PST1,0/2-3,5"/>
 <part name="P+8" library="Plane" deviceset="VCC" device=""/>
+<part name="R6" library="R-C" deviceset="R" device="0805" value="182"/>
 </parts>
 <sheets>
 <sheet>
@@ -3205,17 +3206,17 @@ UART0 CROSSOVER</text>
 <instance part="R1" gate="G$1" x="231.14" y="213.36" rot="R90"/>
 <instance part="S1" gate="S" x="134.62" y="167.64"/>
 <instance part="GND61" gate="1" x="147.32" y="165.1"/>
-<instance part="R3" gate="G$1" x="124.46" y="170.18" rot="R270"/>
+<instance part="R4" gate="G$1" x="124.46" y="170.18" rot="R270"/>
 <instance part="R5" gate="G$1" x="139.7" y="190.5" rot="R270"/>
 <instance part="GND5" gate="1" x="261.62" y="205.74"/>
 <instance part="Q2" gate="G$1" x="254" y="208.28" rot="MR270"/>
-<instance part="R4" gate="G$1" x="124.46" y="190.5" rot="R270"/>
+<instance part="R3" gate="G$1" x="124.46" y="190.5" rot="R270"/>
 <instance part="P+3" gate="1" x="124.46" y="200.66"/>
 <instance part="S2" gate="S" x="238.76" y="175.26"/>
 <instance part="GND1" gate="1" x="248.92" y="172.72"/>
-<instance part="R7" gate="G$1" x="175.26" y="142.24" rot="R180"/>
+<instance part="R8" gate="G$1" x="175.26" y="142.24" rot="R180"/>
 <instance part="P+6" gate="1" x="182.88" y="144.78"/>
-<instance part="R11" gate="G$1" x="175.26" y="121.92" rot="R180"/>
+<instance part="R10" gate="G$1" x="175.26" y="121.92" rot="R180"/>
 <instance part="+3V6" gate="G$1" x="182.88" y="124.46"/>
 <instance part="Q3" gate="G$1" x="132.08" y="182.88" rot="MR270"/>
 <instance part="U2" gate="A" x="152.4" y="137.16"/>
@@ -3224,14 +3225,14 @@ UART0 CROSSOVER</text>
 <instance part="U4" gate="B" x="152.4" y="68.58"/>
 <instance part="U4" gate="A" x="152.4" y="93.98"/>
 <instance part="U4" gate="P" x="208.28" y="83.82"/>
-<instance part="C7" gate="G$1" x="215.9" y="86.36"/>
+<instance part="C6" gate="G$1" x="215.9" y="86.36"/>
 <instance part="GND8" gate="1" x="210.82" y="71.12"/>
-<instance part="R9" gate="G$1" x="170.18" y="99.06" rot="R180"/>
+<instance part="R11" gate="G$1" x="170.18" y="99.06" rot="R180"/>
 <instance part="P+5" gate="1" x="177.8" y="101.6"/>
-<instance part="R6" gate="G$1" x="218.44" y="195.58" rot="R270"/>
+<instance part="R7" gate="G$1" x="218.44" y="195.58" rot="R270"/>
 <instance part="Q4" gate="G$1" x="264.16" y="147.32" rot="MR90"/>
 <instance part="+3V2" gate="G$1" x="254" y="149.86"/>
-<instance part="R8" gate="G$1" x="274.32" y="139.7" rot="R270"/>
+<instance part="R9" gate="G$1" x="274.32" y="139.7" rot="R270"/>
 <instance part="GND7" gate="1" x="274.32" y="129.54"/>
 <instance part="P+1" gate="1" x="71.12" y="213.36"/>
 <instance part="C2" gate="G$1" x="71.12" y="203.2"/>
@@ -3246,11 +3247,12 @@ UART0 CROSSOVER</text>
 <instance part="J1" gate="G$1" x="368.3" y="208.28"/>
 <instance part="J3" gate="G$1" x="368.3" y="137.16"/>
 <instance part="J2" gate="G$1" x="368.3" y="172.72"/>
-<instance part="R10" gate="G$1" x="170.18" y="86.36" rot="R180"/>
-<instance part="U5" gate="G$1" x="76.2" y="91.44"/>
+<instance part="R12" gate="G$1" x="170.18" y="86.36" rot="R180"/>
+<instance part="U3" gate="G$1" x="76.2" y="91.44"/>
 <instance part="J4" gate=".1" x="22.86" y="195.58" rot="R180"/>
 <instance part="J4" gate=".2" x="22.86" y="208.28" rot="R180"/>
 <instance part="P+8" gate="VCC" x="27.94" y="213.36"/>
+<instance part="R6" gate="G$1" x="149.86" y="182.88"/>
 </instances>
 <busses>
 </busses>
@@ -3271,7 +3273,7 @@ UART0 CROSSOVER</text>
 <junction x="139.7" y="200.66"/>
 </segment>
 <segment>
-<pinref part="R11" gate="G$1" pin="1"/>
+<pinref part="R10" gate="G$1" pin="1"/>
 <wire x1="180.34" y1="121.92" x2="182.88" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="+3V6" gate="G$1" pin="+3V3"/>
 </segment>
@@ -3296,8 +3298,8 @@ UART0 CROSSOVER</text>
 <wire x1="33.02" y1="99.06" x2="33.02" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="66.04" x2="38.1" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="66.04" x2="40.64" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="U5" gate="G$1" pin="0V@0"/>
-<pinref part="U5" gate="G$1" pin="0V@1"/>
+<pinref part="U3" gate="G$1" pin="0V@0"/>
+<pinref part="U3" gate="G$1" pin="0V@1"/>
 </segment>
 <segment>
 <pinref part="J5" gate="G$1" pin="GND@1"/>
@@ -3367,7 +3369,7 @@ UART0 CROSSOVER</text>
 </segment>
 <segment>
 <pinref part="U4" gate="P" pin="GND"/>
-<pinref part="C7" gate="G$1" pin="2"/>
+<pinref part="C6" gate="G$1" pin="2"/>
 <wire x1="208.28" y1="73.66" x2="210.82" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="73.66" x2="215.9" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="73.66" x2="215.9" y2="81.28" width="0.1524" layer="91"/>
@@ -3375,7 +3377,7 @@ UART0 CROSSOVER</text>
 <junction x="210.82" y="73.66"/>
 </segment>
 <segment>
-<pinref part="R8" gate="G$1" pin="2"/>
+<pinref part="R9" gate="G$1" pin="2"/>
 <wire x1="274.32" y1="134.62" x2="274.32" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="1" pin="0V"/>
 </segment>
@@ -3421,18 +3423,18 @@ UART0 CROSSOVER</text>
 <junction x="246.38" y="223.52"/>
 </segment>
 <segment>
-<pinref part="R4" gate="G$1" pin="1"/>
+<pinref part="R3" gate="G$1" pin="1"/>
 <pinref part="P+3" gate="1" pin="+5V"/>
 <wire x1="124.46" y1="198.12" x2="124.46" y2="195.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R7" gate="G$1" pin="1"/>
+<pinref part="R8" gate="G$1" pin="1"/>
 <wire x1="180.34" y1="142.24" x2="182.88" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="P+6" gate="1" pin="+5V"/>
 </segment>
 <segment>
 <pinref part="P+5" gate="1" pin="+5V"/>
-<pinref part="R9" gate="G$1" pin="1"/>
+<pinref part="R11" gate="G$1" pin="1"/>
 <wire x1="177.8" y1="99.06" x2="175.26" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -3441,7 +3443,7 @@ UART0 CROSSOVER</text>
 <wire x1="33.02" y1="106.68" x2="33.02" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="121.92" x2="58.42" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="119.38" x2="53.34" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="U5" gate="G$1" pin="AVCC"/>
+<pinref part="U3" gate="G$1" pin="AVCC"/>
 <junction x="58.42" y="119.38"/>
 <wire x1="58.42" y1="116.84" x2="53.34" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="P+4" gate="1" pin="+5V"/>
@@ -3450,7 +3452,7 @@ UART0 CROSSOVER</text>
 <wire x1="38.1" y1="111.76" x2="38.1" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="114.3" x2="55.88" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="114.3" x2="58.42" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="U5" gate="G$1" pin="VCC@0"/>
+<pinref part="U3" gate="G$1" pin="VCC@0"/>
 <junction x="58.42" y="116.84"/>
 <wire x1="53.34" y1="119.38" x2="53.34" y2="116.84" width="0.1524" layer="91"/>
 <junction x="53.34" y="116.84"/>
@@ -3503,13 +3505,13 @@ UART0 CROSSOVER</text>
 </net>
 <net name="SHUTDOWN" class="0">
 <segment>
-<pinref part="J5" gate="G$1" pin="BCM6"/>
 <pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="139.7" y1="182.88" x2="162.56" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="185.42" x2="139.7" y2="182.88" width="0.1524" layer="91"/>
-<junction x="139.7" y="182.88"/>
 <pinref part="Q3" gate="G$1" pin="S"/>
 <wire x1="137.16" y1="182.88" x2="139.7" y2="182.88" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="144.78" y1="182.88" x2="139.7" y2="182.88" width="0.1524" layer="91"/>
+<junction x="139.7" y="182.88"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -3531,7 +3533,7 @@ UART0 CROSSOVER</text>
 <segment>
 <label x="104.14" y="116.84" size="1.27" layer="91" xref="yes"/>
 <wire x1="104.14" y1="116.84" x2="96.52" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="U5" gate="G$1" pin="(RX0)PA1"/>
+<pinref part="U3" gate="G$1" pin="(RX0)PA1"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="7"/>
@@ -3541,7 +3543,7 @@ UART0 CROSSOVER</text>
 <segment>
 <pinref part="U2" gate="A" pin="O"/>
 <wire x1="162.56" y1="137.16" x2="170.18" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="R7" gate="G$1" pin="2"/>
+<pinref part="R8" gate="G$1" pin="2"/>
 <wire x1="170.18" y1="137.16" x2="172.72" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="142.24" x2="170.18" y2="137.16" width="0.1524" layer="91"/>
 <junction x="170.18" y="137.16"/>
@@ -3552,7 +3554,7 @@ UART0 CROSSOVER</text>
 <segment>
 <label x="104.14" y="119.38" size="1.27" layer="91" xref="yes"/>
 <wire x1="104.14" y1="119.38" x2="96.52" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="U5" gate="G$1" pin="(EXTCLK/TX0)PA0"/>
+<pinref part="U3" gate="G$1" pin="(EXTCLK/TX0)PA0"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="6"/>
@@ -3592,7 +3594,7 @@ UART0 CROSSOVER</text>
 <pinref part="U4" gate="B" pin="O"/>
 <label x="195.58" y="116.84" size="1.27" layer="91" xref="yes"/>
 <wire x1="162.56" y1="116.84" x2="170.18" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="R11" gate="G$1" pin="2"/>
+<pinref part="R10" gate="G$1" pin="2"/>
 <wire x1="170.18" y1="116.84" x2="193.04" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="116.84" x2="195.58" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="121.92" x2="170.18" y2="116.84" width="0.1524" layer="91"/>
@@ -3606,7 +3608,7 @@ UART0 CROSSOVER</text>
 <net name="UPDI_" class="0">
 <segment>
 <label x="218.44" y="187.96" size="1.27" layer="91" rot="R270" xref="yes"/>
-<pinref part="R6" gate="G$1" pin="2"/>
+<pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="218.44" y1="187.96" x2="218.44" y2="190.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -3616,7 +3618,7 @@ UART0 CROSSOVER</text>
 <wire x1="264.16" y1="134.62" x2="259.08" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C7" gate="G$1" pin="1"/>
+<pinref part="C6" gate="G$1" pin="1"/>
 <wire x1="215.9" y1="88.9" x2="215.9" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="U4" gate="P" pin="VCC"/>
 <wire x1="215.9" y1="93.98" x2="208.28" y2="93.98" width="0.1524" layer="91"/>
@@ -3630,7 +3632,7 @@ UART0 CROSSOVER</text>
 <wire x1="269.24" y1="147.32" x2="274.32" y2="147.32" width="0.1524" layer="91"/>
 <label x="279.4" y="147.32" size="1.27" layer="91" xref="yes"/>
 <pinref part="Q4" gate="G$1" pin="D"/>
-<pinref part="R8" gate="G$1" pin="1"/>
+<pinref part="R9" gate="G$1" pin="1"/>
 <wire x1="274.32" y1="147.32" x2="279.4" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="274.32" y1="144.78" x2="274.32" y2="147.32" width="0.1524" layer="91"/>
 <junction x="274.32" y="147.32"/>
@@ -3655,13 +3657,13 @@ UART0 CROSSOVER</text>
 <wire x1="182.88" y1="81.28" x2="144.78" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="81.28" x2="144.78" y2="68.58" width="0.1524" layer="91"/>
 <junction x="144.78" y="68.58"/>
-<pinref part="R10" gate="G$1" pin="1"/>
+<pinref part="R12" gate="G$1" pin="1"/>
 <wire x1="175.26" y1="86.36" x2="182.88" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="58.42" y1="111.76" x2="55.88" y2="111.76" width="0.1524" layer="91"/>
 <label x="55.88" y="111.76" size="1.27" layer="91" rot="R180" xref="yes"/>
-<pinref part="U5" gate="G$1" pin="UPDI"/>
+<pinref part="U3" gate="G$1" pin="UPDI"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="8"/>
@@ -3673,7 +3675,7 @@ UART0 CROSSOVER</text>
 <segment>
 <wire x1="96.52" y1="83.82" x2="106.68" y2="83.82" width="0.1524" layer="91"/>
 <label x="106.68" y="83.82" size="1.27" layer="91" xref="yes"/>
-<pinref part="U5" gate="G$1" pin="(AIN0)PD0"/>
+<pinref part="U3" gate="G$1" pin="(AIN0)PD0"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="3"/>
@@ -3685,7 +3687,7 @@ UART0 CROSSOVER</text>
 <segment>
 <wire x1="96.52" y1="81.28" x2="106.68" y2="81.28" width="0.1524" layer="91"/>
 <label x="106.68" y="81.28" size="1.27" layer="91" xref="yes"/>
-<pinref part="U5" gate="G$1" pin="(AIN1)PD1"/>
+<pinref part="U3" gate="G$1" pin="(AIN1)PD1"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="4"/>
@@ -3697,7 +3699,7 @@ UART0 CROSSOVER</text>
 <segment>
 <wire x1="96.52" y1="78.74" x2="106.68" y2="78.74" width="0.1524" layer="91"/>
 <label x="106.68" y="78.74" size="1.27" layer="91" xref="yes"/>
-<pinref part="U5" gate="G$1" pin="(AIN2)PD2"/>
+<pinref part="U3" gate="G$1" pin="(AIN2)PD2"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="5"/>
@@ -3709,7 +3711,7 @@ UART0 CROSSOVER</text>
 <segment>
 <wire x1="96.52" y1="76.2" x2="106.68" y2="76.2" width="0.1524" layer="91"/>
 <label x="106.68" y="76.2" size="1.27" layer="91" xref="yes"/>
-<pinref part="U5" gate="G$1" pin="(AIN3)PD3"/>
+<pinref part="U3" gate="G$1" pin="(AIN3)PD3"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="6"/>
@@ -3721,7 +3723,7 @@ UART0 CROSSOVER</text>
 <segment>
 <wire x1="96.52" y1="73.66" x2="106.68" y2="73.66" width="0.1524" layer="91"/>
 <label x="106.68" y="73.66" size="1.27" layer="91" xref="yes"/>
-<pinref part="U5" gate="G$1" pin="(AIN4)PD4"/>
+<pinref part="U3" gate="G$1" pin="(AIN4)PD4"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="7"/>
@@ -3733,7 +3735,7 @@ UART0 CROSSOVER</text>
 <segment>
 <wire x1="96.52" y1="71.12" x2="106.68" y2="71.12" width="0.1524" layer="91"/>
 <label x="106.68" y="71.12" size="1.27" layer="91" xref="yes"/>
-<pinref part="U5" gate="G$1" pin="(AIN5)PD5"/>
+<pinref part="U3" gate="G$1" pin="(AIN5)PD5"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="8"/>
@@ -3745,7 +3747,7 @@ UART0 CROSSOVER</text>
 <segment>
 <wire x1="96.52" y1="68.58" x2="106.68" y2="68.58" width="0.1524" layer="91"/>
 <label x="106.68" y="68.58" size="1.27" layer="91" xref="yes"/>
-<pinref part="U5" gate="G$1" pin="(AIN6)PD6"/>
+<pinref part="U3" gate="G$1" pin="(AIN6)PD6"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="9"/>
@@ -3757,7 +3759,7 @@ UART0 CROSSOVER</text>
 <segment>
 <wire x1="96.52" y1="66.04" x2="106.68" y2="66.04" width="0.1524" layer="91"/>
 <label x="106.68" y="66.04" size="1.27" layer="91" xref="yes"/>
-<pinref part="U5" gate="G$1" pin="(AREF)PD7"/>
+<pinref part="U3" gate="G$1" pin="(AREF)PD7"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="10"/>
@@ -3769,7 +3771,7 @@ UART0 CROSSOVER</text>
 <segment>
 <wire x1="58.42" y1="88.9" x2="55.88" y2="88.9" width="0.1524" layer="91"/>
 <label x="55.88" y="88.9" size="1.27" layer="91" rot="R180" xref="yes"/>
-<pinref part="U5" gate="G$1" pin="PF0(TX2)"/>
+<pinref part="U3" gate="G$1" pin="PF0(TX2)"/>
 </segment>
 <segment>
 <label x="360.68" y="180.34" size="1.27" layer="91" rot="R180" xref="yes"/>
@@ -3781,7 +3783,7 @@ UART0 CROSSOVER</text>
 <segment>
 <wire x1="58.42" y1="86.36" x2="55.88" y2="86.36" width="0.1524" layer="91"/>
 <label x="55.88" y="86.36" size="1.27" layer="91" rot="R180" xref="yes"/>
-<pinref part="U5" gate="G$1" pin="PF1(RX2)"/>
+<pinref part="U3" gate="G$1" pin="PF1(RX2)"/>
 </segment>
 <segment>
 <label x="360.68" y="177.8" size="1.27" layer="91" rot="R180" xref="yes"/>
@@ -3793,7 +3795,7 @@ UART0 CROSSOVER</text>
 <segment>
 <wire x1="58.42" y1="81.28" x2="55.88" y2="81.28" width="0.1524" layer="91"/>
 <label x="55.88" y="81.28" size="1.27" layer="91" rot="R180" xref="yes"/>
-<pinref part="U5" gate="G$1" pin="PF6(!RESET)"/>
+<pinref part="U3" gate="G$1" pin="PF6(!RESET)"/>
 </segment>
 <segment>
 <label x="360.68" y="175.26" size="1.27" layer="91" rot="R180" xref="yes"/>
@@ -3805,7 +3807,7 @@ UART0 CROSSOVER</text>
 <segment>
 <wire x1="96.52" y1="114.3" x2="104.14" y2="114.3" width="0.1524" layer="91"/>
 <label x="104.14" y="114.3" size="1.27" layer="91" xref="yes"/>
-<pinref part="U5" gate="G$1" pin="(SDA0)PA2"/>
+<pinref part="U3" gate="G$1" pin="(SDA0)PA2"/>
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="3"/>
@@ -3817,7 +3819,7 @@ UART0 CROSSOVER</text>
 <segment>
 <wire x1="96.52" y1="111.76" x2="104.14" y2="111.76" width="0.1524" layer="91"/>
 <label x="104.14" y="111.76" size="1.27" layer="91" xref="yes"/>
-<pinref part="U5" gate="G$1" pin="(SCL0)PA3"/>
+<pinref part="U3" gate="G$1" pin="(SCL0)PA3"/>
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="4"/>
@@ -3829,7 +3831,7 @@ UART0 CROSSOVER</text>
 <segment>
 <wire x1="96.52" y1="109.22" x2="104.14" y2="109.22" width="0.1524" layer="91"/>
 <label x="104.14" y="109.22" size="1.27" layer="91" xref="yes"/>
-<pinref part="U5" gate="G$1" pin="(MOSI)PA4"/>
+<pinref part="U3" gate="G$1" pin="(MOSI)PA4"/>
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="5"/>
@@ -3841,7 +3843,7 @@ UART0 CROSSOVER</text>
 <segment>
 <wire x1="96.52" y1="106.68" x2="104.14" y2="106.68" width="0.1524" layer="91"/>
 <label x="104.14" y="106.68" size="1.27" layer="91" xref="yes"/>
-<pinref part="U5" gate="G$1" pin="(MISO)PA5"/>
+<pinref part="U3" gate="G$1" pin="(MISO)PA5"/>
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="6"/>
@@ -3853,7 +3855,7 @@ UART0 CROSSOVER</text>
 <segment>
 <wire x1="96.52" y1="104.14" x2="104.14" y2="104.14" width="0.1524" layer="91"/>
 <label x="104.14" y="104.14" size="1.27" layer="91" xref="yes"/>
-<pinref part="U5" gate="G$1" pin="(SCK)PA6"/>
+<pinref part="U3" gate="G$1" pin="(SCK)PA6"/>
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="7"/>
@@ -3865,7 +3867,7 @@ UART0 CROSSOVER</text>
 <segment>
 <wire x1="96.52" y1="101.6" x2="104.14" y2="101.6" width="0.1524" layer="91"/>
 <label x="104.14" y="101.6" size="1.27" layer="91" xref="yes"/>
-<pinref part="U5" gate="G$1" pin="(!SS!)PA7"/>
+<pinref part="U3" gate="G$1" pin="(!SS!)PA7"/>
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="8"/>
@@ -3877,7 +3879,7 @@ UART0 CROSSOVER</text>
 <segment>
 <wire x1="96.52" y1="93.98" x2="104.14" y2="93.98" width="0.1524" layer="91"/>
 <label x="104.14" y="93.98" size="1.27" layer="91" xref="yes"/>
-<pinref part="U5" gate="G$1" pin="(RX1)PC1"/>
+<pinref part="U3" gate="G$1" pin="(RX1)PC1"/>
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="10"/>
@@ -3889,15 +3891,15 @@ UART0 CROSSOVER</text>
 <segment>
 <wire x1="96.52" y1="88.9" x2="104.14" y2="88.9" width="0.1524" layer="91"/>
 <label x="104.14" y="88.9" size="1.27" layer="91" xref="yes"/>
-<pinref part="U5" gate="G$1" pin="PC3"/>
+<pinref part="U3" gate="G$1" pin="PC3"/>
 </segment>
 <segment>
 <label x="104.14" y="177.8" size="1.27" layer="91" rot="R180" xref="yes"/>
 <wire x1="124.46" y1="175.26" x2="124.46" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="177.8" x2="104.14" y2="177.8" width="0.1524" layer="91"/>
-<pinref part="R3" gate="G$1" pin="1"/>
+<pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="127" y1="182.88" x2="124.46" y2="182.88" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="2"/>
+<pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="124.46" y1="185.42" x2="124.46" y2="182.88" width="0.1524" layer="91"/>
 <pinref part="Q3" gate="G$1" pin="D"/>
 <wire x1="124.46" y1="177.8" x2="124.46" y2="182.88" width="0.1524" layer="91"/>
@@ -3912,7 +3914,7 @@ UART0 CROSSOVER</text>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="R6" gate="G$1" pin="1"/>
+<pinref part="R7" gate="G$1" pin="1"/>
 <pinref part="J5" gate="G$1" pin="SD_DAT0/BCM24"/>
 <wire x1="218.44" y1="200.66" x2="210.82" y2="200.66" width="0.1524" layer="91"/>
 </segment>
@@ -3926,14 +3928,14 @@ UART0 CROSSOVER</text>
 <segment>
 <wire x1="96.52" y1="96.52" x2="104.14" y2="96.52" width="0.1524" layer="91"/>
 <label x="104.14" y="96.52" size="1.27" layer="91" xref="yes"/>
-<pinref part="U5" gate="G$1" pin="(TX1)PC0"/>
+<pinref part="U3" gate="G$1" pin="(TX1)PC0"/>
 </segment>
 </net>
 <net name="PWR_RPI_CNTL" class="0">
 <segment>
 <wire x1="96.52" y1="91.44" x2="104.14" y2="91.44" width="0.1524" layer="91"/>
 <label x="104.14" y="91.44" size="1.27" layer="91" xref="yes"/>
-<pinref part="U5" gate="G$1" pin="PC2"/>
+<pinref part="U3" gate="G$1" pin="PC2"/>
 </segment>
 <segment>
 <wire x1="231.14" y1="218.44" x2="226.06" y2="218.44" width="0.1524" layer="91"/>
@@ -3953,11 +3955,11 @@ UART0 CROSSOVER</text>
 <segment>
 <pinref part="U4" gate="A" pin="O"/>
 <wire x1="162.56" y1="93.98" x2="162.56" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="R9" gate="G$1" pin="2"/>
+<pinref part="R11" gate="G$1" pin="2"/>
 <wire x1="162.56" y1="99.06" x2="165.1" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="93.98" x2="162.56" y2="86.36" width="0.1524" layer="91"/>
 <junction x="162.56" y="93.98"/>
-<pinref part="R10" gate="G$1" pin="2"/>
+<pinref part="R12" gate="G$1" pin="2"/>
 <wire x1="162.56" y1="86.36" x2="165.1" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -3980,7 +3982,14 @@ UART0 CROSSOVER</text>
 <segment>
 <pinref part="S1" gate="S" pin="2"/>
 <wire x1="124.46" y1="165.1" x2="129.54" y2="165.1" width="0.1524" layer="91"/>
-<pinref part="R3" gate="G$1" pin="2"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="J5" gate="G$1" pin="BCM6"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="162.56" y1="182.88" x2="154.94" y2="182.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
