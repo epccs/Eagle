@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -644,24 +644,21 @@ example MURB1620CTRT4G http://www.onsemi.com/pub_link/Collateral/MUR1620CTR-D.PD
 <wire x1="2.54" y1="-3.048" x2="2.54" y2="-1.27" width="0.254" layer="51"/>
 </package>
 <package name="SMA">
-<description>&lt;pre&gt;SMB 
+<description>&lt;pre&gt;SMA 
 http://www.diodes.com/datasheets/ap02001.pdf
 center to center 4 mm
 pad 2.5X x 1.7Y mm</description>
-<wire x1="-2.25" y1="1.825" x2="2.25" y2="1.825" width="0.254" layer="51"/>
-<wire x1="2.25" y1="-1.825" x2="-2.25" y2="-1.825" width="0.254" layer="51"/>
-<wire x1="-2.25" y1="1.825" x2="-2.25" y2="1.25" width="0.254" layer="51"/>
-<wire x1="2.25" y1="1.25" x2="2.25" y2="-1.25" width="0.254" layer="51"/>
-<wire x1="-2.25" y1="-1.825" x2="-2.25" y2="-1.25" width="0.254" layer="51"/>
-<wire x1="2.25" y1="-1.825" x2="2.25" y2="-1.25" width="0.254" layer="51" curve="-1.904406"/>
-<wire x1="2.25" y1="1.825" x2="2.25" y2="1.25" width="0.254" layer="51"/>
-<wire x1="-2.25" y1="-1.25" x2="-2.25" y2="1.25" width="0.254" layer="51"/>
+<wire x1="-2.25" y1="1.5" x2="2.25" y2="1.5" width="0.254" layer="51"/>
+<wire x1="2.25" y1="-1.5" x2="-2.25" y2="-1.5" width="0.254" layer="51"/>
+<wire x1="2.25" y1="1.5" x2="2.25" y2="-1.25" width="0.254" layer="51"/>
+<wire x1="2.25" y1="-1.5" x2="2.25" y2="-1.25" width="0.254" layer="51" curve="-1.904406"/>
+<wire x1="-2.25" y1="-1.5" x2="-2.25" y2="1.5" width="0.254" layer="51"/>
 <smd name="K" x="-2" y="0" dx="2.5" dy="1.7" layer="1" roundness="50"/>
 <smd name="A" x="2" y="0" dx="2.5" dy="1.7" layer="1" roundness="20"/>
 <text x="-1.861" y="2.254" size="0.6096" layer="25" ratio="10">&gt;NAME</text>
 <rectangle x1="2.38" y1="-0.825" x2="2.8" y2="0.8" layer="51"/>
 <rectangle x1="-2.8" y1="-0.8" x2="-2.38" y2="0.8" layer="51"/>
-<rectangle x1="-1.5" y1="-1.75" x2="-0.75" y2="1.75" layer="51"/>
+<rectangle x1="-1.5" y1="-1.5" x2="-0.75" y2="1.5" layer="51"/>
 <polygon width="0.127" layer="51">
 <vertex x="0.635" y="-1.27"/>
 <vertex x="0.635" y="1.27"/>
