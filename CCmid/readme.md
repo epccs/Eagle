@@ -1,6 +1,6 @@
 CCmid
 
-Constant currrent source based on AL8805W5-7 for LED or other uses. 
+Constant current source based on AL8805W5-7 for LED or other uses. 
 
 https://oshpark.com/shared_projects/9gUEmC1T
 
