@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -352,6 +352,18 @@ SRR0604-101 [Bourns,SRR0604-101KL] INDUCTOR POWER SHIELDED 100UH SMD</descriptio
 <smd name="2" x="-2.35" y="0" dx="5.7" dy="1.6" layer="1" roundness="100" rot="R90"/>
 <text x="-1.9071" y="3.6391" size="0.6096" layer="25">&gt;NAME</text>
 </package>
+<package name="L2831">
+<description>&lt;pre&gt;Dimension (mm): .28 x .31 (7.0 x 7.8)
+
+SRP7030-4R7M [Bourns@SRP7030-4R7M] INDUCTOR POWER SHIELDED 4.7UH 5.5A SMD</description>
+<wire x1="-3.9" y1="3.5" x2="3.9" y2="3.5" width="0.127" layer="51"/>
+<wire x1="3.9" y1="3.5" x2="3.9" y2="-3.5" width="0.127" layer="51"/>
+<wire x1="3.9" y1="-3.5" x2="-3.9" y2="-3.5" width="0.127" layer="51"/>
+<wire x1="-3.9" y1="-3.5" x2="-3.9" y2="3.5" width="0.127" layer="51"/>
+<smd name="1" x="3.1" y="0" dx="3.5" dy="2.5" layer="1" roundness="60" rot="R90"/>
+<smd name="2" x="-3.1" y="0" dx="3.5" dy="2.5" layer="1" roundness="60" rot="R90"/>
+<text x="-1.9071" y="3.6391" size="0.6096" layer="25">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="LFB">
@@ -524,6 +536,15 @@ SRR0604-101 [Bourns,SRR0604-101KL] INDUCTOR POWER SHIELDED 100UH SMD</descriptio
 </technologies>
 </device>
 <device name="2424" package="L2424">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="2831" package="L2831">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
