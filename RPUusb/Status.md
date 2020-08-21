@@ -1,9 +1,9 @@
 # Status
 
 ```
-        ^5  Done: Design, Layout,
-            WIP: BOM,
-            Todo: Review*, Order Boards, Assembly, Testing, Evaluation.
+        ^5  Done: Design, Layout, BOM, Review*, Order Boards, Assembly, 
+            WIP: Testing,
+            Todo: Evaluation.
             *during review the Design may change without changing the revision.
             # remove arduino headers
             # add header with 40 pin R-Pi pinout
