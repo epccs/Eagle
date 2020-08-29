@@ -5011,15 +5011,15 @@ REV MARKED WITH .1</text>
 <text x="290.068" y="15.748" size="1.6764" layer="98">ADPT^2, SWAP 1634 &amp;
 328, FULL BUS CONT</text>
 <text x="320.548" y="16.51" size="1.778" layer="98">11/22/15</text>
-<wire x1="121.412" y1="182.88" x2="129.286" y2="182.88" width="0.4064" layer="98"/>
-<wire x1="129.286" y1="182.88" x2="128.27" y2="182.118" width="0.4064" layer="98"/>
-<wire x1="129.286" y1="182.88" x2="128.27" y2="183.642" width="0.4064" layer="98"/>
-<wire x1="121.412" y1="205.74" x2="129.286" y2="205.74" width="0.4064" layer="98"/>
-<wire x1="129.286" y1="205.74" x2="128.27" y2="204.978" width="0.4064" layer="98"/>
-<wire x1="129.286" y1="205.74" x2="128.27" y2="206.502" width="0.4064" layer="98"/>
-<wire x1="129.032" y1="203.2" x2="121.158" y2="203.2" width="0.4064" layer="98"/>
-<wire x1="121.158" y1="203.2" x2="122.174" y2="203.962" width="0.4064" layer="98"/>
-<wire x1="121.158" y1="203.2" x2="122.174" y2="202.438" width="0.4064" layer="98"/>
+<wire x1="129.032" y1="182.88" x2="136.906" y2="182.88" width="0.4064" layer="98"/>
+<wire x1="136.906" y1="182.88" x2="135.89" y2="182.118" width="0.4064" layer="98"/>
+<wire x1="136.906" y1="182.88" x2="135.89" y2="183.642" width="0.4064" layer="98"/>
+<wire x1="131.572" y1="205.74" x2="139.446" y2="205.74" width="0.4064" layer="98"/>
+<wire x1="139.446" y1="205.74" x2="138.43" y2="204.978" width="0.4064" layer="98"/>
+<wire x1="139.446" y1="205.74" x2="138.43" y2="206.502" width="0.4064" layer="98"/>
+<wire x1="139.192" y1="203.2" x2="131.318" y2="203.2" width="0.4064" layer="98"/>
+<wire x1="131.318" y1="203.2" x2="132.334" y2="203.962" width="0.4064" layer="98"/>
+<wire x1="131.318" y1="203.2" x2="132.334" y2="202.438" width="0.4064" layer="98"/>
 <text x="23.622" y="18.796" size="1.778" layer="98">CRYSTAL:
 ECS-120-20-3X-TR 
 12MHZ +/- 30PPM
@@ -5034,47 +5034,25 @@ FIX MGR BRICKING</text>
 <text x="282.702" y="26.924" size="2.54" layer="98">^4</text>
 <text x="290.068" y="25.908" size="1.6764" layer="98">ICP1 TO TP</text>
 <text x="320.548" y="26.67" size="1.778" layer="98">1/14/17</text>
-<wire x1="129.032" y1="180.34" x2="121.158" y2="180.34" width="0.4064" layer="98"/>
-<wire x1="121.158" y1="180.34" x2="122.174" y2="181.102" width="0.4064" layer="98"/>
-<wire x1="121.158" y1="180.34" x2="122.174" y2="179.578" width="0.4064" layer="98"/>
+<wire x1="136.652" y1="180.34" x2="128.778" y2="180.34" width="0.4064" layer="98"/>
+<wire x1="128.778" y1="180.34" x2="129.794" y2="181.102" width="0.4064" layer="98"/>
+<wire x1="128.778" y1="180.34" x2="129.794" y2="179.578" width="0.4064" layer="98"/>
 <text x="320.548" y="31.75" size="1.778" layer="98">8/26/19</text>
 <text x="290.068" y="30.988" size="1.6764" layer="98">SILAB USB, MCU IS FOR
 DBUG ON 40 PIN R-PI HDR</text>
 <text x="282.702" y="32.004" size="2.54" layer="98">^5</text>
-<text x="110.744" y="108.458" size="1.778" layer="98">0</text>
-<text x="110.744" y="105.918" size="1.778" layer="98">1</text>
-<text x="110.744" y="103.378" size="1.778" layer="98">2</text>
-<text x="110.744" y="100.838" size="1.778" layer="98">3</text>
-<text x="143.764" y="98.298" size="1.778" layer="98">4</text>
-<text x="143.764" y="95.758" size="1.778" layer="98">5</text>
-<text x="110.744" y="93.218" size="1.778" layer="98">6</text>
-<text x="110.744" y="90.678" size="1.778" layer="98">7</text>
-<text x="113.284" y="62.738" size="1.778" layer="98">8</text>
-<text x="113.284" y="60.198" size="1.778" layer="98">9</text>
-<text x="113.284" y="57.658" size="1.778" layer="98">10</text>
-<text x="128.524" y="55.118" size="1.778" layer="98">11</text>
-<text x="128.524" y="52.578" size="1.778" layer="98">12</text>
-<text x="128.524" y="50.038" size="1.778" layer="98">13</text>
-<text x="115.824" y="83.058" size="1.778" layer="98">14</text>
-<text x="115.824" y="85.598" size="1.778" layer="98">15</text>
-<text x="115.824" y="80.518" size="1.778" layer="98">16</text>
-<text x="115.824" y="77.978" size="1.778" layer="98">17</text>
-<text x="115.824" y="75.438" size="1.778" layer="98">18</text>
-<text x="115.824" y="72.898" size="1.778" layer="98">19</text>
-<text x="115.824" y="70.358" size="1.778" layer="98">20</text>
-<text x="115.824" y="67.818" size="1.778" layer="98">21</text>
-<text x="44.704" y="47.498" size="1.778" layer="98">22</text>
-<text x="44.704" y="44.958" size="1.778" layer="98">23</text>
 <text x="261.62" y="221.742" size="2.54" layer="98">SBC (R-PI) HDR FOR DEBUGING RPU TARGET</text>
 <text x="84.582" y="158.496" size="1.778" layer="98">Silicon Labs factory default
 VID: 0x10C4
 PID: 0xEA7A</text>
-<wire x1="250.952" y1="198.12" x2="258.826" y2="198.12" width="0.4064" layer="98"/>
-<wire x1="258.826" y1="198.12" x2="257.81" y2="197.358" width="0.4064" layer="98"/>
-<wire x1="258.826" y1="198.12" x2="257.81" y2="198.882" width="0.4064" layer="98"/>
-<wire x1="335.788" y1="167.64" x2="343.662" y2="167.64" width="0.4064" layer="98"/>
-<wire x1="343.662" y1="167.64" x2="342.646" y2="166.878" width="0.4064" layer="98"/>
-<wire x1="343.662" y1="167.64" x2="342.646" y2="168.402" width="0.4064" layer="98"/>
+<wire x1="240.792" y1="198.12" x2="248.666" y2="198.12" width="0.4064" layer="98"/>
+<wire x1="248.666" y1="198.12" x2="247.65" y2="197.358" width="0.4064" layer="98"/>
+<wire x1="248.666" y1="198.12" x2="247.65" y2="198.882" width="0.4064" layer="98"/>
+<wire x1="345.948" y1="167.64" x2="353.822" y2="167.64" width="0.4064" layer="98"/>
+<wire x1="353.822" y1="167.64" x2="352.806" y2="166.878" width="0.4064" layer="98"/>
+<wire x1="353.822" y1="167.64" x2="352.806" y2="168.402" width="0.4064" layer="98"/>
+<text x="346.202" y="199.136" size="1.778" layer="98">NOTE: RX &amp; TX CROSS
+OVER AT TRANSCEIVER</text>
 </plain>
 <instances>
 <instance part="U$2" gate="G$1" x="251.46" y="7.62"/>
@@ -5232,7 +5210,7 @@ PID: 0xEA7A</text>
 <junction x="177.8" y="226.06"/>
 </segment>
 </net>
-<net name="!SS!" class="0">
+<net name="!CE00!" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="(!SS!/OC1B)PB2"/>
 <wire x1="99.06" y1="58.42" x2="101.6" y2="58.42" width="0.1524" layer="91"/>
@@ -5415,13 +5393,11 @@ PID: 0xEA7A</text>
 <label x="266.7" y="205.74" size="1.27" layer="91" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="TX1" class="0">
+<net name="USB_UART1_TX" class="0">
 <segment>
-<label x="106.68" y="83.82" size="1.27" layer="91" xref="yes"/>
+<label x="104.14" y="86.36" size="1.27" layer="91" xref="yes"/>
 <pinref part="U3" gate="G$1" pin="(RXD)PD0"/>
-<wire x1="99.06" y1="86.36" x2="101.6" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="86.36" x2="104.14" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="83.82" x2="106.68" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="86.36" x2="104.14" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="TX_SCI"/>
@@ -5587,7 +5563,7 @@ PID: 0xEA7A</text>
 <junction x="58.42" y="83.82"/>
 </segment>
 </net>
-<net name="SDA1" class="0">
+<net name="ID_SD" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="PE0(SDA1/ICP4)"/>
 <label x="55.88" y="48.26" size="1.27" layer="91" rot="R180" xref="yes"/>
@@ -5599,7 +5575,7 @@ PID: 0xEA7A</text>
 <label x="266.7" y="177.8" size="1.27" layer="91" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="SCL1" class="0">
+<net name="ID_SC" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="PE1(SCL1/T4)"/>
 <wire x1="60.96" y1="45.72" x2="55.88" y2="45.72" width="0.1524" layer="91"/>
@@ -5669,13 +5645,11 @@ PID: 0xEA7A</text>
 <label x="266.7" y="187.96" size="1.27" layer="91" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="RX1" class="0">
+<net name="USB_UART1_RX" class="0">
 <segment>
-<label x="106.68" y="86.36" size="1.27" layer="91" xref="yes"/>
+<label x="104.14" y="83.82" size="1.27" layer="91" xref="yes"/>
 <pinref part="U3" gate="G$1" pin="(TXD)PD1"/>
-<wire x1="99.06" y1="83.82" x2="101.6" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="83.82" x2="104.14" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="86.36" x2="106.68" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="83.82" x2="104.14" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="RX_SCI"/>
@@ -5751,7 +5725,7 @@ PID: 0xEA7A</text>
 <pinref part="R2" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="!RTS1" class="0">
+<net name="USB_UART1_!RTS" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="!RTS!_SCI"/>
 <wire x1="109.22" y1="182.88" x2="111.76" y2="182.88" width="0.1524" layer="91"/>
@@ -5763,7 +5737,7 @@ PID: 0xEA7A</text>
 <label x="27.94" y="93.98" size="1.27" layer="91" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="TX0" class="0">
+<net name="USB_UART0_TX" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="TX_ECI"/>
 <wire x1="109.22" y1="210.82" x2="111.76" y2="210.82" width="0.1524" layer="91"/>
@@ -5780,7 +5754,7 @@ PID: 0xEA7A</text>
 <label x="152.4" y="208.28" size="1.27" layer="91" rot="R270" xref="yes"/>
 </segment>
 </net>
-<net name="RX0" class="0">
+<net name="USB_UART0_RX" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="RX_ECI"/>
 <wire x1="109.22" y1="208.28" x2="111.76" y2="208.28" width="0.1524" layer="91"/>
@@ -5797,7 +5771,7 @@ PID: 0xEA7A</text>
 <label x="175.26" y="208.28" size="1.27" layer="91" rot="R270" xref="yes"/>
 </segment>
 </net>
-<net name="!RTS0" class="0">
+<net name="USB_UART0_!RTS" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="!RTS!_ECI"/>
 <wire x1="109.22" y1="205.74" x2="111.76" y2="205.74" width="0.1524" layer="91"/>
@@ -5809,7 +5783,7 @@ PID: 0xEA7A</text>
 <label x="266.7" y="198.12" size="1.27" layer="91" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="!CTS0" class="0">
+<net name="USB_UART0_!CTS" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="!CTS!_ECI"/>
 <wire x1="109.22" y1="203.2" x2="111.76" y2="203.2" width="0.1524" layer="91"/>
@@ -5829,7 +5803,7 @@ PID: 0xEA7A</text>
 <wire x1="76.2" y1="177.8" x2="78.74" y2="177.8" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="OCOA" class="0">
+<net name="BCM12_PWM0" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="(OC0A)PD6"/>
 <wire x1="99.06" y1="71.12" x2="101.6" y2="71.12" width="0.1524" layer="91"/>
@@ -5841,7 +5815,7 @@ PID: 0xEA7A</text>
 <label x="327.66" y="172.72" size="1.27" layer="91" xref="yes"/>
 </segment>
 </net>
-<net name="OCOB" class="0">
+<net name="BCM13_PWM1" class="0">
 <segment>
 <pinref part="J2" gate="G$1" pin="BCM13/PWM1"/>
 <wire x1="274.32" y1="170.18" x2="266.7" y2="170.18" width="0.1524" layer="91"/>
@@ -5877,7 +5851,7 @@ PID: 0xEA7A</text>
 <label x="327.66" y="162.56" size="1.27" layer="91" xref="yes"/>
 </segment>
 </net>
-<net name="!SS1!" class="0">
+<net name="!CE10!" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="(ICP3/!SS1!)PE2"/>
 <wire x1="99.06" y1="93.98" x2="101.6" y2="93.98" width="0.1524" layer="91"/>
@@ -5901,7 +5875,7 @@ PID: 0xEA7A</text>
 <label x="327.66" y="165.1" size="1.27" layer="91" xref="yes"/>
 </segment>
 </net>
-<net name="2" class="0">
+<net name="BCM23" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="(A2)PC2"/>
 <wire x1="99.06" y1="104.14" x2="101.6" y2="104.14" width="0.1524" layer="91"/>
@@ -5913,7 +5887,7 @@ PID: 0xEA7A</text>
 <label x="327.66" y="193.04" size="1.27" layer="91" xref="yes"/>
 </segment>
 </net>
-<net name="3" class="0">
+<net name="BCM24" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="(A3)PC3"/>
 <wire x1="99.06" y1="101.6" x2="101.6" y2="101.6" width="0.1524" layer="91"/>
@@ -5925,7 +5899,7 @@ PID: 0xEA7A</text>
 <label x="327.66" y="190.5" size="1.27" layer="91" xref="yes"/>
 </segment>
 </net>
-<net name="17" class="0">
+<net name="BCM44" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="(INT1/OC2B)PD3"/>
 <wire x1="99.06" y1="78.74" x2="101.6" y2="78.74" width="0.1524" layer="91"/>
@@ -5937,7 +5911,7 @@ PID: 0xEA7A</text>
 <label x="266.7" y="203.2" size="1.27" layer="91" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="18" class="0">
+<net name="BCM27" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="(T0)PD4"/>
 <wire x1="99.06" y1="76.2" x2="101.6" y2="76.2" width="0.1524" layer="91"/>
@@ -5949,7 +5923,7 @@ PID: 0xEA7A</text>
 <label x="266.7" y="195.58" size="1.27" layer="91" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="21" class="0">
+<net name="BCM22" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="PD7"/>
 <wire x1="99.06" y1="68.58" x2="101.6" y2="68.58" width="0.1524" layer="91"/>
@@ -5961,7 +5935,7 @@ PID: 0xEA7A</text>
 <label x="266.7" y="193.04" size="1.27" layer="91" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="8" class="0">
+<net name="BCM5" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="(ICP1)PB0"/>
 <wire x1="99.06" y1="63.5" x2="101.6" y2="63.5" width="0.1524" layer="91"/>
@@ -5973,7 +5947,7 @@ PID: 0xEA7A</text>
 <label x="266.7" y="175.26" size="1.27" layer="91" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="9" class="0">
+<net name="BCM26" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="(OC1A)PB1"/>
 <wire x1="99.06" y1="60.96" x2="101.6" y2="60.96" width="0.1524" layer="91"/>
