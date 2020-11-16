@@ -14,6 +14,7 @@
             Remove Q4 so UART mode can not get power from 3V3
             Use BCM23 to power UART mode
             Remove SPI between R-Pi and App MCU; it should be available (e.g., sdcard, psram...)
+            Rename DTR pair to OOB (Out Of Band).
 
         ^1  Done: Design, Layout, BOM, Review* (#= done), Order Boards,
             WIP: Assembly, 

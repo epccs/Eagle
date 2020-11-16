@@ -2539,6 +2539,7 @@ https://docs.microchip.com/ContentDelivery/content/en-US/AVR-DA-Product-Brief</d
 3 UART, 2 I2C, 2 SPI
 14-channel 12 bit ADC
 1 10 bit DAC
+Multi-Voltage-I/O on PORTC (enable with MVSYSCFG fuse)
 
 https://docs.microchip.com/ContentDelivery/content/en-US/AVR-DA-Product-Brief</description>
 <wire x1="-15.24" y1="33.02" x2="12.7" y2="33.02" width="0.254" layer="94"/>
@@ -2624,6 +2625,57 @@ https://docs.microchip.com/ContentDelivery/content/en-US/AVR-DA-Product-Brief</d
 <text x="-12.7" y="-30.48" size="1.27" layer="96">&gt;VALUE</text>
 <text x="-12.7" y="31.242" size="1.778" layer="95">&gt;NAME</text>
 <pin name="UPDI" x="-17.78" y="20.32" length="middle"/>
+</symbol>
+<symbol name="AVR128DB32">
+<description>&lt;pre&gt;AVR128DB32
+128 kBytes FLASH
+16 kBytes SRAM
+512 bytes EEPROM
+3 UART, 2 I2C, 2 SPI
+14-channel 12 bit ADC
+1 10 bit DAC
+Multi-Volt I/O (MVIO) on PORTC
+program MVSYSCFG fuse to enable MVIO
+
+http://ww1.microchip.com/downloads/en/DeviceDoc/AVR128DB28-32-48-64-DataSheet-DS40002247A.pdf</description>
+<wire x1="-12.7" y1="27.94" x2="15.24" y2="27.94" width="0.254" layer="94"/>
+<wire x1="15.24" y1="27.94" x2="15.24" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-30.48" x2="-12.7" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-30.48" x2="-12.7" y2="27.94" width="0.254" layer="94"/>
+<pin name="(TX1)PC0" x="20.32" y="5.08" length="middle" rot="R180"/>
+<pin name="(RX1)PC1" x="20.32" y="2.54" length="middle" rot="R180"/>
+<pin name="(*SDA0)PC2" x="20.32" y="0" length="middle" rot="R180"/>
+<pin name="(*SCL0)PC3" x="20.32" y="-2.54" length="middle" rot="R180"/>
+<pin name="(SCK)PA6" x="20.32" y="15.24" length="middle" rot="R180"/>
+<pin name="(!SS!)PA7" x="20.32" y="12.7" length="middle" rot="R180"/>
+<pin name="(AIN6)PD6" x="20.32" y="-25.4" length="middle" rot="R180"/>
+<pin name="PF3(SCL1)" x="-17.78" y="-10.16" length="middle"/>
+<pin name="(SDA0)PA2" x="20.32" y="25.4" length="middle" rot="R180"/>
+<pin name="(AIN2)PD2" x="20.32" y="-15.24" length="middle" rot="R180"/>
+<pin name="(AIN3)PD3" x="20.32" y="-17.78" length="middle" rot="R180"/>
+<pin name="(MOSI)PA4" x="20.32" y="20.32" length="middle" rot="R180"/>
+<pin name="(SCL0)PA3" x="20.32" y="22.86" length="middle" rot="R180"/>
+<pin name="PA1(XTALHF2)" x="-17.78" y="10.16" length="middle"/>
+<pin name="VDDIO2" x="20.32" y="-5.08" length="middle" rot="R180"/>
+<pin name="(MISO)PA5" x="20.32" y="17.78" length="middle" rot="R180"/>
+<pin name="PA0(XTALHF1)" x="-17.78" y="7.62" length="middle"/>
+<pin name="(AIN4)PD4" x="20.32" y="-20.32" length="middle" rot="R180"/>
+<pin name="(AIN5)PD5" x="20.32" y="-22.86" length="middle" rot="R180"/>
+<pin name="(AIN1)PD1" x="20.32" y="-12.7" length="middle" rot="R180"/>
+<pin name="0V@0" x="-17.78" y="-25.4" length="middle" direction="pwr"/>
+<pin name="(AREF)PD7" x="20.32" y="-27.94" length="middle" direction="pas" rot="R180"/>
+<pin name="AVDD" x="-17.78" y="25.4" length="middle" direction="pas"/>
+<pin name="0V@1" x="-17.78" y="-27.94" length="middle" direction="pwr"/>
+<pin name="PF6(!RESET)" x="-17.78" y="-17.78" length="middle" direction="in"/>
+<pin name="VDD" x="-17.78" y="22.86" length="middle" direction="pwr"/>
+<pin name="PF0(TX2)" x="-17.78" y="-2.54" length="middle"/>
+<pin name="PF1(RX2)" x="-17.78" y="-5.08" length="middle"/>
+<text x="-12.7" y="-33.02" size="1.27" layer="96">&gt;VALUE</text>
+<text x="-12.7" y="28.702" size="1.778" layer="95">&gt;NAME</text>
+<pin name="PF2(SDA1)" x="-17.78" y="-7.62" length="middle"/>
+<pin name="PF4(AIN20)" x="-17.78" y="-12.7" length="middle"/>
+<pin name="UPDI" x="-17.78" y="17.78" length="middle"/>
+<pin name="PF5(AIN21)" x="-17.78" y="-15.24" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3763,6 +3815,57 @@ SO = SOIC 28 PIN</description>
 <connect gate="G$1" pin="PF6(!RESET)" pad="18"/>
 <connect gate="G$1" pin="UPDI" pad="19"/>
 <connect gate="G$1" pin="VCC@0" pad="20"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AVR128DB32" prefix="U" uservalue="yes">
+<description>&lt;pre&gt;AVR128DB32-I/[RXB | PT]
+
+IC MCU 8BIT 128kB FLASH 16kB SRAM 
+PT = TQFP 32 PIN
+RXB = VQFN 32 PIN</description>
+<gates>
+<gate name="G$1" symbol="AVR128DB32" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TQFP32-08">
+<connects>
+<connect gate="G$1" pin="(!SS!)PA7" pad="5"/>
+<connect gate="G$1" pin="(*SCL0)PC3" pad="9"/>
+<connect gate="G$1" pin="(*SDA0)PC2" pad="8"/>
+<connect gate="G$1" pin="(AIN1)PD1" pad="11"/>
+<connect gate="G$1" pin="(AIN2)PD2" pad="12"/>
+<connect gate="G$1" pin="(AIN3)PD3" pad="13"/>
+<connect gate="G$1" pin="(AIN4)PD4" pad="14"/>
+<connect gate="G$1" pin="(AIN5)PD5" pad="15"/>
+<connect gate="G$1" pin="(AIN6)PD6" pad="16"/>
+<connect gate="G$1" pin="(AREF)PD7" pad="17"/>
+<connect gate="G$1" pin="(MISO)PA5" pad="3"/>
+<connect gate="G$1" pin="(MOSI)PA4" pad="2"/>
+<connect gate="G$1" pin="(RX1)PC1" pad="7"/>
+<connect gate="G$1" pin="(SCK)PA6" pad="4"/>
+<connect gate="G$1" pin="(SCL0)PA3" pad="1"/>
+<connect gate="G$1" pin="(SDA0)PA2" pad="32"/>
+<connect gate="G$1" pin="(TX1)PC0" pad="6"/>
+<connect gate="G$1" pin="0V@0" pad="19"/>
+<connect gate="G$1" pin="0V@1" pad="29"/>
+<connect gate="G$1" pin="AVDD" pad="18"/>
+<connect gate="G$1" pin="PA0(XTALHF1)" pad="30"/>
+<connect gate="G$1" pin="PA1(XTALHF2)" pad="31"/>
+<connect gate="G$1" pin="PF0(TX2)" pad="20"/>
+<connect gate="G$1" pin="PF1(RX2)" pad="21"/>
+<connect gate="G$1" pin="PF2(SDA1)" pad="22"/>
+<connect gate="G$1" pin="PF3(SCL1)" pad="23"/>
+<connect gate="G$1" pin="PF4(AIN20)" pad="24"/>
+<connect gate="G$1" pin="PF5(AIN21)" pad="25"/>
+<connect gate="G$1" pin="PF6(!RESET)" pad="26"/>
+<connect gate="G$1" pin="UPDI" pad="27"/>
+<connect gate="G$1" pin="VDD" pad="28"/>
+<connect gate="G$1" pin="VDDIO2" pad="10"/>
 </connects>
 <technologies>
 <technology name=""/>
