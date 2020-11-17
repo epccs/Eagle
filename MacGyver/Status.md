@@ -15,6 +15,7 @@
             Use BCM23 to power UART mode
             Remove SPI between R-Pi and App MCU; it should be available (e.g., sdcard, psram...)
             Rename DTR pair to OOB (Out Of Band).
+            Remove RTS/CTS, without a bootloader they will not be needed
 
         ^1  Done: Design, Layout, BOM, Review* (#= done), Order Boards,
             WIP: Assembly, 
