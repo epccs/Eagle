@@ -2,9 +2,9 @@
 
 
 ```
-        ^2  Done: 
-            WIP: 
-            Todo: Design, Layout, BOM, Review* (#= done), Order Boards, Assembly, Testing, Evaluation.
+        ^2  Done: Design, 
+            WIP: Layout,
+            Todo: BOM, Review* (#= done), Order Boards, Assembly, Testing, Evaluation.
             *during review the Design may change without changing the revision.
             LVT12R0100FER smd 1206 metal current sense element 0.01 Ohm 1W (e.g. 10A max)
             AT30TSE758A eeprom/temperature-alert on i2c bus between mngr and app
