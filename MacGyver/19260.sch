@@ -6900,10 +6900,7 @@ R-PI HDR</text>
 <text x="350.012" y="44.196" size="2.54" layer="98">RON S</text>
 <text x="335.788" y="44.196" size="2.1844" layer="98">11/12/20</text>
 <text x="356.616" y="19.558" size="2.54" layer="98">MACGYVER</text>
-<text x="106.934" y="94.488" size="1.27" layer="98">2</text>
-<text x="106.934" y="51.308" size="1.27" layer="98">15</text>
 <text x="109.474" y="43.688" size="1.27" layer="98">17</text>
-<text x="51.054" y="58.928" size="1.27" layer="98">25</text>
 <text x="119.634" y="76.454" size="2.54" layer="98">debug</text>
 <text x="372.364" y="190.754" size="2.54" layer="98">OUT OF BAND</text>
 <text x="85.598" y="36.83" size="1.27" layer="98">IF AREF NEEDS
@@ -7211,14 +7208,14 @@ DUPLEX SERIAL TO RPU</text>
 </segment>
 <segment>
 <pinref part="C109" gate="G$1" pin="1"/>
-<wire x1="43.18" y1="76.2" x2="40.64" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="76.2" x2="40.64" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="76.2" x2="38.1" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="76.2" x2="38.1" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="GND14" gate="1" pin="0V"/>
-<wire x1="40.64" y1="83.82" x2="43.18" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="83.82" x2="43.18" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="C108" gate="G$1" pin="1"/>
-<wire x1="43.18" y1="86.36" x2="40.64" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="86.36" x2="40.64" y2="83.82" width="0.1524" layer="91"/>
-<junction x="40.64" y="83.82"/>
+<wire x1="43.18" y1="86.36" x2="38.1" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="86.36" x2="38.1" y2="83.82" width="0.1524" layer="91"/>
+<junction x="38.1" y="83.82"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -7566,9 +7563,9 @@ DUPLEX SERIAL TO RPU</text>
 <label x="325.12" y="139.7" size="1.27" layer="91" xref="yes"/>
 </segment>
 <segment>
-<label x="109.22" y="93.98" size="1.27" layer="91" xref="yes"/>
-<wire x1="99.06" y1="93.98" x2="109.22" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="U106" gate="G$1" pin="(MOSI)PA4"/>
+<label x="109.22" y="50.8" size="1.27" layer="91" xref="yes"/>
+<wire x1="99.06" y1="50.8" x2="109.22" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="U106" gate="G$1" pin="(AIN5)PD5"/>
 </segment>
 </net>
 <net name="OOB_DE" class="0">
@@ -7595,9 +7592,9 @@ DUPLEX SERIAL TO RPU</text>
 <label x="322.58" y="220.98" size="1.27" layer="91" xref="yes"/>
 </segment>
 <segment>
-<label x="50.8" y="58.42" size="1.27" layer="91" rot="MR0" xref="yes"/>
-<wire x1="60.96" y1="58.42" x2="50.8" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="U106" gate="G$1" pin="PF5(AIN21)"/>
+<label x="109.22" y="93.98" size="1.27" layer="91" rot="MR180" xref="yes"/>
+<wire x1="109.22" y1="93.98" x2="99.06" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="U106" gate="G$1" pin="(MOSI)PA4"/>
 </segment>
 </net>
 <net name="RX_DE" class="0">
@@ -7607,9 +7604,9 @@ DUPLEX SERIAL TO RPU</text>
 <wire x1="368.3" y1="149.86" x2="373.38" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<label x="50.8" y="60.96" size="1.27" layer="91" rot="MR0" xref="yes"/>
-<wire x1="60.96" y1="60.96" x2="50.8" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="U106" gate="G$1" pin="PF4(AIN20)"/>
+<label x="109.22" y="48.26" size="1.27" layer="91" rot="MR180" xref="yes"/>
+<wire x1="99.06" y1="48.26" x2="109.22" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="U106" gate="G$1" pin="(AIN6)PD6"/>
 </segment>
 </net>
 <net name="FROM_RPU_OOB" class="0">
@@ -7753,9 +7750,9 @@ DUPLEX SERIAL TO RPU</text>
 </net>
 <net name="ALT_EN" class="0">
 <segment>
-<label x="109.22" y="50.8" size="1.27" layer="91" xref="yes"/>
-<wire x1="99.06" y1="50.8" x2="109.22" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="U106" gate="G$1" pin="(AIN5)PD5"/>
+<label x="109.22" y="96.52" size="1.27" layer="91" xref="yes"/>
+<wire x1="99.06" y1="96.52" x2="109.22" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="U106" gate="G$1" pin="(SCL0)PA3"/>
 </segment>
 </net>
 <net name="SHUTDWN" class="0">
@@ -7801,9 +7798,9 @@ DUPLEX SERIAL TO RPU</text>
 </net>
 <net name="PIPWR_EN" class="0">
 <segment>
-<label x="109.22" y="48.26" size="1.27" layer="91" xref="yes"/>
-<wire x1="99.06" y1="48.26" x2="109.22" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="U106" gate="G$1" pin="(AIN6)PD6"/>
+<label x="109.22" y="99.06" size="1.27" layer="91" xref="yes"/>
+<wire x1="99.06" y1="99.06" x2="109.22" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="U106" gate="G$1" pin="(SDA0)PA2"/>
 </segment>
 </net>
 <net name="PWR_I" class="0">
@@ -7816,8 +7813,8 @@ DUPLEX SERIAL TO RPU</text>
 <net name="PWR_V" class="0">
 <segment>
 <label x="109.22" y="53.34" size="1.27" layer="91" xref="yes"/>
-<wire x1="99.06" y1="53.34" x2="109.22" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="U106" gate="G$1" pin="(AIN4)PD4"/>
+<wire x1="99.06" y1="53.34" x2="109.22" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ALT_V" class="0">
@@ -8010,16 +8007,16 @@ DUPLEX SERIAL TO RPU</text>
 </net>
 <net name="APP_UART_" class="0">
 <segment>
-<pinref part="U106" gate="G$1" pin="(SDA0)PA2"/>
-<wire x1="99.06" y1="99.06" x2="109.22" y2="99.06" width="0.1524" layer="91"/>
-<label x="109.22" y="99.06" size="1.27" layer="91" xref="yes"/>
+<label x="50.8" y="60.96" size="1.27" layer="91" rot="R180" xref="yes"/>
+<wire x1="60.96" y1="60.96" x2="50.8" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="U106" gate="G$1" pin="PF4(AIN20)"/>
 </segment>
 </net>
 <net name="APP_UPDI_" class="0">
 <segment>
-<pinref part="U106" gate="G$1" pin="(SCL0)PA3"/>
-<wire x1="99.06" y1="96.52" x2="109.22" y2="96.52" width="0.1524" layer="91"/>
-<label x="109.22" y="96.52" size="1.27" layer="91" xref="yes"/>
+<label x="50.8" y="58.42" size="1.27" layer="91" rot="R180" xref="yes"/>
+<wire x1="50.8" y1="58.42" x2="60.96" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="U106" gate="G$1" pin="PF5(AIN21)"/>
 </segment>
 </net>
 <net name="N$9" class="0">
