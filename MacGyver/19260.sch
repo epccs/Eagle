@@ -5610,8 +5610,6 @@ Source: www.ecsxtal.com .. Crystal 16MHz CSM-3X.PDF</description>
 <part name="U$1" library="J-BoardHDR" deviceset="R-PI3B+" device=""/>
 <part name="Q1" library="Q-PCH" deviceset="N-CH?*" device="DPAK" value="IRFR5305"/>
 <part name="Q11" library="Q-NCH" deviceset="N-CH?*" device="SOT23" value="K38"/>
-<part name="TP1" library="J-TP" deviceset="TP" device="PAD1-08"/>
-<part name="TP2" library="J-TP" deviceset="TP" device="PAD1-08"/>
 <part name="J4" library="J-HDR2.54mm" deviceset="F1X10" device="" value="PPPC101LFBN"/>
 <part name="J2" library="J-HDR2.54mm" deviceset="F1X10" device="" value="PPPC101LFBN"/>
 <part name="J3" library="J-HDR2.54mm" deviceset="F1X10" device="" value="PPPC101LFBN"/>
@@ -5653,7 +5651,7 @@ Source: www.ecsxtal.com .. Crystal 16MHz CSM-3X.PDF</description>
 <part name="R21" library="R-C" deviceset="R" device="0805" value="3.01k"/>
 <part name="R18" library="R-C" deviceset="R" device="0805" value="10k"/>
 <part name="R22" library="R-C" deviceset="R" device="0805" value="10k"/>
-<part name="TP3" library="J-TP" deviceset="TP" device="PAD1-08"/>
+<part name="TP1" library="J-TP" deviceset="TP" device="PAD1-08"/>
 <part name="R19" library="R-C" deviceset="R" device="0805" value="3.01k"/>
 <part name="P+10" library="Plane" deviceset="+5V" device=""/>
 <part name="GND7" library="Plane" deviceset="0V" device=""/>
@@ -6736,7 +6734,7 @@ ON ITS UART0</text>
 <pinref part="U6" gate="G$1" pin="PC2"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="APP_UPDI_PULLUP" class="0">
 <segment>
 <pinref part="U7" gate="A" pin="O"/>
 <wire x1="86.36" y1="96.52" x2="86.36" y2="101.6" width="0.1524" layer="91"/>
@@ -6989,8 +6987,6 @@ DUPLEX SERIAL TO RPU</text>
 <instance part="P+27" gate="1" x="22.86" y="101.6"/>
 <instance part="P+29" gate="1" x="121.92" y="27.94"/>
 <instance part="P+31" gate="1" x="210.82" y="86.36"/>
-<instance part="TP1" gate="G$1" x="215.9" y="78.74"/>
-<instance part="TP2" gate="G$1" x="215.9" y="68.58"/>
 <instance part="GND1" gate="1" x="22.86" y="83.82"/>
 <instance part="GND4" gate="1" x="30.48" y="81.28"/>
 <instance part="GND5" gate="1" x="104.14" y="30.48" rot="MR0"/>
@@ -7017,7 +7013,7 @@ DUPLEX SERIAL TO RPU</text>
 <instance part="R106" gate="G$1" x="172.72" y="185.42" rot="R180"/>
 <instance part="R117" gate="G$1" x="86.36" y="137.16" rot="R270"/>
 <instance part="R118" gate="G$1" x="124.46" y="137.16" rot="R270"/>
-<instance part="TP3" gate="G$1" x="58.42" y="93.98"/>
+<instance part="TP1" gate="G$1" x="58.42" y="93.98"/>
 <instance part="C108" gate="G$1" x="45.72" y="86.36" smashed="yes" rot="R90">
 <attribute name="NAME" x="48.006" y="86.995" size="1.778" layer="95"/>
 <attribute name="VALUE" x="41.402" y="87.249" size="1.27" layer="96"/>
@@ -7715,31 +7711,23 @@ DUPLEX SERIAL TO RPU</text>
 <net name="I2C_SDA" class="0">
 <segment>
 <label x="220.98" y="73.66" size="1.27" layer="91" xref="yes"/>
-<wire x1="220.98" y1="73.66" x2="215.9" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="R126" gate="G$1" pin="1"/>
-<wire x1="215.9" y1="73.66" x2="198.12" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="73.66" x2="198.12" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="73.66" x2="195.58" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="78.74" x2="198.12" y2="73.66" width="0.1524" layer="91"/>
 <junction x="198.12" y="73.66"/>
 <pinref part="R124" gate="G$1" pin="1"/>
-<pinref part="TP1" gate="G$1" pin="TP"/>
-<wire x1="215.9" y1="76.2" x2="215.9" y2="73.66" width="0.1524" layer="91"/>
-<junction x="215.9" y="73.66"/>
 </segment>
 </net>
 <net name="I2C_SCL" class="0">
 <segment>
 <label x="220.98" y="63.5" size="1.27" layer="91" xref="yes"/>
-<wire x1="220.98" y1="63.5" x2="215.9" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="63.5" x2="198.12" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="63.5" x2="198.12" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="63.5" x2="195.58" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="R127" gate="G$1" pin="1"/>
 <wire x1="198.12" y1="68.58" x2="198.12" y2="63.5" width="0.1524" layer="91"/>
 <junction x="198.12" y="63.5"/>
 <pinref part="R125" gate="G$1" pin="1"/>
-<pinref part="TP2" gate="G$1" pin="TP"/>
-<wire x1="215.9" y1="66.04" x2="215.9" y2="63.5" width="0.1524" layer="91"/>
-<junction x="215.9" y="63.5"/>
 </segment>
 </net>
 <net name="N$86" class="0">
@@ -7881,7 +7869,7 @@ DUPLEX SERIAL TO RPU</text>
 <pinref part="U106" gate="G$1" pin="UPDI"/>
 <label x="55.88" y="91.44" size="1.27" layer="91" rot="R180" xref="yes"/>
 <wire x1="60.96" y1="91.44" x2="58.42" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="TP3" gate="G$1" pin="TP"/>
+<pinref part="TP1" gate="G$1" pin="TP"/>
 <wire x1="58.42" y1="91.44" x2="55.88" y2="91.44" width="0.1524" layer="91"/>
 <junction x="58.42" y="91.44"/>
 </segment>
@@ -7950,7 +7938,7 @@ DUPLEX SERIAL TO RPU</text>
 <label x="109.22" y="78.74" size="1.27" layer="91" xref="yes"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="MGR_UPDI_PULLUP" class="0">
 <segment>
 <pinref part="U103" gate="A" pin="O"/>
 <wire x1="165.1" y1="190.5" x2="165.1" y2="193.04" width="0.1524" layer="91"/>
