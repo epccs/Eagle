@@ -5585,7 +5585,7 @@ Source: www.ecsxtal.com .. Crystal 16MHz CSM-3X.PDF</description>
 <part name="J5" library="U-Pi" deviceset="RPI-ZERO" device="90" value="Pi Zero"/>
 <part name="GND59" library="Plane" deviceset="0V" device=""/>
 <part name="GND60" library="Plane" deviceset="0V" device=""/>
-<part name="S201" library="S-Tactile" deviceset="KSA" device="0M311" value="KSA0M311"/>
+<part name="S101" library="S-Tactile" deviceset="KSA" device="0M311" value="KSA0M311"/>
 <part name="R116" library="R-C" deviceset="R" device="0805" value="1.82k"/>
 <part name="GND61" library="Plane" deviceset="0V" device=""/>
 <part name="R101" library="R-C" deviceset="R" device="0805" value="10k"/>
@@ -6975,7 +6975,7 @@ DUPLEX SERIAL TO RPU</text>
 <instance part="C106" gate="G$1" x="22.86" y="93.98"/>
 <instance part="C107" gate="G$1" x="30.48" y="91.44"/>
 <instance part="GND57" gate="1" x="40.64" y="45.72"/>
-<instance part="S201" gate="S" x="55.88" y="134.62"/>
+<instance part="S101" gate="S" x="55.88" y="134.62"/>
 <instance part="R116" gate="G$1" x="40.64" y="134.62" rot="R180"/>
 <instance part="GND61" gate="1" x="66.04" y="132.08"/>
 <instance part="R126" gate="G$1" x="203.2" y="78.74"/>
@@ -7169,10 +7169,10 @@ DUPLEX SERIAL TO RPU</text>
 <wire x1="60.96" y1="48.26" x2="40.64" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="S201" gate="S" pin="3"/>
+<pinref part="S101" gate="S" pin="3"/>
 <wire x1="60.96" y1="134.62" x2="66.04" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="GND61" gate="1" pin="0V"/>
-<pinref part="S201" gate="S" pin="4"/>
+<pinref part="S101" gate="S" pin="4"/>
 <wire x1="60.96" y1="132.08" x2="60.96" y2="134.62" width="0.1524" layer="91"/>
 <junction x="60.96" y="134.62"/>
 </segment>
@@ -7762,11 +7762,11 @@ DUPLEX SERIAL TO RPU</text>
 </net>
 <net name="N$93" class="0">
 <segment>
-<pinref part="S201" gate="S" pin="2"/>
+<pinref part="S101" gate="S" pin="2"/>
 <wire x1="45.72" y1="134.62" x2="48.26" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="134.62" x2="48.26" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="132.08" x2="50.8" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="S201" gate="S" pin="1"/>
+<pinref part="S101" gate="S" pin="1"/>
 <wire x1="50.8" y1="134.62" x2="48.26" y2="134.62" width="0.1524" layer="91"/>
 <junction x="48.26" y="134.62"/>
 <pinref part="R116" gate="G$1" pin="1"/>

@@ -2,20 +2,18 @@
 
 
 ```
-        ^2  Done: Design, Layout,
-            WIP: BOM,
-            Todo: Review* (#= done), Order Boards, Assembly, Testing, Evaluation.
+        ^2  Done: Design, Layout, BOM,
+            WIP: Review* (#= done),
+            Todo: Order Boards, Assembly, Testing, Evaluation.
             *during review the Design may change without changing the revision.
-            LVT12R0100FER smd 1206 metal current sense element 0.01 Ohm 1W (e.g. 10A max)
-            AT30TSE758A eeprom/temperature-alert on i2c bus between mngr and app
-            change name on board to MacGyver
-            AVR128DB has two power domains, but the logistics is a mystery to me at this time.
-            Add 10k Ohm to discharge the UPDI mode which is controled with BCM24
-            Remove Q4 so UART mode can not get power from 3V3
-            Use BCM23 to power UART mode
-            Remove SPI between R-Pi and App MCU; it should be available (e.g., sdcard, psram...)
-            Rename DTR pair to OOB (Out Of Band).
-            Remove RTS/CTS, without a bootloader they will not be needed
+            # LVT12R0100FER smd 1206 metal current sense element 0.01 Ohm 1W (e.g. 10A max)
+            # change name on board to MacGyver
+            # AVR128DB has two power domains, but its logistics is a mystery to me at this time.
+            # Use 10k Ohm to discharge the UPDI mode controled with BCM24
+            # Use 10k Ohm to discharge the UART mode controled with BCM23
+            # Remove SPI between R-Pi and App MCU; it should be available (e.g., sdcard, psram...)
+            # Rename DTR pair to OOB (Out Of Band).
+            # Remove RTS/CTS, without a bootloader they will not be needed
 
         ^1  Done: Design, Layout, BOM, Review* (#= done), Order Boards,
             WIP: Assembly, 
