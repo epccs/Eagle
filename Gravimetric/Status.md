@@ -9,6 +9,12 @@
             after devl and testing serial and I2C lib's for the DA's start this update
             change m324pb to AVR128DA48 
             change m328pb to AVR128DA32
+            Add redundant SD cards, IOFF buffers might be used to enable one or the other data and clock
+            Measure power to SD cards, high side current sensor, wait for stable before removing power.
+            Add LED to show SD power, brightness proportional to current.
+            Add a checksum of the previous file to the current file as it is added, then make a checksum for the next file during the readback test.
+            When the MCU has free time and enough power, it could verify the checksums between cards.
+            That may also make data tampering detectable.
 
         ^2  Done: Design, Layout (#=done), BOM,
             WIP: Review*, 

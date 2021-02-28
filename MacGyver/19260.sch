@@ -5684,7 +5684,7 @@ Monolithic Power Solutions</text>
 <text x="256.032" y="94.234" size="2.54" layer="98">I2C</text>
 <text x="182.372" y="230.886" size="1.778" layer="98">PWR_V</text>
 <text x="221.488" y="233.426" size="1.778" layer="98">PWR_I</text>
-<text x="10.922" y="212.852" size="1.778" layer="98">ALTERNATE POWER</text>
+<text x="8.382" y="212.852" size="1.778" layer="98">ALT (CHARGING) POWER</text>
 <text x="58.166" y="187.706" size="1.778" layer="98">ALTERNATE
 POWER</text>
 <text x="180.34" y="230.886" size="1.27" layer="98" rot="R90">0.1%</text>
