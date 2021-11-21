@@ -1531,19 +1531,6 @@ solder needs all the help it can get.</description>
 <wire x1="2.794" y1="-2.032" x2="-2.794" y2="-2.032" width="0.127" layer="39"/>
 <wire x1="-2.794" y1="-2.032" x2="-2.794" y2="2.032" width="0.127" layer="39"/>
 </package>
-<package name="L2626">
-<description>&lt;pre&gt;Dimension (mm): .26 x .26 (6.5 x 6.5)
-
-SRR0604-101 [Bourns,SRR0604-101KL] INDUCTOR POWER SHIELDED 100UH SMD</description>
-<wire x1="-3.175" y1="3.175" x2="3.175" y2="3.175" width="0.127" layer="51"/>
-<wire x1="3.175" y1="3.175" x2="3.175" y2="-3.175" width="0.127" layer="51"/>
-<wire x1="3.175" y1="-3.175" x2="-3.175" y2="-3.175" width="0.127" layer="51"/>
-<wire x1="-3.175" y1="-3.175" x2="-3.175" y2="3.175" width="0.127" layer="51"/>
-<circle x="0" y="0" radius="1.79605" width="0.127" layer="51"/>
-<smd name="1" x="3.0099" y="0" dx="3.048" dy="1.524" layer="1" roundness="100" rot="R90"/>
-<smd name="2" x="-3.0099" y="0" dx="3.048" dy="1.524" layer="1" roundness="100" rot="R90"/>
-<text x="-1.9071" y="3.6391" size="0.6096" layer="25">&gt;NAME</text>
-</package>
 <package name="L3939">
 <description>&lt;pre&gt;Dimension (mm): 0.39 x 0.39 (10.1 x 10.1)
 15UH2A2 [TDK,SLF10145T-150M2R2-PF] INDUCTOR POWER SHIELDED 15UH 2A2 SMD</description>
@@ -1608,6 +1595,21 @@ SRP7030-4R7M [Bourns@SRP7030-4R7M] INDUCTOR POWER SHIELDED 4.7UH 5.5A SMD</descr
 <wire x1="-3.9" y1="-3.5" x2="-3.9" y2="3.5" width="0.127" layer="51"/>
 <smd name="1" x="3.1" y="0" dx="3.5" dy="2.5" layer="1" roundness="60" rot="R90"/>
 <smd name="2" x="-3.1" y="0" dx="3.5" dy="2.5" layer="1" roundness="60" rot="R90"/>
+<text x="-1.9071" y="3.6391" size="0.6096" layer="25">&gt;NAME</text>
+</package>
+<package name="L2626">
+<description>&lt;pre&gt;Dimension (mm): .26 x .26 (6.5 x 6.5)
+
+SRR0604-101 [Bourns,SRR0604-101KL] INDUCTOR POWER SHIELDED 100UH SMD
+
+SRP7028A-4R7M [Bourns, SRP7028A-4R7M]INDUCTOR POWER SHIELDED 4U7H SMD</description>
+<wire x1="-3.175" y1="3.175" x2="3.175" y2="3.175" width="0.127" layer="51"/>
+<wire x1="3.175" y1="3.175" x2="3.175" y2="-3.175" width="0.127" layer="51"/>
+<wire x1="3.175" y1="-3.175" x2="-3.175" y2="-3.175" width="0.127" layer="51"/>
+<wire x1="-3.175" y1="-3.175" x2="-3.175" y2="3.175" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="1.79605" width="0.127" layer="51"/>
+<smd name="1" x="3.0099" y="0" dx="3.048" dy="2.286" layer="1" roundness="100" rot="R90"/>
+<smd name="2" x="-3.0099" y="0" dx="3.048" dy="2.286" layer="1" roundness="100" rot="R90"/>
 <text x="-1.9071" y="3.6391" size="0.6096" layer="25">&gt;NAME</text>
 </package>
 </packages>
@@ -1952,6 +1954,7 @@ CONST VOLT SOUR</text>
 <text x="194.056" y="134.112" size="2.54" layer="98">R-Pi Power 5.2V</text>
 <text x="120.396" y="101.092" size="1.778" layer="98">freq [kHz] = 100000 / (100[kOhm])   = 1MegHz</text>
 <text x="112.776" y="141.732" size="2.54" layer="98">7V to 40V</text>
+<text x="120.396" y="96.012" size="1.778" layer="98">SRP7028A is 2626 size, it fits on SRP7030 size 2831</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>

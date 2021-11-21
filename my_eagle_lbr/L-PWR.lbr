@@ -288,14 +288,16 @@ solder needs all the help it can get.</description>
 <package name="L2626">
 <description>&lt;pre&gt;Dimension (mm): .26 x .26 (6.5 x 6.5)
 
-SRR0604-101 [Bourns,SRR0604-101KL] INDUCTOR POWER SHIELDED 100UH SMD</description>
+SRR0604-101 [Bourns,SRR0604-101KL] INDUCTOR POWER SHIELDED 100UH SMD
+
+SRP7028A-4R7M [Bourns, SRP7028A-4R7M]INDUCTOR POWER SHIELDED 4U7H SMD</description>
 <wire x1="-3.175" y1="3.175" x2="3.175" y2="3.175" width="0.127" layer="51"/>
 <wire x1="3.175" y1="3.175" x2="3.175" y2="-3.175" width="0.127" layer="51"/>
 <wire x1="3.175" y1="-3.175" x2="-3.175" y2="-3.175" width="0.127" layer="51"/>
 <wire x1="-3.175" y1="-3.175" x2="-3.175" y2="3.175" width="0.127" layer="51"/>
 <circle x="0" y="0" radius="1.79605" width="0.127" layer="51"/>
-<smd name="1" x="3.0099" y="0" dx="3.048" dy="1.524" layer="1" roundness="100" rot="R90"/>
-<smd name="2" x="-3.0099" y="0" dx="3.048" dy="1.524" layer="1" roundness="100" rot="R90"/>
+<smd name="1" x="3.0099" y="0" dx="3.048" dy="2.286" layer="1" roundness="100" rot="R90"/>
+<smd name="2" x="-3.0099" y="0" dx="3.048" dy="2.286" layer="1" roundness="100" rot="R90"/>
 <text x="-1.9071" y="3.6391" size="0.6096" layer="25">&gt;NAME</text>
 </package>
 <package name="L3939">
