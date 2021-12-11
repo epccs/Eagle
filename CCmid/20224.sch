@@ -2320,6 +2320,92 @@ PC452 [FAIRCHILD,PC452J00000F] OPTOCOUPLER DARL 3750VRMS 4SMD
 </deviceset>
 </devicesets>
 </library>
+<library name="D-TVS">
+<description>&lt;pre&gt;Transient Voltage Suppressor (Diode, TVS)
+
+USE AT YOUR OWN RISK...
+
+Copyright (C) 2014 Ronald Steven Sutherland
+Released under the Creative Commons 
+Attribution Share-Alike 3.0 License
+http://creativecommons.org/licenses/by-sa/3.0</description>
+<packages>
+<package name="SMB">
+<description>&lt;&gt;SMB</description>
+<wire x1="-2.375" y1="2" x2="2.375" y2="2" width="0.254" layer="51"/>
+<wire x1="2.375" y1="-2" x2="-2.375" y2="-2" width="0.254" layer="51"/>
+<wire x1="2.375" y1="2" x2="2.375" y2="-2" width="0.254" layer="51"/>
+<wire x1="-2.375" y1="-2" x2="-2.375" y2="2" width="0.254" layer="51"/>
+<smd name="C" x="-2.2" y="0" dx="2.2" dy="2.26" layer="1" roundness="50"/>
+<smd name="A" x="2.2" y="0" dx="2.2" dy="2.26" layer="1" roundness="20"/>
+<text x="-1.861" y="2.254" size="0.6096" layer="25" ratio="10">&gt;NAME</text>
+<rectangle x1="2.38" y1="-1.1" x2="2.8" y2="1.1" layer="51"/>
+<rectangle x1="-2.8" y1="-1.1" x2="-2.38" y2="1.1" layer="51"/>
+<rectangle x1="-1.5" y1="-2" x2="-0.75" y2="2" layer="51"/>
+</package>
+<package name="SOD123">
+<description>&lt;pre&gt;SOD123
+http://www.diodes.com/datasheets/ap02001.pdf</description>
+<wire x1="-1.1" y1="0.7" x2="1.1" y2="0.7" width="0.254" layer="51"/>
+<wire x1="1.1" y1="0.7" x2="1.1" y2="-0.7" width="0.254" layer="51"/>
+<wire x1="1.1" y1="-0.7" x2="-1.1" y2="-0.7" width="0.254" layer="51"/>
+<wire x1="-1.1" y1="-0.7" x2="-1.1" y2="0.7" width="0.254" layer="51"/>
+<smd name="C" x="-1.6" y="0" dx="1.4" dy="1.4" layer="1" roundness="50"/>
+<smd name="A" x="1.6" y="0" dx="1.4" dy="1.4" layer="1" roundness="20"/>
+<text x="-1.1" y="1" size="0.6096" layer="25">&gt;NAME</text>
+<rectangle x1="-1.95" y1="-0.45" x2="-1.2" y2="0.4" layer="51"/>
+<rectangle x1="1.2" y1="-0.45" x2="1.95" y2="0.4" layer="51"/>
+<rectangle x1="-1.05" y1="-0.65" x2="-0.15" y2="0.7" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="TVS-BI">
+<description>&lt;pre&gt;Bi-directional</description>
+<wire x1="0.508" y1="-1.27" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-0.508" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-1.27" x2="0.508" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0.508" y2="0" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="0" x2="-0.762" y2="0.254" width="0.254" layer="94"/>
+<wire x1="0.508" y1="0" x2="0.762" y2="-0.254" width="0.254" layer="94"/>
+<text x="1.27" y="0.127" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.27" y="-1.397" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="A" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="C" x="0" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
+<wire x1="-0.508" y1="1.27" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0.508" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="1.27" x2="0.508" y2="1.27" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TVS-BI" prefix="D" uservalue="yes">
+<description>&lt;pre&gt;Bi-directional Transient Voltage Suppressors</description>
+<gates>
+<gate name="G$1" symbol="TVS-BI" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SMB" package="SMB">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SOD123" package="SOD123">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2344,13 +2430,13 @@ PC452 [FAIRCHILD,PC452J00000F] OPTOCOUPLER DARL 3750VRMS 4SMD
 <part name="C4" library="C-C" deviceset="C" device="C1206" value="10uF"/>
 <part name="C5" library="C-C" deviceset="C" device="C1206" value="10uF"/>
 <part name="C6" library="C-C" deviceset="C" device="C1206" value="10uF"/>
-<part name="C1" library="C-C" deviceset="C" device="C1206" value="10uF"/>
 <part name="GND1" library="Plane" deviceset="0V" device=""/>
 <part name="C7" library="C-C" deviceset="C" device="C0603A" value="470pF"/>
 <part name="R3" library="R-C" deviceset="R" device="0805" value="3.3"/>
 <part name="GND2" library="Plane" deviceset="0V" device=""/>
 <part name="C8" library="C-C" deviceset="C" device="C0603A" value="680pF"/>
 <part name="R1" library="R-C" deviceset="R" device="0805" value="482"/>
+<part name="D3" library="D-TVS" deviceset="TVS-BI" device="SOD123" value="SMF36CA"/>
 </parts>
 <sheets>
 <sheet>
@@ -2408,6 +2494,9 @@ Load</text>
 couple it to free space (377 Ohm), so it is better to
 impedance match and burn off as much as possible.
 The notch impedance is 482 Ohm.</text>
+<text x="61.468" y="129.794" size="1.778" layer="98">30A inrush @36V 
+on VIN.</text>
+<text x="111.76" y="152.4" size="1.778" layer="98">A 58V peak lags inrush @36V on VIN.</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -2433,13 +2522,13 @@ The notch impedance is 482 Ohm.</text>
 <instance part="C4" gate="G$1" x="116.84" y="142.24"/>
 <instance part="C5" gate="G$1" x="121.92" y="142.24"/>
 <instance part="C6" gate="G$1" x="127" y="142.24"/>
-<instance part="C1" gate="G$1" x="76.2" y="119.38"/>
 <instance part="GND1" gate="1" x="121.92" y="134.62"/>
 <instance part="C7" gate="G$1" x="139.7" y="111.76"/>
 <instance part="R3" gate="G$1" x="132.08" y="106.68"/>
 <instance part="GND2" gate="1" x="121.92" y="104.14"/>
 <instance part="C8" gate="G$1" x="93.98" y="121.92"/>
 <instance part="R1" gate="G$1" x="88.9" y="116.84"/>
+<instance part="D3" gate="G$1" x="76.2" y="116.84"/>
 </instances>
 <busses>
 </busses>
@@ -2464,9 +2553,9 @@ The notch impedance is 482 Ohm.</text>
 <wire x1="101.6" y1="139.7" x2="101.6" y2="111.76" width="0.1524" layer="91"/>
 <junction x="101.6" y="111.76"/>
 <pinref part="J3" gate=".2" pin="1"/>
-<pinref part="C1" gate="G$1" pin="2"/>
 <wire x1="76.2" y1="114.3" x2="76.2" y2="111.76" width="0.1524" layer="91"/>
 <junction x="76.2" y="111.76"/>
+<pinref part="D3" gate="G$1" pin="A"/>
 </segment>
 <segment>
 <pinref part="C3" gate="G$1" pin="2"/>
@@ -2486,7 +2575,7 @@ The notch impedance is 482 Ohm.</text>
 <wire x1="121.92" y1="106.68" x2="127" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="0" class="0">
+<net name="BULK" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="104.14" y1="129.54" x2="104.14" y2="147.32" width="0.1524" layer="91"/>
@@ -2593,8 +2682,7 @@ The notch impedance is 482 Ohm.</text>
 <net name="N$5" class="0">
 <segment>
 <pinref part="J3" gate=".1" pin="1"/>
-<pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="76.2" y1="124.46" x2="76.2" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="124.46" x2="76.2" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="L1" gate="G$1" pin="1"/>
 <junction x="76.2" y="124.46"/>
 <wire x1="76.2" y1="124.46" x2="83.82" y2="124.46" width="0.1524" layer="91"/>
@@ -2602,6 +2690,7 @@ The notch impedance is 482 Ohm.</text>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="83.82" y1="116.84" x2="83.82" y2="124.46" width="0.1524" layer="91"/>
 <junction x="83.82" y="124.46"/>
+<pinref part="D3" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="N$6" class="0">
