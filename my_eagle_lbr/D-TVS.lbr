@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="3.45" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -83,20 +83,17 @@ Attribution Share-Alike 3.0 License
 http://creativecommons.org/licenses/by-sa/3.0</description>
 <packages>
 <package name="SMC">
-<description>&lt;b&gt;DIODE&lt;/b&gt;</description>
+<description>&lt;pre&gt;pads check with Diodes SMC (RSS 12/11/21)</description>
 <wire x1="-3.5606" y1="3.105" x2="3.5606" y2="3.105" width="0.1016" layer="51"/>
 <wire x1="-3.5606" y1="-3.105" x2="3.5606" y2="-3.105" width="0.1016" layer="51"/>
 <wire x1="-3.5606" y1="-3.105" x2="-3.5606" y2="3.105" width="0.1016" layer="51"/>
 <wire x1="3.5606" y1="-3.105" x2="3.5606" y2="3.105" width="0.1016" layer="51"/>
-<wire x1="0.543" y1="1" x2="-0.83" y2="0" width="0.2032" layer="51"/>
-<wire x1="-0.83" y1="0" x2="0.543" y2="-1" width="0.2032" layer="51"/>
-<wire x1="0.543" y1="-1" x2="0.543" y2="1" width="0.2032" layer="51"/>
-<smd name="C" x="-3.7" y="0" dx="2.8" dy="3.8" layer="1"/>
-<smd name="A" x="3.7" y="0" dx="2.8" dy="3.8" layer="1"/>
+<smd name="C" x="-3.45" y="0" dx="2.6" dy="3.5" layer="1" roundness="50"/>
+<smd name="A" x="3.45" y="0" dx="2.5" dy="3.5" layer="1" roundness="20"/>
 <text x="-3.459" y="3.359" size="0.6096" layer="25">&gt;NAME</text>
-<rectangle x1="-4.094" y1="-1.0922" x2="-3.5606" y2="1.0922" layer="51"/>
-<rectangle x1="3.5606" y1="-1.0922" x2="4.094" y2="1.0922" layer="51"/>
-<rectangle x1="-2.1" y1="-3.1" x2="-0.85" y2="3.1" layer="51"/>
+<rectangle x1="-4.094" y1="-1.59" x2="-3.5606" y2="1.59" layer="51"/>
+<rectangle x1="3.5606" y1="-1.59" x2="4.094" y2="1.59" layer="51"/>
+<rectangle x1="-2.735" y1="-3.1" x2="-1.485" y2="3.1" layer="51"/>
 </package>
 <package name="SOT5">
 <description>&lt;pre&gt;TPD2E001 [TI,TPD2E001DRLR] DIODE TVS 2CH 15HBM 5.5VWM SOT5</description>
@@ -437,6 +434,15 @@ MARK: RD1</description>
 </technologies>
 </device>
 <device name="SOD123" package="SOD123">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMC" package="SMC">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
