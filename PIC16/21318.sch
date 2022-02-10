@@ -2038,7 +2038,7 @@ KSA0M311 [C&amp;K,KSA0M311LFT] SWITCH TACTILE SEALED SPST-NO 50MA 32V</descripti
 <part name="J1" library="J-HDR2.54mm" deviceset="F1X10" device=""/>
 <part name="J2" library="J-HDR2.54mm" deviceset="F1X10" device=""/>
 <part name="J3" library="U-PIC" deviceset="ISP" device=""/>
-<part name="C1" library="C-C" deviceset="C" device="C0603A"/>
+<part name="C1" library="C-C" deviceset="C" device="C0603A" value=".1uF"/>
 <part name="C2" library="C-C" deviceset="C" device="C0805A" value="1uF"/>
 <part name="P+1" library="Plane" deviceset="+5V" device=""/>
 <part name="P+2" library="Plane" deviceset="+5V" device=""/>
